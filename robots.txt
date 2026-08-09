@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sml-pn.github.io/ferramentas-trabalhistas/sitemap.xml
