@@ -14,6 +14,16 @@
   <meta property="og:description" id="ogDesc" content="Salário, rescisão, horas extras, escala 6x1/5x1, férias, 13º, FGTS, seguro, insalubridade, CLT vs PJ, aviso, freelancer e financiamento.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#1a3a5c">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PY0S5EYP3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7PY0S5EYP3');
+  </script>
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Ferramentas Trabalhistas 2026","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"13 calculadoras trabalhistas e financeiras com tabelas oficiais 2026","author":{"@type":"Person","name":"Samuel Pena"}}
   </script>
@@ -346,7 +356,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 
   <div class="ad-placeholder">📢 AD MEIO - In-article</div>
 
-  <!-- FAQ atualizado -->
+  <!-- FAQ -->
   <div class="card"><h2>❓ Perguntas Frequentes - 2026</h2>
     <details><summary>Como é calculado o INSS em 2026?</summary><p>Progressivo por faixa conforme Portaria 13/2026: até R$1.621 7,5%, até R$2.902,84 9%, até R$4.354,27 12%, até R$8.475,55 14%. Teto contribuição R$988,09.</p></details>
     <details><summary>Quem está isento de IRRF em 2026?</summary><p>Lei 15.270/2025: isenção total até R$5.000 de base tributável. Entre R$5.000,01 e R$7.350 redutor = R$978,62 - 0,133145 x base. Acima R$7.350 tabela normal.</p></details>
@@ -384,22 +394,22 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 const pageData = {
   home: { title: 'Ferramentas Trabalhistas 2026 - 13 Calculadoras Oficiais', desc: 'Portal completo com 13 calculadoras trabalhistas 2026: salário líquido, rescisão, horas extras, escala 6x1/5x1, férias, 13º, FGTS, seguro, insalubridade, CLT vs PJ, aviso, freelancer e financiamento.', canonical: 'https://trabalhista2026.onrender.com/' },
   liquido: { title: 'Calculadora de Salário Líquido 2026 - INSS e IRRF com isenção até R$5.000', desc: 'Calcule seu salário líquido 2026 com as tabelas oficiais do INSS e IRRF. Inclui dedução de dependentes, pensão e isenção até R$5.000.', canonical: 'https://trabalhista2026.onrender.com/#liquido' },
-  rescisao: { title: 'Calculadora de Rescisão Trabalhista 2026 - 4 tipos, aviso prévio e multa FGTS', desc: 'Calcule sua rescisão trabalhista 2026 com aviso prévio proporcional, férias, 13º, FGTS e multa 40%/20%. Tipos: sem justa, pedido, justa causa, acordo 484-A, indireta e fim de experiência.', canonical: 'https://trabalhista2026.onrender.com/#rescisao' },
-  extras: { title: 'Calculadora de Horas Extras e DSR 2026 - 50%, 100%, noturno', desc: 'Calcule horas extras 50%, 100%, adicional noturno 20% e DSR (descanso semanal remunerado).', canonical: 'https://trabalhista2026.onrender.com/#extras' },
-  escala: { title: 'Calculadora de Escala 6x1 e 5x1 2026 - Reforma Trabalhista e Comparativo', desc: 'Compare as escalas 6x1 (6 dias de trabalho, 1 de descanso) e 5x1 (5 dias, 1 descanso). Calcule salário, horas extras, DSR e veja qual regime compensa mais.', canonical: 'https://trabalhista2026.onrender.com/#escala' },
-  ferias: { title: 'Calculadora de Férias 2026 - 1/3 constitucional, abono pecuniário e dobro', desc: 'Calcule férias 2026: valor de gozo, 1/3 constitucional, abono pecuniário (10 dias) e dobra em caso de atraso.', canonical: 'https://trabalhista2026.onrender.com/#ferias' },
-  decimo: { title: 'Calculadora de 13º Salário 2026 - 1ª e 2ª parcela com descontos', desc: 'Calcule o 13º salário 2026: valor bruto proporcional, 1ª parcela sem desconto e 2ª parcela com INSS e IRRF.', canonical: 'https://trabalhista2026.onrender.com/#decimo' },
-  seguro: { title: 'Calculadora de Seguro-Desemprego 2026 - faixas MTE e parcelas', desc: 'Calcule o valor do seguro-desemprego 2026 conforme faixas MTE: piso R$1.621, teto R$2.518,65.', canonical: 'https://trabalhista2026.onrender.com/#seguro' },
-  fgts: { title: 'Calculadora de FGTS 2026 - depósitos 8%, multa 40%/20%, saque', desc: 'Calcule depósitos de FGTS, saldo estimado, multa rescisória e valor de saque conforme Lei 8.036/1990.', canonical: 'https://trabalhista2026.onrender.com/#fgts' },
-  adicionais: { title: 'Calculadora de Adicionais 2026 - Insalubridade e Periculosidade', desc: 'Calcule o adicional de insalubridade (10%, 20%, 40% sobre mínimo) e periculosidade (30% sobre base).', canonical: 'https://trabalhista2026.onrender.com/#adicionais' },
-  aviso: { title: 'Calculadora de Aviso Prévio 2026 - proporcional 30+3 dias/ano', desc: 'Calcule o aviso prévio proporcional: 30 dias + 3 dias por ano completo (máx. 90). Projeção para 13º, férias e FGTS.', canonical: 'https://trabalhista2026.onrender.com/#aviso' },
-  'clt-pj': { title: 'Comparativo CLT vs PJ 2026 - Fator R, Simples Nacional e líquido', desc: 'Compare CLT e PJ: custos, impostos (Simples Nacional Anexo III/V), Fator R, pró-labore, INSS, IRRF e lucro distribuído.', canonical: 'https://trabalhista2026.onrender.com/#clt-pj' },
-  freela: { title: 'Calculadora de Valor Hora Freelancer 2026 - custos e margem', desc: 'Calcule o valor hora para freelancers/PJ: inclui salário desejado, custos fixos, percentual faturável e margem.', canonical: 'https://trabalhista2026.onrender.com/#freela' },
-  finan: { title: 'Simulador Financiamento 2026 - PRICE vs SAC com economia de juros', desc: 'Compare os sistemas de amortização PRICE (parcela fixa) e SAC (amortização constante).', canonical: 'https://trabalhista2026.onrender.com/#finan' }
+  rescisao: { title: 'Calculadora de Rescisão Trabalhista 2026 - 4 tipos, aviso prévio e multa FGTS', desc: 'Calcule sua rescisão trabalhista 2026 com aviso prévio proporcional, férias, 13º, FGTS e multa 40%/20%.', canonical: 'https://trabalhista2026.onrender.com/#rescisao' },
+  extras: { title: 'Calculadora de Horas Extras e DSR 2026 - 50%, 100%, noturno', desc: 'Calcule horas extras 50%, 100%, adicional noturno 20% e DSR.', canonical: 'https://trabalhista2026.onrender.com/#extras' },
+  escala: { title: 'Calculadora de Escala 6x1 e 5x1 2026 - Reforma Trabalhista', desc: 'Compare as escalas 6x1 e 5x1. Calcule salário, horas extras, DSR e veja qual compensa mais.', canonical: 'https://trabalhista2026.onrender.com/#escala' },
+  ferias: { title: 'Calculadora de Férias 2026 - 1/3, abono e dobro', desc: 'Calcule férias 2026: valor de gozo, 1/3 constitucional, abono pecuniário e dobra.', canonical: 'https://trabalhista2026.onrender.com/#ferias' },
+  decimo: { title: 'Calculadora de 13º Salário 2026 - 1ª e 2ª parcela', desc: 'Calcule o 13º salário 2026: valor bruto proporcional, 1ª parcela e 2ª parcela com INSS e IRRF.', canonical: 'https://trabalhista2026.onrender.com/#decimo' },
+  seguro: { title: 'Calculadora de Seguro-Desemprego 2026 - faixas MTE', desc: 'Calcule o valor do seguro-desemprego 2026 conforme faixas MTE.', canonical: 'https://trabalhista2026.onrender.com/#seguro' },
+  fgts: { title: 'Calculadora de FGTS 2026 - depósitos, multa e saque', desc: 'Calcule depósitos de FGTS, saldo, multa rescisória e saque.', canonical: 'https://trabalhista2026.onrender.com/#fgts' },
+  adicionais: { title: 'Calculadora de Adicionais 2026 - Insalubridade e Periculosidade', desc: 'Calcule adicionais de insalubridade e periculosidade.', canonical: 'https://trabalhista2026.onrender.com/#adicionais' },
+  aviso: { title: 'Calculadora de Aviso Prévio 2026 - proporcional', desc: 'Calcule o aviso prévio proporcional: 30 dias + 3 dias por ano.', canonical: 'https://trabalhista2026.onrender.com/#aviso' },
+  'clt-pj': { title: 'Comparativo CLT vs PJ 2026 - Fator R e Simples', desc: 'Compare CLT e PJ: custos, impostos, Fator R, pró-labore e líquido.', canonical: 'https://trabalhista2026.onrender.com/#clt-pj' },
+  freela: { title: 'Calculadora de Valor Hora Freelancer 2026', desc: 'Calcule o valor hora para freelancers/PJ com custos e margem.', canonical: 'https://trabalhista2026.onrender.com/#freela' },
+  finan: { title: 'Simulador Financiamento 2026 - PRICE vs SAC', desc: 'Compare PRICE e SAC, veja a economia total de juros.', canonical: 'https://trabalhista2026.onrender.com/#finan' }
 };
 
 // ============================================================
-// NAVEGAÇÃO
+// NAVEGAÇÃO E GA4 TRACKING
 // ============================================================
 function updatePageSEO(pageId) {
   const data = pageData[pageId] || pageData.home;
@@ -409,7 +419,11 @@ function updatePageSEO(pageId) {
   document.getElementById('ogDesc').content = data.desc;
   document.getElementById('pageCanonical').href = data.canonical;
 }
+
 function showPage(id) {
+  // GA4: Visualização da ferramenta
+  gtag('event', 'view_tool', { 'tool': id });
+
   document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
   const target = document.getElementById('page-'+id);
   if (target) target.classList.add('active');
@@ -424,32 +438,49 @@ function showPage(id) {
   }
   window.scrollTo({top:0,behavior:'smooth'});
 }
-function navigateTo(pageId) { window.location.hash = pageId; }
+
+function navigateTo(pageId) {
+  // GA4: Clique no card da Home
+  gtag('event', 'click_tool', { 'tool': pageId, 'source': 'card' });
+  window.location.hash = pageId;
+}
+
 function loadFromHash() {
   const hash = window.location.hash.replace('#','') || 'home';
   const validPages = Object.keys(pageData);
   const page = validPages.includes(hash) ? hash : 'home';
   showPage(page);
 }
+
 window.addEventListener('hashchange', loadFromHash);
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', function(e) {
     e.preventDefault();
     const page = this.dataset.page;
+    // GA4: Clique no menu
+    gtag('event', 'click_tool', { 'tool': page, 'source': 'menu' });
     window.location.hash = page;
   });
 });
+
 document.getElementById('hamburger').addEventListener('click', function() {
   document.getElementById('navLinks').classList.toggle('open');
   this.classList.toggle('active');
+  // GA4: Abrir menu mobile
+  gtag('event', 'click_menu_mobile', { 'open': this.classList.contains('active') });
 });
+
 document.addEventListener('click', e => {
   if (!e.target.closest('.navbar')) {
     document.getElementById('navLinks').classList.remove('open');
     document.getElementById('hamburger').classList.remove('active');
   }
 });
+
 function toggleCards() {
+  // GA4: Botão "Ver todas"
+  gtag('event', 'click_show_more');
+
   const hidden = document.querySelectorAll('.mini-card.hidden-mobile');
   const btn = document.getElementById('showMoreBtn');
   if (hidden[0].style.display === 'block') {
@@ -462,7 +493,7 @@ function toggleCards() {
 }
 
 // ============================================================
-// MÁSCARA DE MOEDA E UNFORMAT
+// MÁSCARA DE MOEDA E UNFORMAT (igual)
 // ============================================================
 function mascaraMoeda(el) {
   el.addEventListener('input', function() {
@@ -489,7 +520,7 @@ const unformat = s => { if (!s) return 0; if (typeof s === 'number') return s; l
 function parseHM(str) { if (!str) return 0; let p = str.split(':'); let h = parseInt(p[0])||0, m = parseInt(p[1])||0; return h + m/60; }
 
 // ============================================================
-// INSS / IRRF
+// INSS / IRRF (idênticos)
 // ============================================================
 const INSS_FAIXAS = [{ate:1621,aliq:0.075},{ate:2902.84,aliq:0.09},{ate:4354.27,aliq:0.12},{ate:8475.55,aliq:0.14}];
 function calcINSS(sal) {
@@ -524,9 +555,10 @@ function calcIRRF(base, dep = 0, pensao = 0, pgbl = 0, usaSimpl = false) {
 }
 
 // ============================================================
-// 1. SALÁRIO LÍQUIDO
+// 1. SALÁRIO LÍQUIDO (COM GA4)
 // ============================================================
 function calcLiquido() {
+  gtag('event', 'calculate', { 'tool': 'liquido', 'bruto': unformat(document.getElementById('salBruto').value) });
   let bruto = unformat(document.getElementById('salBruto').value) + unformat(document.getElementById('salOutros').value);
   let dep = parseInt(document.getElementById('salDep').value) || 0;
   let pensao = unformat(document.getElementById('salPensao').value);
@@ -549,7 +581,7 @@ function calcLiquido() {
 }
 
 // ============================================================
-// 2. RESCISÃO
+// 2. RESCISÃO (COM GA4)
 // ============================================================
 function diffMonths(d1, d2) {
   let m = (d2.getFullYear() - d1.getFullYear()) * 12 + (d2.getMonth() - d1.getMonth());
@@ -557,6 +589,7 @@ function diffMonths(d1, d2) {
   return Math.max(m, 0);
 }
 function calcRescisao() {
+  gtag('event', 'calculate', { 'tool': 'rescisao', 'salario': unformat(document.getElementById('rescSal').value) });
   let sal = unformat(document.getElementById('rescSal').value);
   let adm = new Date(document.getElementById('rescAdm').value);
   let dem = new Date(document.getElementById('rescDem').value);
@@ -634,9 +667,10 @@ function calcRescisao() {
 }
 
 // ============================================================
-// 3. HORAS EXTRAS (com correção do noturno)
+// 3. HORAS EXTRAS (COM GA4)
 // ============================================================
 function calcHE() {
+  gtag('event', 'calculate', { 'tool': 'horas_extras', 'salario': unformat(document.getElementById('heSal').value) });
   let sal = unformat(document.getElementById('heSal').value);
   let jornada = parseFloat(document.getElementById('heJornada').value) || 220;
   let he50 = parseHM(document.getElementById('he50').value);
@@ -647,7 +681,7 @@ function calcHE() {
   let vh = sal / jornada;
   let v50 = vh * 1.5 * he50;
   let v100 = vh * 2 * he100;
-  let vNot = vh * 1.2 * heNot; // hora noturna já com 20%
+  let vNot = vh * 1.2 * heNot;
   let totalHE = v50 + v100 + vNot;
   let dsr = uteis > 0 ? (totalHE / uteis) * desc : 0;
   let total = totalHE + dsr;
@@ -665,9 +699,10 @@ function calcHE() {
 }
 
 // ============================================================
-// 4. ESCALA 6x1 / 5x1 (NOVA)
+// 4. ESCALA 6x1 / 5x1 (COM GA4)
 // ============================================================
 function calcEscala() {
+  gtag('event', 'calculate', { 'tool': 'escala', 'salario': unformat(document.getElementById('escSal').value) });
   const sal = unformat(document.getElementById('escSal').value);
   const jornada = parseFloat(document.getElementById('escJornada').value) || 8;
   const diasSemana = parseInt(document.getElementById('escDiasSemana').value) || 6;
@@ -743,9 +778,10 @@ function calcEscala() {
 }
 
 // ============================================================
-// 5. FÉRIAS
+// 5. FÉRIAS (COM GA4)
 // ============================================================
 function calcFerias() {
+  gtag('event', 'calculate', { 'tool': 'ferias', 'salario': unformat(document.getElementById('ferSal').value) });
   let sal = unformat(document.getElementById('ferSal').value);
   let dias = parseInt(document.getElementById('ferDias').value) || 30;
   let media = unformat(document.getElementById('ferMedia').value);
@@ -778,9 +814,10 @@ function calcFerias() {
 }
 
 // ============================================================
-// 6. 13º SALÁRIO
+// 6. 13º SALÁRIO (COM GA4)
 // ============================================================
 function calcDecimo() {
+  gtag('event', 'calculate', { 'tool': 'decimo', 'salario': unformat(document.getElementById('decSal').value) });
   let sal = unformat(document.getElementById('decSal').value);
   let meses = parseInt(document.getElementById('decMeses').value) || 12;
   let media = unformat(document.getElementById('decMedia').value);
@@ -805,9 +842,10 @@ function calcDecimo() {
 }
 
 // ============================================================
-// 7. SEGURO-DESEMPREGO
+// 7. SEGURO-DESEMPREGO (COM GA4)
 // ============================================================
 function calcSeguro() {
+  gtag('event', 'calculate', { 'tool': 'seguro', 'media': unformat(document.getElementById('segMedia').value) });
   let media = unformat(document.getElementById('segMedia').value);
   let meses = parseInt(document.getElementById('segMeses').value) || 0;
   let vezes = parseInt(document.getElementById('segVezes').value) || 1;
@@ -833,9 +871,10 @@ function calcSeguro() {
 }
 
 // ============================================================
-// 8. FGTS
+// 8. FGTS (COM GA4)
 // ============================================================
 function calcFGTS() {
+  gtag('event', 'calculate', { 'tool': 'fgts', 'salario': unformat(document.getElementById('fgtsSal').value) });
   let sal = unformat(document.getElementById('fgtsSal').value);
   let meses = parseInt(document.getElementById('fgtsMeses').value) || 0;
   let saldoInf = unformat(document.getElementById('fgtsSaldoInf').value);
@@ -858,9 +897,10 @@ function calcFGTS() {
 }
 
 // ============================================================
-// 9. ADICIONAIS
+// 9. ADICIONAIS (COM GA4)
 // ============================================================
 function calcAdicionais() {
+  gtag('event', 'calculate', { 'tool': 'adicionais', 'salario': unformat(document.getElementById('adiSal').value) });
   let sal = unformat(document.getElementById('adiSal').value);
   let insalPerc = parseInt(document.getElementById('adiInsal').value) || 0;
   let pericPerc = parseInt(document.getElementById('adiPeric').value) || 0;
@@ -896,9 +936,10 @@ function calcAdicionais() {
 }
 
 // ============================================================
-// 10. AVISO PRÉVIO
+// 10. AVISO PRÉVIO (COM GA4)
 // ============================================================
 function calcAviso() {
+  gtag('event', 'calculate', { 'tool': 'aviso', 'salario': unformat(document.getElementById('avSal').value) });
   let sal = unformat(document.getElementById('avSal').value);
   let adm = new Date(document.getElementById('avAdm').value);
   let dem = new Date(document.getElementById('avDem').value);
@@ -922,9 +963,10 @@ function calcAviso() {
 }
 
 // ============================================================
-// 11. CLT vs PJ
+// 11. CLT vs PJ (COM GA4)
 // ============================================================
 function calcCLTPJ() {
+  gtag('event', 'calculate', { 'tool': 'clt_pj', 'salario_clt': unformat(document.getElementById('cpjSal').value) });
   let salCLT = unformat(document.getElementById('cpjSal').value);
   let benef = unformat(document.getElementById('cpjBenef').value);
   let fat = unformat(document.getElementById('cpjFat').value);
@@ -980,9 +1022,10 @@ function calcCLTPJ() {
 }
 
 // ============================================================
-// 12. FREELANCER
+// 12. FREELANCER (COM GA4)
 // ============================================================
 function calcFreela() {
+  gtag('event', 'calculate', { 'tool': 'freela', 'salario': unformat(document.getElementById('frSal').value) });
   let sal = unformat(document.getElementById('frSal').value);
   let custos = unformat(document.getElementById('frCustos').value);
   let hDia = parseFloat(document.getElementById('frHorasDia').value) || 8;
@@ -1011,9 +1054,10 @@ function calcFreela() {
 }
 
 // ============================================================
-// 13. FINANCIAMENTO
+// 13. FINANCIAMENTO (COM GA4)
 // ============================================================
 function calcFinan() {
+  gtag('event', 'calculate', { 'tool': 'financiamento', 'imovel': unformat(document.getElementById('finImovel').value) });
   let imovel = unformat(document.getElementById('finImovel').value);
   let entrada = unformat(document.getElementById('finEntrada').value);
   let taxaAa = parseFloat(document.getElementById('finTaxa').value) || 10.5;
