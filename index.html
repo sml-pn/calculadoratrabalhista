@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6807487565941819" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="pageTitle">Ferramentas Trabalhistas 2026 - 13 Calculadoras: Salário, Rescisão, Horas Extras, Escala 6x1/5x1 e mais</title>
@@ -15,6 +14,9 @@
   <meta property="og:description" id="ogDesc" content="Salário, rescisão, horas extras, escala 6x1/5x1, férias, 13º, FGTS, seguro, insalubridade, CLT vs PJ, aviso, freelancer e financiamento.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#1a3a5c">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6807487565941819" crossorigin="anonymous"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PY0S5EYP3"></script>
@@ -68,6 +70,7 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);line-hei
 .result-item:last-child{border-bottom:none}.result-item.total{border-top:2px solid var(--primary);margin-top:6px;padding-top:10px;font-size:16px;font-weight:800}
 .value{font-weight:700;text-align:right}.positive{color:var(--green)}.negative{color:var(--red)}
 .explanation{margin-top:10px;padding:10px;background:#fef9e7;border:1px solid #f9e79f;border-radius:10px;font-size:12.5px;color:#5d4e37;line-height:1.6}
+.ad-container{text-align:center;padding:16px 0;margin:16px 0;background:#f8fafc;border-radius:12px;border:1px solid #e0e6ed}
 .ad-placeholder{text-align:center;padding:24px;background:#fff;border-radius:12px;border:1px dashed #bbb;color:#999;font-size:12px;margin:16px 0;line-height:1.5}
 .grid-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}@media(max-width:640px){.grid-cards{grid-template-columns:1fr 1fr}}
 .mini-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center;cursor:pointer;transition:.2s}
@@ -116,10 +119,10 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
     <p>Tabelas oficiais INSS/IRRF - Isenção até R$5.000</p>
     <div class="stats"><div class="stat">✅ Sem cadastro</div><div class="stat">📚 Fontes oficiais</div><div class="stat">💾 Exporta memória</div><div class="stat">📱 Mobile-first</div></div>
   </div>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6807487565941819" data-ad-slot="7514359591" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
+  <!-- ANÚNCIO TOPO -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6807487565941819" data-ad-slot="7514359591" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <!-- HOME -->
   <section id="page-home" class="page-section active">
@@ -217,6 +220,10 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
     <div id="resEscala"></div>
     </div>
   </section>
+
+  <!-- ANÚNCIO MEIO (entre as seções) -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6807487565941819" data-ad-slot="1008660992" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <!-- ========== 5. FÉRIAS ========== -->
   <section id="page-ferias" class="page-section">
@@ -355,13 +362,12 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
     </div>
     <button class="btn" onclick="calcFinan()">Simular Financiamento</button>
     <div id="resFinan"></div>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6807487565941819" data-ad-slot="1008660992" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    </div>
   </section>
 
-  <div class="ad-placeholder">📢 AD MEIO - In-article</div>
+  <!-- ANÚNCIO RODAPÉ -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6807487565941819" data-ad-slot="3877652905" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <!-- FAQ -->
   <div class="card"><h2>❓ Perguntas Frequentes - 2026</h2>
@@ -428,9 +434,7 @@ function updatePageSEO(pageId) {
 }
 
 function showPage(id) {
-  // GA4: Visualização da ferramenta
   gtag('event', 'view_tool', { 'tool': id });
-
   document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
   const target = document.getElementById('page-'+id);
   if (target) target.classList.add('active');
@@ -447,7 +451,6 @@ function showPage(id) {
 }
 
 function navigateTo(pageId) {
-  // GA4: Clique no card da Home
   gtag('event', 'click_tool', { 'tool': pageId, 'source': 'card' });
   window.location.hash = pageId;
 }
@@ -464,7 +467,6 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', function(e) {
     e.preventDefault();
     const page = this.dataset.page;
-    // GA4: Clique no menu
     gtag('event', 'click_tool', { 'tool': page, 'source': 'menu' });
     window.location.hash = page;
   });
@@ -473,7 +475,6 @@ document.querySelectorAll('.nav-links a').forEach(a => {
 document.getElementById('hamburger').addEventListener('click', function() {
   document.getElementById('navLinks').classList.toggle('open');
   this.classList.toggle('active');
-  // GA4: Abrir menu mobile
   gtag('event', 'click_menu_mobile', { 'open': this.classList.contains('active') });
 });
 
@@ -485,9 +486,7 @@ document.addEventListener('click', e => {
 });
 
 function toggleCards() {
-  // GA4: Botão "Ver todas"
   gtag('event', 'click_show_more');
-
   const hidden = document.querySelectorAll('.mini-card.hidden-mobile');
   const btn = document.getElementById('showMoreBtn');
   if (hidden[0].style.display === 'block') {
@@ -500,7 +499,7 @@ function toggleCards() {
 }
 
 // ============================================================
-// MÁSCARA DE MOEDA E UNFORMAT (igual)
+// MÁSCARA DE MOEDA E UNFORMAT
 // ============================================================
 function mascaraMoeda(el) {
   el.addEventListener('input', function() {
@@ -527,7 +526,7 @@ const unformat = s => { if (!s) return 0; if (typeof s === 'number') return s; l
 function parseHM(str) { if (!str) return 0; let p = str.split(':'); let h = parseInt(p[0])||0, m = parseInt(p[1])||0; return h + m/60; }
 
 // ============================================================
-// INSS / IRRF (idênticos)
+// INSS / IRRF
 // ============================================================
 const INSS_FAIXAS = [{ate:1621,aliq:0.075},{ate:2902.84,aliq:0.09},{ate:4354.27,aliq:0.12},{ate:8475.55,aliq:0.14}];
 function calcINSS(sal) {
@@ -588,7 +587,7 @@ function calcLiquido() {
 }
 
 // ============================================================
-// 2. RESCISÃO (COM GA4)
+// 2. RESCISÃO
 // ============================================================
 function diffMonths(d1, d2) {
   let m = (d2.getFullYear() - d1.getFullYear()) * 12 + (d2.getMonth() - d1.getMonth());
@@ -674,7 +673,7 @@ function calcRescisao() {
 }
 
 // ============================================================
-// 3. HORAS EXTRAS (COM GA4)
+// 3. HORAS EXTRAS
 // ============================================================
 function calcHE() {
   gtag('event', 'calculate', { 'tool': 'horas_extras', 'salario': unformat(document.getElementById('heSal').value) });
@@ -706,7 +705,7 @@ function calcHE() {
 }
 
 // ============================================================
-// 4. ESCALA 6x1 / 5x1 (COM GA4)
+// 4. ESCALA 6x1 / 5x1
 // ============================================================
 function calcEscala() {
   gtag('event', 'calculate', { 'tool': 'escala', 'salario': unformat(document.getElementById('escSal').value) });
@@ -785,7 +784,7 @@ function calcEscala() {
 }
 
 // ============================================================
-// 5. FÉRIAS (COM GA4)
+// 5. FÉRIAS
 // ============================================================
 function calcFerias() {
   gtag('event', 'calculate', { 'tool': 'ferias', 'salario': unformat(document.getElementById('ferSal').value) });
@@ -821,7 +820,7 @@ function calcFerias() {
 }
 
 // ============================================================
-// 6. 13º SALÁRIO (COM GA4)
+// 6. 13º SALÁRIO
 // ============================================================
 function calcDecimo() {
   gtag('event', 'calculate', { 'tool': 'decimo', 'salario': unformat(document.getElementById('decSal').value) });
@@ -849,7 +848,7 @@ function calcDecimo() {
 }
 
 // ============================================================
-// 7. SEGURO-DESEMPREGO (COM GA4)
+// 7. SEGURO-DESEMPREGO
 // ============================================================
 function calcSeguro() {
   gtag('event', 'calculate', { 'tool': 'seguro', 'media': unformat(document.getElementById('segMedia').value) });
@@ -878,7 +877,7 @@ function calcSeguro() {
 }
 
 // ============================================================
-// 8. FGTS (COM GA4)
+// 8. FGTS
 // ============================================================
 function calcFGTS() {
   gtag('event', 'calculate', { 'tool': 'fgts', 'salario': unformat(document.getElementById('fgtsSal').value) });
@@ -904,7 +903,7 @@ function calcFGTS() {
 }
 
 // ============================================================
-// 9. ADICIONAIS (COM GA4)
+// 9. ADICIONAIS
 // ============================================================
 function calcAdicionais() {
   gtag('event', 'calculate', { 'tool': 'adicionais', 'salario': unformat(document.getElementById('adiSal').value) });
@@ -943,7 +942,7 @@ function calcAdicionais() {
 }
 
 // ============================================================
-// 10. AVISO PRÉVIO (COM GA4)
+// 10. AVISO PRÉVIO
 // ============================================================
 function calcAviso() {
   gtag('event', 'calculate', { 'tool': 'aviso', 'salario': unformat(document.getElementById('avSal').value) });
@@ -970,7 +969,7 @@ function calcAviso() {
 }
 
 // ============================================================
-// 11. CLT vs PJ (COM GA4)
+// 11. CLT vs PJ
 // ============================================================
 function calcCLTPJ() {
   gtag('event', 'calculate', { 'tool': 'clt_pj', 'salario_clt': unformat(document.getElementById('cpjSal').value) });
@@ -1029,7 +1028,7 @@ function calcCLTPJ() {
 }
 
 // ============================================================
-// 12. FREELANCER (COM GA4)
+// 12. FREELANCER
 // ============================================================
 function calcFreela() {
   gtag('event', 'calculate', { 'tool': 'freela', 'salario': unformat(document.getElementById('frSal').value) });
@@ -1061,7 +1060,7 @@ function calcFreela() {
 }
 
 // ============================================================
-// 13. FINANCIAMENTO (COM GA4)
+// 13. FINANCIAMENTO
 // ============================================================
 function calcFinan() {
   gtag('event', 'calculate', { 'tool': 'financiamento', 'imovel': unformat(document.getElementById('finImovel').value) });
