@@ -7,11 +7,11 @@
 <meta name="description" id="pageDesc" content="13 calculadoras trabalhistas 2026: salário, rescisão, horas extras, escala 6x1/5x1, férias, 13º, FGTS, seguro, insalubridade, CLT vs PJ, aviso, freelancer, financiamento.">
 <link rel="canonical" id="pageCanonical" href="https://trabalhista2026.onrender.com/">
 <meta property="og:title" content="Ferramentas Trabalhistas 2026">
-<meta property="og:description" content="13 calculadoras com tabelas oficiais 2026">
 <meta name="theme-color" content="#1a3a5c">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6807487565941819" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PY0S5EYP3"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-7PY0S5EYP3');</script>
+<script src="https://unpkg.com/lucide@latest"></script>
 <style>
 :root{--primary:#1a3a5c;--primary-light:#2a5a8c;--accent:#e67e22;--bg:#f4f6f9;--card:#fff;--text:#1e2a3a;--muted:#6b7a8a;--border:#dce3ed;--shadow:0 8px 24px rgba(26,58,92,.08);--radius:16px;--green:#27ae60;--red:#e74c3c}
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
@@ -22,9 +22,10 @@ body{background:var(--bg);color:var(--text);line-height:1.65;padding-top:72px}
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--primary);color:#fff;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;box-shadow:0 4px 20px rgba(0,0,0,.18)}
 @media(min-width:820px){.navbar{padding:0 20px}}
 .logo{font-size:18px;font-weight:800;display:flex;align-items:center;gap:6px}
-.logo span{color:#f1c40f}
+.logo i{width:22px;height:22px;color:#f1c40f}
 .nav-links{display:flex;gap:4px;list-style:none;align-items:center}
-.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;padding:7px 10px;border-radius:30px;font-size:12px;font-weight:600;transition:0.2s;white-space:nowrap}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;padding:7px 10px;border-radius:30px;font-size:12px;font-weight:600;transition:0.2s;white-space:nowrap;display:flex;align-items:center;gap:4px}
+.nav-links a i{width:14px;height:14px}
 @media(min-width:820px){.nav-links a{font-size:12.5px;padding:7px 14px}}
 .nav-links a:hover,.nav-links a.active{background:rgba(255,255,255,.15);color:#fff}
 .nav-links a.active{background:var(--accent)}
@@ -34,13 +35,16 @@ body{background:var(--bg);color:var(--text);line-height:1.65;padding-top:72px}
 .hamburger.active span:nth-child(2){opacity:0}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px)}
 .hero{background:linear-gradient(135deg,var(--primary),#0f2a44);color:#fff;border-radius:var(--radius);padding:24px 20px;margin:8px 0 16px;box-shadow:var(--shadow)}
-.hero h1{font-size:24px;line-height:1.2;margin-bottom:4px}
+.hero h1{font-size:24px;line-height:1.2;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.hero h1 i{width:28px;height:28px;color:#f1c40f}
 .hero p{opacity:.9;font-size:14px;max-width:620px}
 .hero .stats{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
-.hero .stat{background:rgba(255,255,255,.12);padding:6px 12px;border-radius:99px;font-size:12px;font-weight:600}
+.hero .stat{background:rgba(255,255,255,.12);padding:6px 12px;border-radius:99px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:4px}
+.hero .stat i{width:14px;height:14px}
 @media(max-width:640px){.hero .stats{display:none}.hero h1{font-size:20px}.hero p{font-size:13px}}
 .card{background:var(--card);border-radius:var(--radius);padding:22px 18px;margin-bottom:18px;box-shadow:var(--shadow);border:1px solid var(--border)}
-.card h2{font-size:18px;margin-bottom:4px;color:var(--primary);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.card h2{font-size:18px;margin-bottom:4px;color:var(--primary);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card h2 i{width:22px;height:22px;color:var(--accent)}
 .card h2 .badge{background:var(--accent);color:#fff;font-size:10px;padding:2px 8px;border-radius:99px}
 .card .sub{color:var(--muted);font-size:13px;margin-bottom:14px}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -50,7 +54,8 @@ body{background:var(--bg);color:var(--text);line-height:1.65;padding-top:72px}
 .form-group input,.form-group select{width:100%;padding:10px 12px;border:2px solid var(--border);border-radius:10px;font-size:14px;background:#fff;transition:0.2s}
 .form-group input:focus,.form-group select:focus{outline:none;border-color:var(--primary-light);box-shadow:0 0 0 3px rgba(42,90,140,.15)}
 .check{display:flex;gap:8px;align-items:center;font-size:13px;font-weight:600;background:#f8fafc;padding:8px 12px;border-radius:10px;border:1px solid var(--border);cursor:pointer;margin-bottom:8px}
-.btn{background:var(--primary);color:#fff;border:none;padding:12px 20px;border-radius:30px;font-size:14px;font-weight:700;cursor:pointer;transition:0.2s;width:100%}
+.btn{background:var(--primary);color:#fff;border:none;padding:12px 20px;border-radius:30px;font-size:14px;font-weight:700;cursor:pointer;transition:0.2s;width:100%;display:flex;align-items:center;justify-content:center;gap:6px}
+.btn i{width:18px;height:18px}
 .btn:hover{background:var(--primary-light);transform:translateY(-1px)}
 .result{margin-top:14px;padding:14px;background:#f8fafc;border-radius:12px;border-left:5px solid var(--primary);animation:fadeUp .35s ease}
 .result-item{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed #e0e6ed;font-size:14px}
@@ -63,126 +68,133 @@ body{background:var(--bg);color:var(--text);line-height:1.65;padding-top:72px}
 @media(max-width:640px){.grid-cards{grid-template-columns:1fr 1fr}}
 .mini-card{background:#fff;border:2px solid var(--border);border-radius:14px;padding:16px;text-align:center;cursor:pointer;transition:0.2s}
 .mini-card:hover{border-color:var(--primary);transform:translateY(-3px);box-shadow:var(--shadow)}
+.mini-card i{display:block;margin:0 auto 8px;color:var(--primary);width:28px;height:28px}
 .mini-card b{display:block;font-size:14px;margin-top:6px}.mini-card span{font-size:11px;color:var(--muted)}
 .show-more-btn{background:var(--accent);color:#fff;border:none;padding:10px;border-radius:30px;font-size:13px;font-weight:700;width:100%;cursor:pointer;margin:6px 0}
 .page-section{display:none;animation:fadeUp .4s ease}.page-section.active{display:block}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 details{border-bottom:1px solid var(--border);padding:12px 0}
-summary{font-weight:700;cursor:pointer;list-style:none;font-size:14px}summary::-webkit-details-marker{display:none}
-details p,details ul{margin-top:6px;color:#4a5a6a;font-size:13px;line-height:1.6}
+summary{font-weight:700;cursor:pointer;list-style:none;font-size:14px;display:flex;align-items:center;gap:6px}
+summary i{width:16px;height:16px;color:var(--accent)}
+summary::-webkit-details-marker{display:none}
+details p{margin-top:6px;color:#4a5a6a;font-size:13px;line-height:1.6}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border-top:1px solid var(--border);margin-top:16px;line-height:1.6}
 .link-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.link-list a{background:#fff;border:1px solid var(--border);padding:6px 12px;border-radius:99px;font-size:12px;text-decoration:none;color:var(--primary);font-weight:600}
-.back-top{display:inline-block;margin-top:12px;padding:8px 16px;background:var(--primary);color:#fff;border-radius:30px;text-decoration:none;font-size:12px}
+.link-list a{background:#fff;border:1px solid var(--border);padding:6px 12px;border-radius:99px;font-size:12px;text-decoration:none;color:var(--primary);font-weight:600;display:flex;align-items:center;gap:4px}
+.link-list a i{width:14px;height:14px}
+.back-top{display:inline-flex;align-items:center;gap:4px;margin-top:12px;padding:8px 16px;background:var(--primary);color:#fff;border-radius:30px;text-decoration:none;font-size:12px}
+.back-top i{width:14px;height:14px}
 .back-top:hover{background:var(--primary-light)}
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:12px 0}
 .footer-links a{color:var(--muted);text-decoration:none;font-size:12px;border-right:1px solid var(--border);padding-right:12px}
 .footer-links a:last-child{border-right:none}.footer-links a:hover{color:var(--primary)}
-@media(max-width:820px){.nav-links{position:fixed;top:64px;left:0;right:0;background:var(--primary);flex-direction:column;padding:16px;display:none;border-radius:0 0 18px 18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}.nav-links.open{display:flex}.nav-links a{width:100%;text-align:center;padding:12px;font-size:15px}.hamburger{display:flex}}
+@media(max-width:820px){.nav-links{position:fixed;top:64px;left:0;right:0;background:var(--primary);flex-direction:column;padding:16px;display:none;border-radius:0 0 18px 18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}.nav-links.open{display:flex}.nav-links a{width:100%;text-align:center;padding:12px;font-size:15px;justify-content:center}.hamburger{display:flex}}
 #backToTop{position:fixed;bottom:24px;right:24px;background:var(--primary);color:#fff;width:44px;height:44px;border-radius:50%;border:none;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.2)}
 #backToTop.visible{opacity:1;visibility:visible}#backToTop:hover{background:var(--primary-light)}
 .share-btns{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
 .share-btn{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;border-radius:16px;font-size:11px;font-weight:600;color:#fff;transition:0.2s;cursor:pointer;border:none}
+.share-btn i{width:14px;height:14px}
 .share-btn:hover{transform:translateY(-1px);box-shadow:0 2px 8px rgba(0,0,0,.15)}
 .share-whatsapp{background:#25d366}.share-telegram{background:#0088cc}.share-copy{background:#6c757d}
 </style>
 </head>
 <body>
 <nav class="navbar">
-<div class="logo"><span>Ferramentas</span>BR 2026</div>
+<div class="logo"><i data-lucide="calculator"></i> Ferramentas<span>BR 2026</span></div>
 <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 <ul class="nav-links" id="navLinks">
-<li><a href="#home" data-page="home">Início</a></li>
-<li><a href="#liquido" data-page="liquido">Salário</a></li>
-<li><a href="#rescisao" data-page="rescisao">Rescisão</a></li>
-<li><a href="#extras" data-page="extras">Extras</a></li>
-<li><a href="#escala" data-page="escala">6x1/5x1</a></li>
-<li><a href="#ferias" data-page="ferias">Férias/13º</a></li>
-<li><a href="#seguro" data-page="seguro">Seguro/FGTS</a></li>
-<li><a href="#adicionais" data-page="adicionais">Adicionais</a></li>
-<li><a href="#clt-pj" data-page="clt-pj">CLT vs PJ</a></li>
-<li><a href="#finan" data-page="finan">Financiamento</a></li>
+<li><a href="#home" data-page="home"><i data-lucide="home"></i> Início</a></li>
+<li><a href="#liquido" data-page="liquido"><i data-lucide="dollar-sign"></i> Salário</a></li>
+<li><a href="#rescisao" data-page="rescisao"><i data-lucide="file-text"></i> Rescisão</a></li>
+<li><a href="#extras" data-page="extras"><i data-lucide="clock"></i> Extras</a></li>
+<li><a href="#escala" data-page="escala"><i data-lucide="calendar"></i> 6x1/5x1</a></li>
+<li><a href="#ferias" data-page="ferias"><i data-lucide="umbrella"></i> Férias</a></li>
+<li><a href="#seguro" data-page="seguro"><i data-lucide="shield"></i> Seguro</a></li>
+<li><a href="#adicionais" data-page="adicionais"><i data-lucide="alert-triangle"></i> Adicionais</a></li>
+<li><a href="#clt-pj" data-page="clt-pj"><i data-lucide="briefcase"></i> CLT vs PJ</a></li>
+<li><a href="#finan" data-page="finan"><i data-lucide="home"></i> Financiamento</a></li>
 </ul>
 </nav>
 <div class="container">
 <div class="hero">
-<h1>13 Calculadoras Trabalhistas 2026</h1>
+<h1><i data-lucide="calculator"></i> 13 Calculadoras Trabalhistas 2026</h1>
 <p>Tabelas oficiais INSS/IRRF - Isenção de IR até R$5.000 (Lei 15.270/2025)</p>
-<div class="stats"><div class="stat">✅ Sem cadastro</div><div class="stat">📚 Fontes oficiais</div><div class="stat">💾 Salva memória</div><div class="stat">📱 Responsivo</div></div>
+<div class="stats"><div class="stat"><i data-lucide="check-circle"></i> Sem cadastro</div><div class="stat"><i data-lucide="book-open"></i> Fontes oficiais</div><div class="stat"><i data-lucide="save"></i> Salva memória</div><div class="stat"><i data-lucide="smartphone"></i> Responsivo</div></div>
 </div>
 <div class="ad-container"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6807487565941819" data-ad-slot="7514359591" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
 <section id="page-home" class="page-section active">
 <div class="grid-cards">
-<div class="mini-card" onclick="navigateTo('liquido')">💰<b>Salário Líquido</b><span>INSS + IRRF 2026</span></div>
-<div class="mini-card" onclick="navigateTo('rescisao')">📄<b>Rescisão Completa</b><span>4 tipos + aviso</span></div>
-<div class="mini-card" onclick="navigateTo('extras')">⏰<b>Horas Extras</b><span>50/100% + DSR</span></div>
-<div class="mini-card" onclick="navigateTo('escala')">🔄<b>Escala 6x1/5x1</b><span>Reforma + comparativo</span></div>
-<div class="mini-card" onclick="navigateTo('ferias')">🏖️<b>Férias + 1/3</b><span>Abono + dobra</span></div>
-<div class="mini-card" onclick="navigateTo('decimo')">🎄<b>13º Salário</b><span>1ª e 2ª parcela</span></div>
-<div class="mini-card" onclick="navigateTo('seguro')">🛡️<b>Seguro-Desemprego</b><span>Faixas MTE 2026</span></div>
-<div class="mini-card hidden-mobile" onclick="navigateTo('fgts')">🏦<b>FGTS + Multa</b><span>40%/20% + TR</span></div>
-<div class="mini-card hidden-mobile" onclick="navigateTo('adicionais')">⚠️<b>Insalubridade</b><span>10-40% + 30%</span></div>
-<div class="mini-card hidden-mobile" onclick="navigateTo('aviso')">📅<b>Aviso Prévio</b><span>30-90 dias</span></div>
-<div class="mini-card hidden-mobile" onclick="navigateTo('clt-pj')">⚖️<b>CLT vs PJ</b><span>Fator R</span></div>
-<div class="mini-card hidden-mobile" onclick="navigateTo('freela')">🧑‍💻<b>Valor Hora</b><span>Freelancer</span></div>
-<div class="mini-card hidden-mobile" onclick="navigateTo('finan')">🏠<b>PRICE vs SAC</b><span>Financiamento</span></div>
+<div class="mini-card" onclick="navigateTo('liquido')"><i data-lucide="dollar-sign"></i><b>Salário Líquido</b><span>INSS + IRRF 2026</span></div>
+<div class="mini-card" onclick="navigateTo('rescisao')"><i data-lucide="file-text"></i><b>Rescisão Completa</b><span>4 tipos + aviso</span></div>
+<div class="mini-card" onclick="navigateTo('extras')"><i data-lucide="clock"></i><b>Horas Extras</b><span>50/100% + DSR</span></div>
+<div class="mini-card" onclick="navigateTo('escala')"><i data-lucide="calendar"></i><b>Escala 6x1/5x1</b><span>Reforma</span></div>
+<div class="mini-card" onclick="navigateTo('ferias')"><i data-lucide="umbrella"></i><b>Férias + 1/3</b><span>Abono + dobra</span></div>
+<div class="mini-card" onclick="navigateTo('decimo')"><i data-lucide="gift"></i><b>13º Salário</b><span>1ª e 2ª parcela</span></div>
+<div class="mini-card" onclick="navigateTo('seguro')"><i data-lucide="shield"></i><b>Seguro-Desemprego</b><span>Faixas MTE</span></div>
+<div class="mini-card hidden-mobile" onclick="navigateTo('fgts')"><i data-lucide="building"></i><b>FGTS + Multa</b><span>40%/20% + TR</span></div>
+<div class="mini-card hidden-mobile" onclick="navigateTo('adicionais')"><i data-lucide="alert-triangle"></i><b>Insalubridade</b><span>10-40% + 30%</span></div>
+<div class="mini-card hidden-mobile" onclick="navigateTo('aviso')"><i data-lucide="calendar-days"></i><b>Aviso Prévio</b><span>30-90 dias</span></div>
+<div class="mini-card hidden-mobile" onclick="navigateTo('clt-pj')"><i data-lucide="briefcase"></i><b>CLT vs PJ</b><span>Fator R</span></div>
+<div class="mini-card hidden-mobile" onclick="navigateTo('freela')"><i data-lucide="user"></i><b>Valor Hora</b><span>Freelancer</span></div>
+<div class="mini-card hidden-mobile" onclick="navigateTo('finan')"><i data-lucide="home"></i><b>PRICE vs SAC</b><span>Financiamento</span></div>
 </div>
-<button class="show-more-btn" id="showMoreBtn" onclick="toggleCards()">🔽 Ver todas as 13 calculadoras</button>
-<div class="card"><h2>🔗 Links Oficiais</h2><div class="link-list">
-<a href="https://meu.inss.gov.br" target="_blank" rel="noopener">Meu INSS</a>
-<a href="https://www.gov.br/trabalho-e-emprego" target="_blank" rel="noopener">MTE</a>
-<a href="https://www.caixa.gov.br/beneficios-trabalhador/fgts/" target="_blank" rel="noopener">FGTS Caixa</a>
-<a href="https://www.gov.br/receitafederal" target="_blank" rel="noopener">Receita Federal</a>
-<a href="https://servicos.mte.gov.br" target="_blank" rel="noopener">Carteira Digital</a>
+<button class="show-more-btn" id="showMoreBtn" onclick="toggleCards()"><i data-lucide="chevron-down"></i> Ver todas as 13 calculadoras</button>
+<div class="card"><h2><i data-lucide="link"></i> Links Oficiais</h2><div class="link-list">
+<a href="https://meu.inss.gov.br" target="_blank" rel="noopener"><i data-lucide="external-link"></i> Meu INSS</a>
+<a href="https://www.gov.br/trabalho-e-emprego" target="_blank" rel="noopener"><i data-lucide="external-link"></i> MTE</a>
+<a href="https://www.caixa.gov.br/beneficios-trabalhador/fgts/" target="_blank" rel="noopener"><i data-lucide="external-link"></i> FGTS Caixa</a>
+<a href="https://www.gov.br/receitafederal" target="_blank" rel="noopener"><i data-lucide="external-link"></i> Receita Federal</a>
+<a href="https://servicos.mte.gov.br" target="_blank" rel="noopener"><i data-lucide="external-link"></i> Carteira Digital</a>
 </div></div>
 </section>
 
 <!-- 1. SALÁRIO LÍQUIDO -->
-<section id="page-liquido" class="page-section"><div class="card"><h2>💰 Salário Líquido 2026 <span class="badge">Isenção até R$5k</span></h2><p class="sub">INSS progressivo, salário-família, vale-transporte, sindical e redutor IRRF</p><div class="form-grid"><div class="form-group"><label>Salário Bruto (R$)</label><input type="text" id="salBruto" value="3.500,00" class="money"></div><div class="form-group"><label>Outros proventos</label><input type="text" id="salOutros" value="0,00" class="money"></div><div class="form-group"><label>Dependentes</label><input type="number" id="salDep" value="0" min="0" max="10"></div><div class="form-group"><label>Filhos até 14 anos (salário-família)</label><input type="number" id="salFilhos" value="0" min="0" max="20"></div><div class="form-group"><label>Pensão alimentícia (R$)</label><input type="text" id="salPensao" value="0,00" class="money"></div><div class="form-group"><label>Vale-Transporte (gasto mensal R$)</label><input type="text" id="salVT" value="0,00" class="money" placeholder="Valor total do transporte"></div></div><label class="check"><input type="checkbox" id="salUsaSimpl"> Forçar dedução simplificada (R$607,20)</label><label class="check"><input type="checkbox" id="salSindical"> Descontar Contribuição Sindical (1 dia/ano)</label><button class="btn" onclick="calcLiquido()">Calcular Líquido</button><div id="resLiquido"></div></div></section>
+<section id="page-liquido" class="page-section"><div class="card"><h2><i data-lucide="dollar-sign"></i> Salário Líquido 2026 <span class="badge">Isenção até R$5k</span></h2><p class="sub">INSS progressivo, salário-família, vale-transporte, contribuição sindical e redutor IRRF</p><div class="form-grid"><div class="form-group"><label>Salário Bruto (R$)</label><input type="text" id="salBruto" value="3.500,00" class="money"></div><div class="form-group"><label>Outros proventos</label><input type="text" id="salOutros" value="0,00" class="money"></div><div class="form-group"><label>Dependentes (IRRF)</label><input type="number" id="salDep" value="0" min="0" max="10"></div><div class="form-group"><label>Filhos até 14 anos (salário-família)</label><input type="number" id="salFilhos" value="0" min="0" max="20"></div><div class="form-group"><label>Pensão alimentícia (R$)</label><input type="text" id="salPensao" value="0,00" class="money"></div><div class="form-group"><label>Vale-Transporte (gasto mensal R$)</label><input type="text" id="salVT" value="0,00" class="money" placeholder="Valor total do transporte"></div></div><label class="check"><input type="checkbox" id="salUsaSimpl"> Forçar dedução simplificada (R$607,20)</label><label class="check"><input type="checkbox" id="salSindical"> Descontar Contribuição Sindical (1 dia/ano)</label><button class="btn" onclick="calcLiquido()"><i data-lucide="calculator"></i> Calcular Líquido</button><div id="resLiquido"></div></div></section>
 
 <!-- 2. RESCISÃO -->
-<section id="page-rescisao" class="page-section"><div class="card"><h2>📄 Rescisão Trabalhista Completa <span class="badge">4 tipos</span></h2><p class="sub">Aviso proporcional, projeção, férias, 13º, FGTS e multa</p><div class="form-grid"><div class="form-group"><label>Salário Bruto</label><input type="text" id="rescSal" value="3.500,00" class="money"></div><div class="form-group"><label>Admissão</label><input type="date" id="rescAdm" value="2023-01-15"></div><div class="form-group"><label>Demissão (último dia)</label><input type="date" id="rescDem" value="2026-08-09"></div><div class="form-group"><label>Tipo</label><select id="rescTipo"><option value="sem_justa">Sem justa causa</option><option value="pedido">Pedido de demissão</option><option value="justa">Justa causa</option><option value="acordo">Acordo 484-A (20%)</option><option value="indireta">Rescisão indireta</option><option value="experiencia">Fim experiência</option></select></div><div class="form-group"><label>Aviso</label><select id="rescAviso"><option value="indenizado">Indenizado</option><option value="trabalhado">Trabalhado</option><option value="dispensado">Dispensado</option></select></div><div class="form-group"><label>Dias saldo mês</label><input type="number" id="rescDiasMes" value="9" min="0" max="31"></div><div class="form-group"><label>Férias vencidas (períodos)</label><input type="number" id="rescFerVenc" value="0" min="0" max="5"></div><div class="form-group"><label>Saldo FGTS informado</label><input type="text" id="rescFgtsSaldo" value="" class="money" placeholder="Ex: 8.500,00"></div></div><button class="btn" onclick="calcRescisao()">Calcular Rescisão</button><div id="resRescisao"></div></div></section>
+<section id="page-rescisao" class="page-section"><div class="card"><h2><i data-lucide="file-text"></i> Rescisão Trabalhista Completa <span class="badge">4 tipos</span></h2><p class="sub">Aviso proporcional, projeção, férias, 13º, FGTS e multa</p><div class="form-grid"><div class="form-group"><label>Salário Bruto</label><input type="text" id="rescSal" value="3.500,00" class="money"></div><div class="form-group"><label>Admissão</label><input type="date" id="rescAdm" value="2023-01-15"></div><div class="form-group"><label>Demissão (último dia)</label><input type="date" id="rescDem" value="2026-08-09"></div><div class="form-group"><label>Tipo</label><select id="rescTipo"><option value="sem_justa">Sem justa causa</option><option value="pedido">Pedido de demissão</option><option value="justa">Justa causa</option><option value="acordo">Acordo 484-A (20%)</option><option value="indireta">Rescisão indireta</option><option value="experiencia">Fim experiência</option></select></div><div class="form-group"><label>Aviso</label><select id="rescAviso"><option value="indenizado">Indenizado</option><option value="trabalhado">Trabalhado</option><option value="dispensado">Dispensado</option></select></div><div class="form-group"><label>Dias saldo mês</label><input type="number" id="rescDiasMes" value="9" min="0" max="31"></div><div class="form-group"><label>Férias vencidas (períodos)</label><input type="number" id="rescFerVenc" value="0" min="0" max="5"></div><div class="form-group"><label>Saldo FGTS informado</label><input type="text" id="rescFgtsSaldo" value="" class="money" placeholder="Ex: 8.500,00"></div></div><button class="btn" onclick="calcRescisao()"><i data-lucide="calculator"></i> Calcular Rescisão</button><div id="resRescisao"></div></div></section>
 
 <!-- 3. HORAS EXTRAS -->
-<section id="page-extras" class="page-section"><div class="card"><h2>⏰ Horas Extras + DSR + Noturno</h2><p class="sub">50%, 100%, adicional noturno 20% e opção banco de horas</p><div class="form-grid"><div class="form-group"><label>Salário Bruto</label><input type="text" id="heSal" value="3.000,00" class="money"></div><div class="form-group"><label>Jornada mensal (h)</label><input type="number" id="heJornada" value="220"></div><div class="form-group"><label>Horas extras 50% (HH:MM)</label><input type="text" id="he50" value="10:00"></div><div class="form-group"><label>Horas extras 100%</label><input type="text" id="he100" value="02:00"></div><div class="form-group"><label>Horas noturnas (22h-5h)</label><input type="text" id="heNot" value="05:00"></div><div class="form-group"><label>Dias úteis mês</label><input type="number" id="heUteis" value="26"></div><div class="form-group"><label>Domingos + feriados</label><input type="number" id="heDesc" value="5"></div></div><label class="check"><input type="checkbox" id="heCompensar"> Compensar como banco de horas (sem adicional de 50%)</label><button class="btn" onclick="calcHE()">Calcular Extras</button><div id="resHE"></div></div></section>
+<section id="page-extras" class="page-section"><div class="card"><h2><i data-lucide="clock"></i> Horas Extras + DSR + Noturno</h2><p class="sub">50%, 100%, adicional noturno 20% e opção banco de horas</p><div class="form-grid"><div class="form-group"><label>Salário Bruto</label><input type="text" id="heSal" value="3.000,00" class="money"></div><div class="form-group"><label>Jornada mensal (h)</label><input type="number" id="heJornada" value="220"></div><div class="form-group"><label>Horas extras 50% (HH:MM)</label><input type="text" id="he50" value="10:00"></div><div class="form-group"><label>Horas extras 100%</label><input type="text" id="he100" value="02:00"></div><div class="form-group"><label>Horas noturnas (22h-5h)</label><input type="text" id="heNot" value="05:00"></div><div class="form-group"><label>Dias úteis mês</label><input type="number" id="heUteis" value="26"></div><div class="form-group"><label>Domingos + feriados</label><input type="number" id="heDesc" value="5"></div></div><label class="check"><input type="checkbox" id="heCompensar"> Compensar como banco de horas (sem adicional de 50%)</label><button class="btn" onclick="calcHE()"><i data-lucide="calculator"></i> Calcular Extras</button><div id="resHE"></div></div></section>
 
-<!-- 4. ESCALA 6x1/5x1 -->
-<section id="page-escala" class="page-section"><div class="card"><h2>🔄 Escala 6x1 vs 5x1 <span class="badge">Reforma</span></h2><p class="sub">Compare os regimes. Salário, horas extras, DSR e diferença no líquido</p><div class="form-grid"><div class="form-group"><label>Salário Base (R$)</label><input type="text" id="escSal" value="3.000,00" class="money"></div><div class="form-group"><label>Jornada diária (h)</label><input type="number" id="escJornada" value="8" step="0.5"></div><div class="form-group"><label>Dias/semana</label><select id="escDiasSemana"><option value="6">6 dias (6x1)</option><option value="5">5 dias (5x1)</option></select></div><div class="form-group"><label>Horas extras mês</label><input type="number" id="escHE" value="0" step="0.5"></div><div class="form-group"><label>Adicional noturno?</label><select id="escNoturno"><option value="0">Não</option><option value="1">Sim (20%)</option></select></div><div class="form-group"><label>Dependentes</label><input type="number" id="escDep" value="0" min="0" max="10"></div></div><button class="btn" onclick="calcEscala()">Comparar Escalas</button><div id="resEscala"></div></div></section>
+<!-- 4. ESCALA -->
+<section id="page-escala" class="page-section"><div class="card"><h2><i data-lucide="calendar"></i> Escala 6x1 vs 5x1 <span class="badge">Reforma</span></h2><p class="sub">Compare os regimes. Salário, horas extras, DSR e diferença no líquido</p><div class="form-grid"><div class="form-group"><label>Salário Base (R$)</label><input type="text" id="escSal" value="3.000,00" class="money"></div><div class="form-group"><label>Jornada diária (h)</label><input type="number" id="escJornada" value="8" step="0.5"></div><div class="form-group"><label>Dias/semana</label><select id="escDiasSemana"><option value="6">6 dias (6x1)</option><option value="5">5 dias (5x1)</option></select></div><div class="form-group"><label>Horas extras mês</label><input type="number" id="escHE" value="0" step="0.5"></div><div class="form-group"><label>Adicional noturno?</label><select id="escNoturno"><option value="0">Não</option><option value="1">Sim (20%)</option></select></div><div class="form-group"><label>Dependentes</label><input type="number" id="escDep" value="0" min="0" max="10"></div></div><button class="btn" onclick="calcEscala()"><i data-lucide="calculator"></i> Comparar Escalas</button><div id="resEscala"></div></div></section>
 
 <!-- 5. FÉRIAS -->
-<section id="page-ferias" class="page-section"><div class="card"><h2>🏖️ Férias + 1/3 + Abono</h2><p class="sub">Art. 137 CLT: dobra se atrasada. Abono 10 dias + 1/3 isento INSS/IRRF</p><div class="form-grid"><div class="form-group"><label>Salário base</label><input type="text" id="ferSal" value="3.500,00" class="money"></div><div class="form-group"><label>Dias de gozo</label><select id="ferDias"><option value="30">30 dias</option><option value="20">20 dias</option><option value="15">15 dias</option></select></div><div class="form-group"><label>Média extras (R$)</label><input type="text" id="ferMedia" value="0,00" class="money"></div><div class="form-group"><label>Situação</label><select id="ferSit"><option value="normal">Normal</option><option value="dobro">Vencidas em dobro</option><option value="proporcional">Proporcional</option></select></div></div><label class="check"><input type="checkbox" id="ferAbono"> Vender 1/3 (abono pecuniário)</label><button class="btn" onclick="calcFerias()">Calcular Férias</button><div id="resFerias"></div></div></section>
+<section id="page-ferias" class="page-section"><div class="card"><h2><i data-lucide="umbrella"></i> Férias + 1/3 + Abono</h2><p class="sub">Art. 137 CLT: dobra se atrasada. Abono 10 dias + 1/3 isento INSS/IRRF</p><div class="form-grid"><div class="form-group"><label>Salário base</label><input type="text" id="ferSal" value="3.500,00" class="money"></div><div class="form-group"><label>Dias de gozo</label><select id="ferDias"><option value="30">30 dias</option><option value="20">20 dias</option><option value="15">15 dias</option></select></div><div class="form-group"><label>Média extras (R$)</label><input type="text" id="ferMedia" value="0,00" class="money"></div><div class="form-group"><label>Situação</label><select id="ferSit"><option value="normal">Normal</option><option value="dobro">Vencidas em dobro</option><option value="proporcional">Proporcional</option></select></div></div><label class="check"><input type="checkbox" id="ferAbono"> Vender 1/3 (abono pecuniário)</label><button class="btn" onclick="calcFerias()"><i data-lucide="calculator"></i> Calcular Férias</button><div id="resFerias"></div></div></section>
 
-<!-- 6. 13º SALÁRIO -->
-<section id="page-decimo" class="page-section"><div class="card"><h2>🎄 13º Salário</h2><p class="sub">1ª parcela sem desconto até 30/11, 2ª até 20/12 com INSS e IRRF</p><div class="form-grid"><div class="form-group"><label>Salário base</label><input type="text" id="decSal" value="3.500,00" class="money"></div><div class="form-group"><label>Meses trabalhados</label><input type="number" id="decMeses" value="12" min="1" max="12"></div><div class="form-group"><label>Média variáveis</label><input type="text" id="decMedia" value="0,00" class="money"></div><div class="form-group"><label>Dependentes</label><input type="number" id="decDep" value="0"></div></div><button class="btn" onclick="calcDecimo()">Calcular 13º</button><div id="resDecimo"></div></div></section>
+<!-- 6. 13º -->
+<section id="page-decimo" class="page-section"><div class="card"><h2><i data-lucide="gift"></i> 13º Salário</h2><p class="sub">1ª parcela sem desconto até 30/11, 2ª até 20/12 com INSS e IRRF</p><div class="form-grid"><div class="form-group"><label>Salário base</label><input type="text" id="decSal" value="3.500,00" class="money"></div><div class="form-group"><label>Meses trabalhados</label><input type="number" id="decMeses" value="12" min="1" max="12"></div><div class="form-group"><label>Média variáveis</label><input type="text" id="decMedia" value="0,00" class="money"></div><div class="form-group"><label>Dependentes</label><input type="number" id="decDep" value="0"></div></div><button class="btn" onclick="calcDecimo()"><i data-lucide="calculator"></i> Calcular 13º</button><div id="resDecimo"></div></div></section>
 
-<!-- 7. SEGURO-DESEMPREGO -->
-<section id="page-seguro" class="page-section"><div class="card"><h2>🛡️ Seguro-Desemprego 2026 <span class="badge">MTE</span></h2><p class="sub">Piso R$1.621, teto R$2.518,65. Verificação de elegibilidade</p><div class="form-grid"><div class="form-group"><label>Média 3 últimos salários</label><input type="text" id="segMedia" value="3.000,00" class="money"></div><div class="form-group"><label>Meses trabalhados</label><input type="number" id="segMeses" value="24"></div><div class="form-group"><label>Solicitações anteriores</label><select id="segVezes"><option value="1">1ª vez</option><option value="2">2ª vez</option><option value="3">3ª+</option></select></div></div><button class="btn" onclick="calcSeguro()">Calcular Seguro</button><div id="resSeguro"></div></div></section>
+<!-- 7. SEGURO -->
+<section id="page-seguro" class="page-section"><div class="card"><h2><i data-lucide="shield"></i> Seguro-Desemprego 2026 <span class="badge">MTE</span></h2><p class="sub">Piso R$1.621, teto R$2.518,65. Verificação de elegibilidade</p><div class="form-grid"><div class="form-group"><label>Média 3 últimos salários</label><input type="text" id="segMedia" value="3.000,00" class="money"></div><div class="form-group"><label>Meses trabalhados</label><input type="number" id="segMeses" value="24"></div><div class="form-group"><label>Solicitações anteriores</label><select id="segVezes"><option value="1">1ª vez</option><option value="2">2ª vez</option><option value="3">3ª+</option></select></div></div><button class="btn" onclick="calcSeguro()"><i data-lucide="calculator"></i> Calcular Seguro</button><div id="resSeguro"></div></div></section>
 
 <!-- 8. FGTS -->
-<section id="page-fgts" class="page-section"><div class="card"><h2>🏦 FGTS + Multa</h2><p class="sub">Depósito 8% (2% aprendiz), rendimento ~0,25% a.m., multa rescisória</p><div class="form-grid"><div class="form-group"><label>Salário base</label><input type="text" id="fgtsSal" value="3.500,00" class="money"></div><div class="form-group"><label>Meses trabalhados</label><input type="number" id="fgtsMeses" value="24"></div><div class="form-group"><label>Saldo informado</label><input type="text" id="fgtsSaldoInf" value="" class="money" placeholder="Extrato Caixa"></div><div class="form-group"><label>Tipo</label><select id="fgtsTipo"><option value="40">Sem justa - 40%</option><option value="20">Acordo - 20%</option><option value="0">Pedido/Justa - 0%</option></select></div></div><label class="check"><input type="checkbox" id="fgtsAprendiz"> Aprendiz (2% FGTS)</label><button class="btn" onclick="calcFGTS()">Calcular FGTS</button><div id="resFGTS"></div></div></section>
+<section id="page-fgts" class="page-section"><div class="card"><h2><i data-lucide="building"></i> FGTS + Multa</h2><p class="sub">Depósito 8% (2% aprendiz), rendimento ~0,25% a.m.</p><div class="form-grid"><div class="form-group"><label>Salário base</label><input type="text" id="fgtsSal" value="3.500,00" class="money"></div><div class="form-group"><label>Meses trabalhados</label><input type="number" id="fgtsMeses" value="24"></div><div class="form-group"><label>Saldo informado</label><input type="text" id="fgtsSaldoInf" value="" class="money" placeholder="Extrato Caixa"></div><div class="form-group"><label>Tipo</label><select id="fgtsTipo"><option value="40">Sem justa - 40%</option><option value="20">Acordo - 20%</option><option value="0">Pedido/Justa - 0%</option></select></div></div><label class="check"><input type="checkbox" id="fgtsAprendiz"> Aprendiz (2% FGTS)</label><button class="btn" onclick="calcFGTS()"><i data-lucide="calculator"></i> Calcular FGTS</button><div id="resFGTS"></div></div></section>
 
 <!-- 9. ADICIONAIS -->
-<section id="page-adicionais" class="page-section"><div class="card"><h2>⚠️ Insalubridade e Periculosidade</h2><p class="sub">Insalubridade 10/20/40% sobre mínimo R$1.621, Periculosidade 30% sobre base</p><div class="form-grid"><div class="form-group"><label>Salário base</label><input type="text" id="adiSal" value="3.000,00" class="money"></div><div class="form-group"><label>Insalubridade</label><select id="adiInsal"><option value="0">Não</option><option value="10">10%</option><option value="20">20%</option><option value="40">40%</option></select></div><div class="form-group"><label>Periculosidade</label><select id="adiPeric"><option value="0">Não</option><option value="30">30%</option></select></div><div class="form-group"><label>HE no mês (R$)</label><input type="text" id="adiHE" value="0,00" class="money"></div></div><button class="btn" onclick="calcAdicionais()">Calcular Adicionais</button><div id="resAdicionais"></div></div></section>
+<section id="page-adicionais" class="page-section"><div class="card"><h2><i data-lucide="alert-triangle"></i> Insalubridade e Periculosidade</h2><p class="sub">Insalubridade 10/20/40% sobre mínimo, Periculosidade 30% sobre base</p><div class="form-grid"><div class="form-group"><label>Salário base</label><input type="text" id="adiSal" value="3.000,00" class="money"></div><div class="form-group"><label>Insalubridade</label><select id="adiInsal"><option value="0">Não</option><option value="10">10%</option><option value="20">20%</option><option value="40">40%</option></select></div><div class="form-group"><label>Periculosidade</label><select id="adiPeric"><option value="0">Não</option><option value="30">30%</option></select></div><div class="form-group"><label>HE no mês (R$)</label><input type="text" id="adiHE" value="0,00" class="money"></div></div><button class="btn" onclick="calcAdicionais()"><i data-lucide="calculator"></i> Calcular Adicionais</button><div id="resAdicionais"></div></div></section>
 
-<!-- 10. AVISO PRÉVIO -->
-<section id="page-aviso" class="page-section"><div class="card"><h2>📅 Aviso Prévio Proporcional</h2><p class="sub">Lei 12.506/2011: 30 dias + 3 dias por ano completo até 90 dias</p><div class="form-grid"><div class="form-group"><label>Salário</label><input type="text" id="avSal" value="3.500,00" class="money"></div><div class="form-group"><label>Admissão</label><input type="date" id="avAdm" value="2020-01-10"></div><div class="form-group"><label>Data demissão</label><input type="date" id="avDem" value="2026-08-09"></div><div class="form-group"><label>Tipo</label><select id="avTipo"><option value="indenizado">Indenizado</option><option value="trabalhado">Trabalhado</option></select></div></div><button class="btn" onclick="calcAviso()">Calcular Aviso</button><div id="resAviso"></div></div></section>
+<!-- 10. AVISO -->
+<section id="page-aviso" class="page-section"><div class="card"><h2><i data-lucide="calendar-days"></i> Aviso Prévio Proporcional</h2><p class="sub">Lei 12.506/2011: 30 dias + 3 dias por ano até 90 dias</p><div class="form-grid"><div class="form-group"><label>Salário</label><input type="text" id="avSal" value="3.500,00" class="money"></div><div class="form-group"><label>Admissão</label><input type="date" id="avAdm" value="2020-01-10"></div><div class="form-group"><label>Data demissão</label><input type="date" id="avDem" value="2026-08-09"></div><div class="form-group"><label>Tipo</label><select id="avTipo"><option value="indenizado">Indenizado</option><option value="trabalhado">Trabalhado</option></select></div></div><button class="btn" onclick="calcAviso()"><i data-lucide="calculator"></i> Calcular Aviso</button><div id="resAviso"></div></div></section>
 
 <!-- 11. CLT vs PJ -->
-<section id="page-clt-pj" class="page-section"><div class="card"><h2>⚖️ CLT vs PJ <span class="badge">Fator R</span></h2><p class="sub">Simples Nacional Anexo III vs V com alíquotas reais. Fator R ≥28% = Anexo III</p><div class="form-grid"><div class="form-group"><label>Salário CLT bruto</label><input type="text" id="cpjSal" value="8.000,00" class="money"></div><div class="form-group"><label>Benefícios CLT</label><input type="text" id="cpjBenef" value="1.000,00" class="money"></div><div class="form-group"><label>Faturamento PJ</label><input type="text" id="cpjFat" value="12.000,00" class="money"></div><div class="form-group"><label>Pró-labore %</label><input type="number" id="cpjPro" value="28" min="28" max="100"></div><div class="form-group"><label>Custos fixos PJ</label><input type="text" id="cpjCustos" value="300,00" class="money"></div><div class="form-group"><label>Regime</label><select id="cpjRegime"><option value="III">Anexo III</option><option value="V">Anexo V</option><option value="fatorR">Fator R</option></select></div></div><button class="btn" onclick="calcCLTPJ()">Comparar</button><div id="resCLTPJ"></div></div></section>
+<section id="page-clt-pj" class="page-section"><div class="card"><h2><i data-lucide="briefcase"></i> CLT vs PJ <span class="badge">Fator R</span></h2><p class="sub">Simples Nacional Anexo III vs V com alíquotas reais</p><div class="form-grid"><div class="form-group"><label>Salário CLT bruto</label><input type="text" id="cpjSal" value="8.000,00" class="money"></div><div class="form-group"><label>Benefícios CLT</label><input type="text" id="cpjBenef" value="1.000,00" class="money"></div><div class="form-group"><label>Faturamento PJ</label><input type="text" id="cpjFat" value="12.000,00" class="money"></div><div class="form-group"><label>Pró-labore %</label><input type="number" id="cpjPro" value="28" min="28" max="100"></div><div class="form-group"><label>Custos fixos PJ</label><input type="text" id="cpjCustos" value="300,00" class="money"></div><div class="form-group"><label>Regime</label><select id="cpjRegime"><option value="III">Anexo III</option><option value="V">Anexo V</option><option value="fatorR">Fator R</option></select></div></div><button class="btn" onclick="calcCLTPJ()"><i data-lucide="calculator"></i> Comparar</button><div id="resCLTPJ"></div></div></section>
 
 <!-- 12. FREELANCER -->
-<section id="page-freela" class="page-section"><div class="card"><h2>🧑‍💻 Valor Hora Freelancer</h2><p class="sub">(custos + salário) / horas faturáveis com margem de lucro</p><div class="form-grid"><div class="form-group"><label>Salário desejado</label><input type="text" id="frSal" value="5.000,00" class="money"></div><div class="form-group"><label>Custos mensais</label><input type="text" id="frCustos" value="1.000,00" class="money"></div><div class="form-group"><label>Horas/dia</label><input type="number" id="frHorasDia" value="8"></div><div class="form-group"><label>Dias/semana</label><input type="number" id="frDiasSem" value="5"></div><div class="form-group"><label>% faturável</label><input type="number" id="frFat" value="60"></div><div class="form-group"><label>Margem %</label><input type="number" id="frMargem" value="30"></div></div><button class="btn" onclick="calcFreela()">Calcular</button><div id="resFreela"></div></div></section>
+<section id="page-freela" class="page-section"><div class="card"><h2><i data-lucide="user"></i> Valor Hora Freelancer</h2><p class="sub">(custos + salário) / horas faturáveis com margem</p><div class="form-grid"><div class="form-group"><label>Salário desejado</label><input type="text" id="frSal" value="5.000,00" class="money"></div><div class="form-group"><label>Custos mensais</label><input type="text" id="frCustos" value="1.000,00" class="money"></div><div class="form-group"><label>Horas/dia</label><input type="number" id="frHorasDia" value="8"></div><div class="form-group"><label>Dias/semana</label><input type="number" id="frDiasSem" value="5"></div><div class="form-group"><label>% faturável</label><input type="number" id="frFat" value="60"></div><div class="form-group"><label>Margem %</label><input type="number" id="frMargem" value="30"></div></div><button class="btn" onclick="calcFreela()"><i data-lucide="calculator"></i> Calcular</button><div id="resFreela"></div></div></section>
 
 <!-- 13. FINANCIAMENTO -->
-<section id="page-finan" class="page-section"><div class="card"><h2>🏠 Financiamento PRICE vs SAC</h2><p class="sub">Compare parcelas fixas (PRICE) com amortização constante (SAC)</p><div class="form-grid"><div class="form-group"><label>Valor imóvel</label><input type="text" id="finImovel" value="400.000,00" class="money"></div><div class="form-group"><label>Entrada</label><input type="text" id="finEntrada" value="80.000,00" class="money"></div><div class="form-group"><label>Taxa a.a. %</label><input type="number" id="finTaxa" value="10.5" step="0.1"></div><div class="form-group"><label>Prazo meses</label><input type="number" id="finPrazo" value="360"></div></div><button class="btn" onclick="calcFinan()">Simular</button><div id="resFinan"></div></div></section>
+<section id="page-finan" class="page-section"><div class="card"><h2><i data-lucide="home"></i> Financiamento PRICE vs SAC</h2><p class="sub">Compare parcelas fixas com amortização constante</p><div class="form-grid"><div class="form-group"><label>Valor imóvel</label><input type="text" id="finImovel" value="400.000,00" class="money"></div><div class="form-group"><label>Entrada</label><input type="text" id="finEntrada" value="80.000,00" class="money"></div><div class="form-group"><label>Taxa a.a. %</label><input type="number" id="finTaxa" value="10.5" step="0.1"></div><div class="form-group"><label>Prazo meses</label><input type="number" id="finPrazo" value="360"></div></div><button class="btn" onclick="calcFinan()"><i data-lucide="calculator"></i> Simular</button><div id="resFinan"></div></div></section>
 
 <div class="ad-container"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6807487565941819" data-ad-slot="1008660992" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
 
-<div class="card"><h2>❓ Perguntas Frequentes - 2026</h2>
-<details><summary>Como é calculado o INSS?</summary><p>Progressivo: 7,5% até R$1.621, 9% até R$2.902,84, 12% até R$4.354,27, 14% até R$8.475,55.</p></details>
-<details><summary>Quem está isento de IRRF?</summary><p>Isenção total até R$5.000. Entre R$5.000,01 e R$7.350 há redutor gradual.</p></details>
-<details><summary>Salário-família 2026?</summary><p>R$67,84 por filho até 14 anos, para salários até R$1.906,04.</p></details>
-<details><summary>Vale-transporte?</summary><p>Desconto de 6% sobre o salário base, limitado ao valor real do transporte.</p></details>
+<div class="card"><h2><i data-lucide="help-circle"></i> Perguntas Frequentes - 2026</h2>
+<details><summary><i data-lucide="chevron-right"></i> Como é calculado o INSS?</summary><p>Progressivo: 7,5% até R$1.621, 9% até R$2.902,84, 12% até R$4.354,27, 14% até R$8.475,55 (teto).</p></details>
+<details><summary><i data-lucide="chevron-right"></i> Quem está isento de IRRF?</summary><p>Isenção total até R$5.000 de base tributável. Entre R$5.000,01 e R$7.350 há redutor gradual (Lei 15.270/2025).</p></details>
+<details><summary><i data-lucide="chevron-right"></i> Salário-família 2026?</summary><p>R$67,84 por filho até 14 anos, para quem ganha até R$1.906,04.</p></details>
+<details><summary><i data-lucide="chevron-right"></i> Vale-transporte?</summary><p>Desconto de 6% sobre o salário base, limitado ao valor real do transporte.</p></details>
 </div>
 
 <footer>
@@ -195,29 +207,30 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 </div>
 <p style="font-size:12px;margin-bottom:6px">📌 <a href="https://meu.inss.gov.br" target="_blank" rel="noopener">Meu INSS</a> | <a href="https://www.caixa.gov.br/beneficios-trabalhador/fgts/" target="_blank" rel="noopener">FGTS Caixa</a> | <a href="https://servicos.mte.gov.br" target="_blank" rel="noopener">Carteira Digital</a></p>
 <p style="font-size:11px;color:#aaa">© <span id="currentYear"></span> FerramentasBR • Tabelas oficiais 2026</p>
-<a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" class="back-top">⬆ Voltar ao topo</a>
+<a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" class="back-top"><i data-lucide="arrow-up"></i> Voltar ao topo</a>
 </footer>
 </div>
-<button id="backToTop" aria-label="Voltar ao topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆</button>
+<button id="backToTop" aria-label="Voltar ao topo" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i data-lucide="arrow-up"></i></button>
 
 <script>
-const pageData={home:{title:'Ferramentas Trabalhistas 2026',desc:'13 calculadoras trabalhistas 2026',canonical:'https://trabalhista2026.onrender.com/'},liquido:{title:'Salário Líquido 2026',desc:'Calcule seu salário líquido',canonical:'https://trabalhista2026.onrender.com/#liquido'},rescisao:{title:'Rescisão Trabalhista 2026',desc:'Calcule sua rescisão',canonical:'https://trabalhista2026.onrender.com/#rescisao'},extras:{title:'Horas Extras 2026',desc:'Calcule horas extras',canonical:'https://trabalhista2026.onrender.com/#extras'},escala:{title:'Escala 6x1/5x1 2026',desc:'Compare escalas',canonical:'https://trabalhista2026.onrender.com/#escala'},ferias:{title:'Férias 2026',desc:'Calcule férias',canonical:'https://trabalhista2026.onrender.com/#ferias'},decimo:{title:'13º Salário 2026',desc:'Calcule 13º',canonical:'https://trabalhista2026.onrender.com/#decimo'},seguro:{title:'Seguro-Desemprego 2026',desc:'Calcule seguro',canonical:'https://trabalhista2026.onrender.com/#seguro'},fgts:{title:'FGTS 2026',desc:'Calcule FGTS',canonical:'https://trabalhista2026.onrender.com/#fgts'},adicionais:{title:'Adicionais 2026',desc:'Calcule adicionais',canonical:'https://trabalhista2026.onrender.com/#adicionais'},aviso:{title:'Aviso Prévio 2026',desc:'Calcule aviso',canonical:'https://trabalhista2026.onrender.com/#aviso'},'clt-pj':{title:'CLT vs PJ 2026',desc:'Compare CLT e PJ',canonical:'https://trabalhista2026.onrender.com/#clt-pj'},freela:{title:'Valor Hora Freelancer 2026',desc:'Calcule valor hora',canonical:'https://trabalhista2026.onrender.com/#freela'},finan:{title:'Financiamento 2026',desc:'Simule financiamento',canonical:'https://trabalhista2026.onrender.com/#finan'}};
+lucide.createIcons();
+const pageData={home:{title:'Ferramentas Trabalhistas 2026',desc:'13 calculadoras trabalhistas 2026',canonical:'https://trabalhista2026.onrender.com/'},liquido:{title:'Salário Líquido 2026',desc:'Calcule seu salário líquido com INSS, IRRF, salário-família e vale-transporte',canonical:'https://trabalhista2026.onrender.com/#liquido'},rescisao:{title:'Rescisão Trabalhista 2026',desc:'Calcule sua rescisão completa',canonical:'https://trabalhista2026.onrender.com/#rescisao'},extras:{title:'Horas Extras 2026',desc:'Calcule horas extras, DSR e adicional noturno',canonical:'https://trabalhista2026.onrender.com/#extras'},escala:{title:'Escala 6x1/5x1 2026',desc:'Compare regimes de escala',canonical:'https://trabalhista2026.onrender.com/#escala'},ferias:{title:'Férias 2026',desc:'Calcule férias com abono e 1/3',canonical:'https://trabalhista2026.onrender.com/#ferias'},decimo:{title:'13º Salário 2026',desc:'Calcule 1ª e 2ª parcela do 13º',canonical:'https://trabalhista2026.onrender.com/#decimo'},seguro:{title:'Seguro-Desemprego 2026',desc:'Calcule seguro-desemprego com faixas oficiais',canonical:'https://trabalhista2026.onrender.com/#seguro'},fgts:{title:'FGTS 2026',desc:'Calcule FGTS com multa rescisória',canonical:'https://trabalhista2026.onrender.com/#fgts'},adicionais:{title:'Adicionais 2026',desc:'Calcule insalubridade e periculosidade',canonical:'https://trabalhista2026.onrender.com/#adicionais'},aviso:{title:'Aviso Prévio 2026',desc:'Calcule aviso prévio proporcional',canonical:'https://trabalhista2026.onrender.com/#aviso'},'clt-pj':{title:'CLT vs PJ 2026',desc:'Compare CLT e PJ com Fator R',canonical:'https://trabalhista2026.onrender.com/#clt-pj'},freela:{title:'Valor Hora Freelancer 2026',desc:'Calcule valor hora como freelancer',canonical:'https://trabalhista2026.onrender.com/#freela'},finan:{title:'Financiamento 2026',desc:'Simule financiamento PRICE vs SAC',canonical:'https://trabalhista2026.onrender.com/#finan'}};
 function updatePageSEO(id){const d=pageData[id]||pageData.home;document.title=d.title;document.getElementById('pageDesc').content=d.desc;document.getElementById('pageCanonical').href=d.canonical}
-function showPage(id){document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));const t=document.getElementById('page-'+id);if(t)t.classList.add('active');document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));const l=document.querySelector('.nav-links a[data-page="'+id+'"]');if(l)l.classList.add('active');document.getElementById('navLinks').classList.remove('open');updatePageSEO(id);if(window.location.hash!=='#'+id)history.pushState(null,'','#'+id);window.scrollTo({top:0,behavior:'smooth'})}
+function showPage(id){document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));const t=document.getElementById('page-'+id);if(t)t.classList.add('active');document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));const l=document.querySelector('.nav-links a[data-page="'+id+'"]');if(l)l.classList.add('active');document.getElementById('navLinks').classList.remove('open');updatePageSEO(id);if(window.location.hash!=='#'+id)history.pushState(null,'','#'+id);window.scrollTo({top:0,behavior:'smooth'});lucide.createIcons()}
 function navigateTo(id){window.location.hash=id}
 function loadFromHash(){const h=window.location.hash.replace('#','')||'home';showPage(Object.keys(pageData).includes(h)?h:'home')}
 window.addEventListener('hashchange',loadFromHash);
 document.querySelectorAll('.nav-links a').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();window.location.hash=this.dataset.page})});
 document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');this.classList.toggle('active')});
 document.addEventListener('click',e=>{if(!e.target.closest('.navbar')){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}});
-function toggleCards(){const h=document.querySelectorAll('.mini-card.hidden-mobile');const b=document.getElementById('showMoreBtn');const v=h[0].style.display==='none'||!h[0].style.display;h.forEach(c=>c.style.display=v?'block':'none');b.textContent=v?'🔼 Mostrar menos':'🔽 Ver todas as 13 calculadoras'}
+function toggleCards(){const h=document.querySelectorAll('.mini-card.hidden-mobile');const b=document.getElementById('showMoreBtn');const v=h[0].style.display==='none'||!h[0].style.display;h.forEach(c=>c.style.display=v?'block':'none');b.innerHTML=v?'<i data-lucide="chevron-up"></i> Mostrar menos':'<i data-lucide="chevron-down"></i> Ver todas as 13 calculadoras';lucide.createIcons()}
 function mascaraMoeda(el){el.addEventListener('input',function(){let v=this.value.replace(/\D/g,'');if(!v){this.value='';return}v=(parseInt(v)/100).toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,'.');this.value=v});el.addEventListener('blur',function(){if(this.value){let n=parseFloat(this.value.replace(/[^0-9,]/g,'').replace(',','.'))||0;this.value=n.toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,'.')}})}
 document.querySelectorAll('input.money').forEach(mascaraMoeda);
 const fmt=v=>isNaN(v)?'R$ 0,00':Number(v).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 const unformat=s=>{if(!s)return 0;if(typeof s==='number')return s;let t=s.toString().replace(/[^\d,.-]/g,'').replace(/\./g,'').replace(',','.');let n=parseFloat(t);return isNaN(n)?0:n};
 function parseHM(s){if(!s)return 0;let p=s.split(':');let h=parseInt(p[0])||0,m=parseInt(p[1])||0;return h+m/60}
 function shareCalc(p){const u=window.location.href;const t=document.title;const x='Confira: '+t;let s='';switch(p){case'whatsapp':s='https://api.whatsapp.com/send?text='+encodeURIComponent(x+' '+u);break;case'telegram':s='https://t.me/share/url?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(x);break;case'copy':navigator.clipboard.writeText(u).then(()=>{alert('Link copiado!')});return}if(s)window.open(s,'_blank','width=600,height=400')}
-function addShareButtons(){return'<div class="share-btns"><button class="share-btn share-whatsapp" onclick="shareCalc(\'whatsapp\')">📱 WhatsApp</button><button class="share-btn share-telegram" onclick="shareCalc(\'telegram\')">✈️ Telegram</button><button class="share-btn share-copy" onclick="shareCalc(\'copy\')">📋 Copiar</button></div>'}
+function addShareButtons(){return'<div class="share-btns"><button class="share-btn share-whatsapp" onclick="shareCalc(\'whatsapp\')"><i data-lucide="message-circle"></i> WhatsApp</button><button class="share-btn share-telegram" onclick="shareCalc(\'telegram\')"><i data-lucide="send"></i> Telegram</button><button class="share-btn share-copy" onclick="shareCalc(\'copy\')"><i data-lucide="copy"></i> Copiar</button></div>'}
 
 const INSS_FAIXAS=[{ate:1621,aliq:0.075},{ate:2902.84,aliq:0.09},{ate:4354.27,aliq:0.12},{ate:8475.55,aliq:0.14}];
 function calcINSS(sal){sal=Math.min(sal,8475.55);let tot=0,ant=0;for(let f of INSS_FAIXAS){if(sal<=ant)break;let base=Math.min(sal,f.ate)-ant;if(base>0)tot+=base*f.aliq;ant=f.ate}return Math.round(tot*100)/100}
@@ -232,28 +245,31 @@ let pensao=unformat(document.getElementById('salPensao').value);
 let vtValor=unformat(document.getElementById('salVT').value);
 let usaSimpl=document.getElementById('salUsaSimpl').checked;
 let sindical=document.getElementById('salSindical').checked;
-let salFamilia=0;if(filhos>0&&bruto<=1906.04)salFamilia=filhos*67.84;
+let salFamilia=0;if(filhos>0&&bruto<=1906.04){salFamilia=filhos*67.84}
 let vtDesconto=Math.min(bruto*0.06,vtValor);
 let sindValor=sindical?bruto/30:0;
 let inss=calcINSS(bruto+salFamilia);
 let resIR=calcIRRF(bruto-inss-vtDesconto-sindValor,dep,pensao,0,usaSimpl);
 let liquido=bruto+salFamilia-inss-vtDesconto-sindValor-resIR.ir-pensao;
-let h='<div class="result"><div class="result-item"><span>Bruto</span><span class="value">'+fmt(bruto)+'</span></div>';
-if(salFamilia>0)h+='<div class="result-item"><span>Salário-Família ('+filhos+' filhos)</span><span class="value positive">+ '+fmt(salFamilia)+'</span></div>';
-h+='<div class="result-item"><span>INSS</span><span class="value negative">- '+fmt(inss)+'</span></div>';
-if(vtDesconto>0)h+='<div class="result-item"><span>Vale-Transporte (6%)</span><span class="value negative">- '+fmt(vtDesconto)+'</span></div>';
-if(sindValor>0)h+='<div class="result-item"><span>Contrib. Sindical</span><span class="value negative">- '+fmt(sindValor)+'</span></div>';
-if(pensao>0)h+='<div class="result-item"><span>Pensão</span><span class="value negative">- '+fmt(pensao)+'</span></div>';
-h+='<div class="result-item"><span>IRRF '+(resIR.base<=5000?'<span style="background:#e8f5e9;color:#27ae60;padding:2px 8px;border-radius:99px;font-size:11px">ISENTO</span>':'')+'</span><span class="value negative">- '+fmt(resIR.ir)+'</span></div>';
-h+='<div class="result-item total"><span>Líquido</span><span class="value positive">'+fmt(liquido)+'</span></div></div>'+addShareButtons();
-document.getElementById('resLiquido').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>➕ Salário Bruto</span><span class="value">'+fmt(bruto)+'</span></div>';
+if(salFamilia>0)h+='<div class="result-item"><span>👶 Salário-Família ('+filhos+' filhos × R$67,84)</span><span class="value positive">+ '+fmt(salFamilia)+'</span></div>';
+h+='<div class="result-item"><span>🔴 INSS ('+(bruto>0?(inss/(bruto+salFamilia)*100).toFixed(1):0)+'%)</span><span class="value negative">- '+fmt(inss)+'</span></div>';
+if(vtDesconto>0)h+='<div class="result-item"><span>🚌 Vale-Transporte (6% de '+fmt(bruto)+')</span><span class="value negative">- '+fmt(vtDesconto)+'</span></div>';
+if(sindValor>0)h+='<div class="result-item"><span>🏢 Contrib. Sindical (1 dia)</span><span class="value negative">- '+fmt(sindValor)+'</span></div>';
+if(pensao>0)h+='<div class="result-item"><span>📄 Pensão Alimentícia</span><span class="value negative">- '+fmt(pensao)+'</span></div>';
+h+='<div class="result-item"><span>📊 Base IRRF</span><span class="value">'+fmt(resIR.base)+'</span></div>';
+h+='<div class="result-item"><span>🔵 IRRF '+(resIR.base<=5000?'<span style="background:#e8f5e9;color:#27ae60;padding:2px 8px;border-radius:99px;font-size:11px">ISENTO ATÉ R$5.000</span>':'')+'</span><span class="value negative">- '+fmt(resIR.ir)+'</span></div>';
+h+='<div class="result-item total"><span>💰 Salário Líquido</span><span class="value positive">'+fmt(liquido)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Detalhes:</b> '+(dep>0?dep+' dependente(s) × R$189,59 = '+fmt(dep*189.59)+'. ':'')+(filhos>0&&salFamilia>0?filhos+' filho(s) com salário-família: '+fmt(salFamilia)+'. ':'')+(salFamilia===0&&filhos>0?'Salário-família não concedido (salário acima de R$1.906,04). ':'')+'Dedução simplificada: '+(usaSimpl?'Sim (R$607,20)':'Não (mais vantajosa: detalhada)')+'.</div>';
+h+=addShareButtons();
+document.getElementById('resLiquido').innerHTML=h;lucide.createIcons()}
 
 function diffYears(adm,dem){let y=dem.getFullYear()-adm.getFullYear();if(dem.getMonth()<adm.getMonth()||(dem.getMonth()===adm.getMonth()&&dem.getDate()<adm.getDate()))y--;return Math.max(0,y)}
 function calcRescisao(){
 let sal=unformat(document.getElementById('rescSal').value);
 let adm=new Date(document.getElementById('rescAdm').value);
 let dem=new Date(document.getElementById('rescDem').value);
-if(!sal||isNaN(adm)||isNaN(dem)){document.getElementById('resRescisao').innerHTML='<div class="result">Preencha todos os campos</div>';return}
+if(!sal||isNaN(adm)||isNaN(dem)){document.getElementById('resRescisao').innerHTML='<div class="result"><div class="result-item"><span>⚠️ Preencha todos os campos</span></div></div>';return}
 let diasMes=parseInt(document.getElementById('rescDiasMes').value)||0;
 let ferVenc=parseInt(document.getElementById('rescFerVenc').value)||0;
 let fgtsInf=unformat(document.getElementById('rescFgtsSaldo').value);
@@ -275,15 +291,20 @@ let ferVencTotal=ferVenc*(sal+sal/3);
 let fgtsTotal=fgtsInf>0?fgtsInf:sal*0.08*(totalDias/30);
 let multa=0;if(tipo==='sem_justa'||tipo==='indireta')multa=fgtsTotal*0.4;else if(tipo==='acordo')multa=fgtsTotal*0.2;
 let saque=0;if(tipo==='sem_justa'||tipo==='indireta')saque=fgtsTotal;else if(tipo==='acordo')saque=fgtsTotal*0.8;else if(tipo==='experiencia')saque=fgtsTotal;
-let itens=[];if(tipo!=='justa'){itens.push({label:'Saldo salário ('+diasMes+' dias)',val:saldoSal,trib:true});if(tipo!=='pedido'&&avisoTipo==='indenizado')itens.push({label:'Aviso prévio ('+diasAviso+' dias)',val:valorAviso,trib:true});if(ferPropTotal>0)itens.push({label:'Férias prop. +1/3',val:ferPropTotal,trib:false});if(ferVencTotal>0)itens.push({label:'Férias vencidas +1/3',val:ferVencTotal,trib:false});if(decimo>0)itens.push({label:'13º proporcional',val:decimo,trib:true})}else{itens.push({label:'Saldo salário',val:saldoSal,trib:true});if(ferVencTotal>0)itens.push({label:'Férias vencidas',val:ferVencTotal,trib:false})}
+let itens=[];if(tipo!=='justa'){itens.push({label:'📅 Saldo salário ('+diasMes+' dias)',val:saldoSal,trib:true});if(tipo!=='pedido'&&avisoTipo==='indenizado')itens.push({label:'📋 Aviso prévio indenizado ('+diasAviso+' dias)',val:valorAviso,trib:true});if(ferPropTotal>0)itens.push({label:'🏖️ Férias proporcionais +1/3 ('+mesesFerProp+'/12 avos)',val:ferPropTotal,trib:false});if(ferVencTotal>0)itens.push({label:'🏖️ Férias vencidas +1/3 ('+ferVenc+' períodos)',val:ferVencTotal,trib:false});if(decimo>0)itens.push({label:'🎄 13º proporcional ('+meses13+'/12 avos)',val:decimo,trib:true})}else{itens.push({label:'📅 Saldo salário ('+diasMes+' dias)',val:saldoSal,trib:true});if(ferVencTotal>0)itens.push({label:'🏖️ Férias vencidas +1/3',val:ferVencTotal,trib:false})}
 let totalINSS=0,totalIR=0;itens.forEach(i=>{if(i.trib){let inssItem=calcINSS(i.val);totalINSS+=inssItem;totalIR+=calcIRRF(i.val-inssItem,0).ir}});
 let bruto=itens.reduce((a,b)=>a+b.val,0);let liquidoSemFGTS=bruto-totalINSS-totalIR;let totalComFGTS=liquidoSemFGTS+saque+multa;
-let h='<div class="result">';itens.forEach(it=>h+='<div class="result-item"><span>'+it.label+'</span><span class="value positive">'+fmt(it.val)+'</span></div>');
-if(saque>0)h+='<div class="result-item"><span>FGTS saque</span><span class="value positive">'+fmt(saque)+'</span></div>';
-if(multa>0)h+='<div class="result-item"><span>Multa FGTS</span><span class="value positive">'+fmt(multa)+'</span></div>';
-h+='<div class="result-item"><span>INSS</span><span class="value negative">- '+fmt(totalINSS)+'</span></div><div class="result-item"><span>IRRF</span><span class="value negative">- '+fmt(totalIR)+'</span></div>';
-h+='<div class="result-item total"><span>Líquido s/ FGTS</span><span class="value positive">'+fmt(liquidoSemFGTS)+'</span></div><div class="result-item total"><span>Total c/ FGTS</span><span class="value positive">'+fmt(totalComFGTS)+'</span></div></div>'+addShareButtons();
-document.getElementById('resRescisao').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>⏱️ Tempo trabalhado</span><span class="value">'+anos+' anos e '+totalDias+' dias</span></div>';
+itens.forEach(it=>h+='<div class="result-item"><span>'+it.label+' '+(it.trib?'':'<small>(isento)</small>')+'</span><span class="value positive">'+fmt(it.val)+'</span></div>');
+if(saque>0)h+='<div class="result-item"><span>🏦 Saque FGTS</span><span class="value positive">'+fmt(saque)+'</span></div>';
+if(multa>0)h+='<div class="result-item"><span>💸 Multa FGTS '+(tipo==='acordo'?'20%':'40%')+'</span><span class="value positive">'+fmt(multa)+'</span></div>';
+h+='<div class="result-item"><span>🔴 INSS total</span><span class="value negative">- '+fmt(totalINSS)+'</span></div>';
+h+='<div class="result-item"><span>🔵 IRRF total</span><span class="value negative">- '+fmt(totalIR)+'</span></div>';
+h+='<div class="result-item total"><span>💰 Líquido sem FGTS</span><span class="value positive">'+fmt(liquidoSemFGTS)+'</span></div>';
+h+='<div class="result-item total"><span>💵 Total com FGTS + Multa</span><span class="value positive">'+fmt(totalComFGTS)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Resumo:</b> '+anos+' anos de empresa. Aviso prévio de '+diasAviso+' dias (Lei 12.506/2011). Projeção até '+demProj.toLocaleDateString('pt-BR')+'. Tipo: '+tipo.replace('_',' ')+'.</div>';
+h+=addShareButtons();
+document.getElementById('resRescisao').innerHTML=h;lucide.createIcons()}
 
 function calcHE(){
 let sal=unformat(document.getElementById('heSal').value),jornada=parseFloat(document.getElementById('heJornada').value)||220;
@@ -293,11 +314,16 @@ let compensar=document.getElementById('heCompensar').checked;
 let vh=sal/jornada,mult=compensar?1:1.5;
 let v50=vh*mult*he50,v100=vh*2*he100,vNot=vh*1.2*heNot;
 let totalHE=v50+v100+vNot,dsr=uteis>0?(totalHE/uteis)*desc:0,total=totalHE+dsr;
-let h='<div class="result"><div class="result-item"><span>Valor hora</span><span class="value">'+fmt(vh)+'</span></div>';
-if(compensar)h+='<div class="result-item"><span>HE 50% (banco)</span><span class="value">'+he50+'h</span></div>';
-else h+='<div class="result-item"><span>HE 50% ('+he50+'h)</span><span class="value positive">'+fmt(v50)+'</span></div>';
-h+='<div class="result-item"><span>HE 100% ('+he100+'h)</span><span class="value positive">'+fmt(v100)+'</span></div><div class="result-item"><span>Noturno ('+heNot+'h)</span><span class="value positive">'+fmt(vNot)+'</span></div><div class="result-item"><span>DSR</span><span class="value positive">'+fmt(dsr)+'</span></div><div class="result-item total"><span>Total</span><span class="value positive">'+fmt(total)+'</span></div></div>'+addShareButtons();
-document.getElementById('resHE').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>⏱️ Valor hora normal</span><span class="value">'+fmt(vh)+'</span></div><div class="result-item"><span>📊 Jornada mensal</span><span class="value">'+jornada+'h</span></div>';
+if(compensar)h+='<div class="result-item"><span>🏦 HE 50% - Banco de Horas ('+he50.toFixed(1)+'h)</span><span class="value">'+he50.toFixed(1)+'h para compensar</span></div>';
+else h+='<div class="result-item"><span>⏰ HE 50% ('+he50.toFixed(1)+'h × 1.5)</span><span class="value positive">'+fmt(v50)+'</span></div>';
+h+='<div class="result-item"><span>⏰ HE 100% ('+he100.toFixed(1)+'h × 2.0)</span><span class="value positive">'+fmt(v100)+'</span></div>';
+h+='<div class="result-item"><span>🌙 Adicional Noturno ('+heNot.toFixed(1)+'h × 1.2)</span><span class="value positive">'+fmt(vNot)+'</span></div>';
+h+='<div class="result-item"><span>📅 DSR (('+fmt(totalHE)+' ÷ '+uteis+') × '+desc+')</span><span class="value positive">'+fmt(dsr)+'</span></div>';
+h+='<div class="result-item total"><span>💰 Total HE + DSR</span><span class="value positive">'+fmt(total)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Fórmula:</b> DSR = (Total HE ÷ Dias úteis) × Domingos/feriados. '+(compensar?'Banco de horas: sem adicional de 50%.':'')+' HE habitual integra 13º, férias e FGTS (Súmula 45 TST).</div>';
+h+=addShareButtons();
+document.getElementById('resHE').innerHTML=h;lucide.createIcons()}
 
 function calcEscala(){
 const sal=unformat(document.getElementById('escSal').value),jornada=parseFloat(document.getElementById('escJornada').value)||8;
@@ -308,9 +334,12 @@ const hm=jornada*diasSemana*sm,sh=sal/hm,heV=sh*1.5*he;
 let nv=0;if(noturno)nv=sh*0.2*hm*0.2;
 const dsr=(heV/(diasSemana*sm))*sm,bruto=sal+heV+nv+dsr;
 const inss=calcINSS(bruto),irrf=calcIRRF(bruto-inss,dep).ir,liquido=bruto-inss-irrf;
-let comp='';if(diasSemana===6){const j5=jornada*6/5,hm5=j5*5*sm,sh5=sal/hm5,he5=sh5*1.5*he,b5=sal+he5+nv+dsr,i5=calcINSS(b5),ir5=calcIRRF(b5-i5,dep).ir,l5=b5-i5-ir5,d=liquido-l5;comp='<div class="result-item"><span>Comparativo 5x1</span><span class="value">'+fmt(l5)+'</span></div><div class="result-item total"><span>Diferença</span><span class="value '+(d>=0?'positive':'negative')+'">'+fmt(d)+'</span></div>'}
-let h='<div class="result"><div class="result-item"><span>Jornada mensal</span><span class="value">'+hm.toFixed(0)+'h</span></div><div class="result-item"><span>Salário base</span><span class="value">'+fmt(sal)+'</span></div><div class="result-item"><span>Horas extras</span><span class="value positive">'+fmt(heV)+'</span></div><div class="result-item"><span>Noturno</span><span class="value positive">'+fmt(nv)+'</span></div><div class="result-item"><span>DSR</span><span class="value positive">'+fmt(dsr)+'</span></div><div class="result-item"><span>INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>IRRF</span><span class="value negative">- '+fmt(irrf)+'</span></div><div class="result-item total"><span>Líquido ('+diasSemana+'x1)</span><span class="value positive">'+fmt(liquido)+'</span></div>'+comp+'</div>'+addShareButtons();
-document.getElementById('resEscala').innerHTML=h}
+let comp='';if(diasSemana===6){const j5=jornada*6/5,hm5=j5*5*sm,sh5=sal/hm5,he5=sh5*1.5*he,b5=sal+he5+nv+dsr,i5=calcINSS(b5),ir5=calcIRRF(b5-i5,dep).ir,l5=b5-i5-ir5,d=liquido-l5;comp='<div class="result-item"><span>🔄 Se fosse 5x1 (líquido)</span><span class="value">'+fmt(l5)+'</span></div><div class="result-item total"><span>📊 Diferença (6x1 - 5x1)</span><span class="value '+(d>=0?'positive':'negative')+'">'+fmt(d)+'</span></div>'}
+else if(diasSemana===5){const j6=jornada*5/6,hm6=j6*6*sm,sh6=sal/hm6,he6=sh6*1.5*he,b6=sal+he6+nv+dsr,i6=calcINSS(b6),ir6=calcIRRF(b6-i6,dep).ir,l6=b6-i6-ir6,d=liquido-l6;comp='<div class="result-item"><span>🔄 Se fosse 6x1 (líquido)</span><span class="value">'+fmt(l6)+'</span></div><div class="result-item total"><span>📊 Diferença (5x1 - 6x1)</span><span class="value '+(d>=0?'positive':'negative')+'">'+fmt(d)+'</span></div>'}
+let h='<div class="result"><div class="result-item"><span>📅 Jornada mensal ('+diasSemana+'x'+jornada+'h)</span><span class="value">'+hm.toFixed(0)+'h</span></div><div class="result-item"><span>💵 Salário base</span><span class="value">'+fmt(sal)+'</span></div><div class="result-item"><span>⏰ Horas extras ('+he+'h)</span><span class="value positive">'+fmt(heV)+'</span></div><div class="result-item"><span>🌙 Adicional noturno</span><span class="value positive">'+fmt(nv)+'</span></div><div class="result-item"><span>📅 DSR sobre HE</span><span class="value positive">'+fmt(dsr)+'</span></div><div class="result-item"><span>➕ Bruto total</span><span class="value">'+fmt(bruto)+'</span></div><div class="result-item"><span>🔴 INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>🔵 IRRF</span><span class="value negative">- '+fmt(irrf)+'</span></div><div class="result-item total"><span>💰 Líquido ('+diasSemana+'x1)</span><span class="value positive">'+fmt(liquido)+'</span></div>'+comp+'</div>';
+h+='<div class="explanation"><b>📌 Legislação:</b> Reforma trabalhista permite escalas 5x1 e 6x1 com até 44h semanais. DSR obrigatório. Horas extras: 50% dias úteis, 100% domingos/feriados.</div>';
+h+=addShareButtons();
+document.getElementById('resEscala').innerHTML=h;lucide.createIcons()}
 
 function calcFerias(){
 let sal=unformat(document.getElementById('ferSal').value),dias=parseInt(document.getElementById('ferDias').value)||30;
@@ -318,18 +347,25 @@ let media=unformat(document.getElementById('ferMedia').value),abono=document.get
 let base=sal+media,vf=base/30*dias,terco=vf/3,va=0,ta=0;
 if(abono){va=base/30*10;ta=va/3}let tb=vf+terco+va+ta;if(sit==='dobro'){tb*=2;vf*=2;terco*=2}
 let inss=calcINSS(vf+terco),ir=calcIRRF(vf+terco-inss,0).ir,liquido=tb-inss-ir;
-let h='<div class="result"><div class="result-item"><span>Férias ('+dias+'d)</span><span class="value">'+fmt(vf)+'</span></div><div class="result-item"><span>1/3</span><span class="value">'+fmt(terco)+'</span></div>';
-if(abono)h+='<div class="result-item"><span>Abono 10d</span><span class="value positive">'+fmt(va)+'</span></div><div class="result-item"><span>1/3 abono</span><span class="value positive">'+fmt(ta)+'</span></div>';
-if(sit==='dobro')h+='<div class="result-item"><span>Dobra</span><span class="value">×2</span></div>';
-h+='<div class="result-item"><span>INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>IRRF</span><span class="value negative">- '+fmt(ir)+'</span></div><div class="result-item total"><span>Líquido</span><span class="value positive">'+fmt(liquido)+'</span></div></div>'+addShareButtons();
-document.getElementById('resFerias').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>🏖️ Férias ('+dias+' dias)</span><span class="value">'+fmt(vf)+'</span></div><div class="result-item"><span>➕ 1/3 Constitucional</span><span class="value">'+fmt(terco)+'</span></div>';
+if(abono)h+='<div class="result-item"><span>💵 Abono pecuniário (10 dias)</span><span class="value positive">'+fmt(va)+'</span></div><div class="result-item"><span>➕ 1/3 sobre abono</span><span class="value positive">'+fmt(ta)+'</span></div>';
+if(sit==='dobro')h+='<div class="result-item"><span>⚠️ Dobra (Art. 137 CLT)</span><span class="value">×2</span></div>';
+h+='<div class="result-item"><span>📊 Base INSS/IRRF</span><span class="value">'+fmt(vf+terco)+'</span></div>';
+h+='<div class="result-item"><span>🔴 INSS</span><span class="value negative">- '+fmt(inss)+'</span></div>';
+h+='<div class="result-item"><span>🔵 IRRF</span><span class="value negative">- '+fmt(ir)+'</span></div>';
+h+='<div class="result-item total"><span>💰 Líquido a receber</span><span class="value positive">'+fmt(liquido)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Observações:</b> Abono pecuniário e seu 1/3 são isentos de INSS e IRRF (Art. 144 CLT). Férias gozadas + 1/3 são tributáveis.</div>';
+h+=addShareButtons();
+document.getElementById('resFerias').innerHTML=h;lucide.createIcons()}
 
 function calcDecimo(){
 let sal=unformat(document.getElementById('decSal').value),meses=parseInt(document.getElementById('decMeses').value)||12;
 let media=unformat(document.getElementById('decMedia').value),dep=parseInt(document.getElementById('decDep').value)||0;
 let base=sal+media,total=base/12*meses,primeira=total/2,inss=calcINSS(total),ir=calcIRRF(total-inss,dep).ir,segunda=total-primeira-inss-ir;
-let h='<div class="result"><div class="result-item"><span>13º total</span><span class="value">'+fmt(total)+'</span></div><div class="result-item"><span>1ª parcela</span><span class="value positive">'+fmt(primeira)+'</span></div><div class="result-item"><span>INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>IRRF</span><span class="value negative">- '+fmt(ir)+'</span></div><div class="result-item total"><span>2ª parcela</span><span class="value positive">'+fmt(segunda)+'</span></div></div>'+addShareButtons();
-document.getElementById('resDecimo').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>🎄 13º Bruto ('+meses+'/12 avos)</span><span class="value">'+fmt(total)+'</span></div><div class="result-item"><span>💵 1ª Parcela (até 30/11)</span><span class="value positive">'+fmt(primeira)+'</span></div><div class="result-item"><span>📊 Base para INSS/IRRF</span><span class="value">'+fmt(total)+'</span></div><div class="result-item"><span>🔴 INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>🔵 IRRF (tributação exclusiva)</span><span class="value negative">- '+fmt(ir)+'</span></div><div class="result-item total"><span>💵 2ª Parcela (até 20/12)</span><span class="value positive">'+fmt(segunda)+'</span></div><div class="result-item total"><span>💰 Líquido total</span><span class="value positive">'+fmt(total-inss-ir)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Lei 4.090/1962:</b> 1ª parcela sem descontos. 2ª parcela com INSS e IRRF integrais. IRRF do 13º tem tributação exclusiva (não soma ao salário).</div>';
+h+=addShareButtons();
+document.getElementById('resDecimo').innerHTML=h;lucide.createIcons()}
 
 function calcSeguro(){
 let media=unformat(document.getElementById('segMedia').value),meses=parseInt(document.getElementById('segMeses').value)||0,vezes=parseInt(document.getElementById('segVezes').value)||1;
@@ -338,8 +374,12 @@ parcela=Math.max(1621,Math.min(parcela,2518.65));
 let qtd=0,elegivel=false;if(vezes===1&&meses>=12)elegivel=true;else if(vezes===2&&meses>=9)elegivel=true;else if(vezes>=3&&meses>=6)elegivel=true;
 if(elegivel){if(meses>=24)qtd=5;else if(meses>=12)qtd=4;else if(meses>=9)qtd=3;else qtd=3}
 let total=parcela*qtd;
-let h='<div class="result"><div class="result-item"><span>Média</span><span class="value">'+fmt(media)+'</span></div><div class="result-item"><span>Parcela</span><span class="value positive">'+fmt(parcela)+'</span></div><div class="result-item"><span>Parcelas</span><span class="value">'+(elegivel?qtd:'0 (não elegível)')+'</span></div>'+(elegivel?'':'<div class="result-item total"><span>Status</span><span class="value negative">Não elegível</span></div>')+'<div class="result-item total"><span>Total</span><span class="value positive">'+fmt(total)+'</span></div></div>'+addShareButtons();
-document.getElementById('resSeguro').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>📊 Média salarial</span><span class="value">'+fmt(media)+'</span></div><div class="result-item"><span>📅 Meses trabalhados</span><span class="value">'+meses+' meses</span></div><div class="result-item"><span>💵 Valor da parcela</span><span class="value positive">'+fmt(parcela)+'</span></div><div class="result-item"><span>🔢 Número de parcelas</span><span class="value">'+(elegivel?qtd:'0 (não elegível)')+'</span></div>';
+if(!elegivel)h+='<div class="result-item total"><span>⚠️ Status</span><span class="value negative">Não atende aos requisitos mínimos</span></div>';
+h+='<div class="result-item total"><span>💰 Total a receber</span><span class="value positive">'+fmt(total)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Faixas MTE 2026:</b> Piso R$1.621,00 | Teto R$2.518,65. Requisitos: 1ª vez ≥12 meses nos últimos 18; 2ª vez ≥9 meses; 3ª+ ≥6 meses.</div>';
+h+=addShareButtons();
+document.getElementById('resSeguro').innerHTML=h;lucide.createIcons()}
 
 function calcFGTS(){
 let sal=unformat(document.getElementById('fgtsSal').value),meses=parseInt(document.getElementById('fgtsMeses').value)||0;
@@ -347,41 +387,54 @@ let saldoInf=unformat(document.getElementById('fgtsSaldoInf').value),tipo=parseI
 let aprendiz=document.getElementById('fgtsAprendiz').checked,perc=aprendiz?0.02:0.08;
 let depositos=sal*perc*meses,saldo=saldoInf>0?saldoInf:depositos*Math.pow(1.0025,meses);
 let multa=saldo*tipo/100,total=saldo+multa;
-let h='<div class="result"><div class="result-item"><span>Depósitos</span><span class="value">'+fmt(depositos)+'</span></div><div class="result-item"><span>Saldo c/ rend.</span><span class="value">'+fmt(saldo)+'</span></div><div class="result-item"><span>Multa '+tipo+'%</span><span class="value positive">'+fmt(multa)+'</span></div><div class="result-item total"><span>Total</span><span class="value positive">'+fmt(total)+'</span></div></div>'+addShareButtons();
-document.getElementById('resFGTS').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>📊 Depósitos ('+(perc*100)+'% × '+meses+' meses)</span><span class="value">'+fmt(depositos)+'</span></div><div class="result-item"><span>📈 Saldo com rendimento (TR+3% a.a.)</span><span class="value">'+fmt(saldo)+'</span></div>';
+if(tipo>0)h+='<div class="result-item"><span>💸 Multa de '+tipo+'%</span><span class="value positive">'+fmt(multa)+'</span></div>';
+h+='<div class="result-item total"><span>💰 Total (saldo + multa)</span><span class="value positive">'+fmt(total)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Depósito:</b> '+(perc*100)+'% sobre salário. Rendimento aproximado de 0,25% a.m. (TR + 3% a.a.). Multa de '+tipo+'% sobre o saldo total.</div>';
+h+=addShareButtons();
+document.getElementById('resFGTS').innerHTML=h;lucide.createIcons()}
 
 function calcAdicionais(){
 let sal=unformat(document.getElementById('adiSal').value),insalPerc=parseInt(document.getElementById('adiInsal').value)||0;
 let pericPerc=parseInt(document.getElementById('adiPeric').value)||0,he=unformat(document.getElementById('adiHE').value);
 let vInsal=1621*insalPerc/100,vPeric=sal*pericPerc/100,adicional=0,tipo='';
-if(vInsal>0&&vPeric>0){if(vPeric>=vInsal){adicional=vPeric;tipo='Periculosidade'}else{adicional=vInsal;tipo='Insalubridade'}}else{adicional=vInsal+vPeric;tipo=vPeric>0?'Periculosidade':'Insalubridade'}
+if(vInsal>0&&vPeric>0){if(vPeric>=vInsal){adicional=vPeric;tipo='Periculosidade (30%)'}else{adicional=vInsal;tipo='Insalubridade ('+insalPerc+'%)'}}else{adicional=vInsal+vPeric;tipo=vPeric>0?'Periculosidade (30%)':'Insalubridade ('+insalPerc+'%)'}
 let base=sal+adicional+he,inss=calcINSS(base),ir=calcIRRF(base-inss,0).ir,liquido=base-inss-ir;
-let h='<div class="result"><div class="result-item"><span>Salário base</span><span class="value">'+fmt(sal)+'</span></div>';
-if(vInsal>0)h+='<div class="result-item"><span>Insalub. '+insalPerc+'%</span><span class="value positive">'+fmt(vInsal)+'</span></div>';
-if(vPeric>0)h+='<div class="result-item"><span>Pericul. 30%</span><span class="value positive">'+fmt(vPeric)+'</span></div>';
-h+='<div class="result-item"><span>Adicional</span><span class="value positive">'+fmt(adicional)+'</span></div><div class="result-item"><span>INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>IRRF</span><span class="value negative">- '+fmt(ir)+'</span></div><div class="result-item total"><span>Líquido</span><span class="value positive">'+fmt(liquido)+'</span></div></div>'+addShareButtons();
-document.getElementById('resAdicionais').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>💵 Salário base</span><span class="value">'+fmt(sal)+'</span></div>';
+if(vInsal>0)h+='<div class="result-item"><span>⚠️ Insalubridade '+insalPerc+'% (sobre R$1.621,00)</span><span class="value positive">'+fmt(vInsal)+'</span></div>';
+if(vPeric>0)h+='<div class="result-item"><span>⚠️ Periculosidade 30% (sobre base)</span><span class="value positive">'+fmt(vPeric)+'</span></div>';
+h+='<div class="result-item"><span>✅ Adicional aplicado: '+tipo+'</span><span class="value positive">'+fmt(adicional)+'</span></div>';
+if(he>0)h+='<div class="result-item"><span>⏰ Horas extras</span><span class="value positive">'+fmt(he)+'</span></div>';
+h+='<div class="result-item"><span>➕ Base total</span><span class="value">'+fmt(base)+'</span></div><div class="result-item"><span>🔴 INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>🔵 IRRF</span><span class="value negative">- '+fmt(ir)+'</span></div><div class="result-item total"><span>💰 Líquido com adicionais</span><span class="value positive">'+fmt(liquido)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Súmulas TST:</b> Insalubridade (S.139) sobre salário mínimo. Periculosidade (S.191) sobre salário base. Não cumulativos (escolhe o maior).</div>';
+h+=addShareButtons();
+document.getElementById('resAdicionais').innerHTML=h;lucide.createIcons()}
 
 function calcAviso(){
 let sal=unformat(document.getElementById('avSal').value),adm=new Date(document.getElementById('avAdm').value),dem=new Date(document.getElementById('avDem').value),tipo=document.getElementById('avTipo').value;
 let anos=diffYears(adm,dem),dias=30+Math.min(anos*3,60),valor=sal/30*dias,proj=new Date(dem);
 if(tipo==='indenizado')proj.setDate(proj.getDate()+dias);
-let h='<div class="result"><div class="result-item"><span>Tempo</span><span class="value">'+anos+' anos</span></div><div class="result-item"><span>Dias</span><span class="value">'+dias+' dias</span></div><div class="result-item"><span>Valor</span><span class="value positive">'+fmt(valor)+'</span></div><div class="result-item"><span>Projeção</span><span class="value">'+proj.toLocaleDateString('pt-BR')+'</span></div></div>'+addShareButtons();
-document.getElementById('resAviso').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>⏱️ Tempo de empresa</span><span class="value">'+anos+' anos</span></div><div class="result-item"><span>📅 Dias de aviso (30 + '+Math.min(anos*3,60)+')</span><span class="value">'+dias+' dias</span></div><div class="result-item"><span>💵 Valor do aviso ('+tipo+')</span><span class="value positive">'+fmt(valor)+'</span></div><div class="result-item"><span>📆 Data projetada (OJ 82 TST)</span><span class="value">'+proj.toLocaleDateString('pt-BR')+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Lei 12.506/2011:</b> 30 dias base + 3 dias por ano completo, limitado a 90 dias. Projeção gera avos de 13º e férias.</div>';
+h+=addShareButtons();
+document.getElementById('resAviso').innerHTML=h;lucide.createIcons()}
 
 function calcCLTPJ(){
 let salCLT=unformat(document.getElementById('cpjSal').value),benef=unformat(document.getElementById('cpjBenef').value),fat=unformat(document.getElementById('cpjFat').value);
 let proPerc=parseInt(document.getElementById('cpjPro').value)||28,custos=unformat(document.getElementById('cpjCustos').value),regime=document.getElementById('cpjRegime').value;
 let inssCLT=calcINSS(salCLT),irCLT=calcIRRF(salCLT-inssCLT,0).ir,liquidoCLT=salCLT-inssCLT-irCLT;
-let custoTotalCLT=salCLT+salCLT/12+salCLT/12*1.333+salCLT*0.08+salCLT*0.28+benef;
+let custo13=salCLT/12,custoFerias=salCLT/12*1.333,custoFGTS=salCLT*0.08,custoINSSPatronal=salCLT*0.28;
+let custoTotalCLT=salCLT+custo13+custoFerias+custoFGTS+custoINSSPatronal+benef;
 let rbt12=fat*12,aliquota=0.06,deducao=0;
 if(rbt12<=180000){aliquota=0.06;deducao=0}else if(rbt12<=360000){aliquota=0.112;deducao=9360}else if(rbt12<=720000){aliquota=0.135;deducao=17640}else if(rbt12<=1800000){aliquota=0.16;deducao=35640}else{aliquota=0.21;deducao=125640}
 if(regime==='V'){aliquota=0.155;deducao=0}if(regime==='fatorR'){let folha=fat*proPerc/100,fR=folha/fat;if(fR>=0.28){aliquota=0.06;deducao=0}else{aliquota=0.155;deducao=0}}
 let impostoPJ=fat*aliquota-deducao/12;if(impostoPJ<0)impostoPJ=0;
 let proLabore=fat*proPerc/100,inssPro=Math.min(proLabore*0.11,908.85),irPro=calcIRRF(proLabore-inssPro,0).ir,liquidoPro=proLabore-inssPro-irPro;
 let lucro=fat-impostoPJ-proLabore-custos,liquidoPJ=liquidoPro+lucro,diff=liquidoPJ-(liquidoCLT+benef);
-let h='<div class="result"><div class="result-item"><span>CLT bruto</span><span class="value">'+fmt(salCLT)+'</span></div><div class="result-item"><span>CLT líquido+benef.</span><span class="value positive">'+fmt(liquidoCLT+benef)+'</span></div><div class="result-item"><span>Custo empresa</span><span class="value">'+fmt(custoTotalCLT)+'</span></div><div class="result-item"><span>PJ faturamento</span><span class="value">'+fmt(fat)+'</span></div><div class="result-item"><span>Imposto '+(aliquota*100).toFixed(1)+'%</span><span class="value negative">- '+fmt(impostoPJ)+'</span></div><div class="result-item"><span>Pró-labore</span><span class="value">'+fmt(proLabore)+'</span></div><div class="result-item"><span>INSS pró-labore</span><span class="value negative">- '+fmt(inssPro)+'</span></div><div class="result-item"><span>IRRF pró-labore</span><span class="value negative">- '+fmt(irPro)+'</span></div><div class="result-item"><span>Custos fixos</span><span class="value negative">- '+fmt(custos)+'</span></div><div class="result-item"><span>Lucro (isento)</span><span class="value positive">'+fmt(lucro)+'</span></div><div class="result-item total"><span>PJ líquido</span><span class="value '+(diff>=0?'positive':'negative')+'">'+fmt(liquidoPJ)+' ('+(diff>=0?'+':'')+fmt(diff)+' vs CLT)</span></div></div>'+addShareButtons();
-document.getElementById('resCLTPJ').innerHTML=h}
+let h='<div class="result"><h3 style="margin-bottom:8px">👔 CLT</h3><div class="result-item"><span>💵 Salário bruto</span><span class="value">'+fmt(salCLT)+'</span></div><div class="result-item"><span>🔴 INSS</span><span class="value negative">- '+fmt(inssCLT)+'</span></div><div class="result-item"><span>🔵 IRRF</span><span class="value negative">- '+fmt(irCLT)+'</span></div><div class="result-item"><span>🎁 Benefícios</span><span class="value positive">+ '+fmt(benef)+'</span></div><div class="result-item total"><span>💰 Líquido CLT</span><span class="value positive">'+fmt(liquidoCLT+benef)+'</span></div><div class="result-item"><span>🏢 Custo total empresa</span><span class="value">'+fmt(custoTotalCLT)+'</span></div><hr style="margin:8px 0"><h3 style="margin-bottom:8px">💼 PJ</h3><div class="result-item"><span>📊 Faturamento</span><span class="value">'+fmt(fat)+'</span></div><div class="result-item"><span>📑 Imposto Simples ('+(aliquota*100).toFixed(1)+'%)</span><span class="value negative">- '+fmt(impostoPJ)+'</span></div><div class="result-item"><span>👤 Pró-labore ('+proPerc+'%)</span><span class="value">'+fmt(proLabore)+'</span></div><div class="result-item"><span>🔴 INSS pró-labore</span><span class="value negative">- '+fmt(inssPro)+'</span></div><div class="result-item"><span>🔵 IRRF pró-labore</span><span class="value negative">- '+fmt(irPro)+'</span></div><div class="result-item"><span>📋 Custos fixos</span><span class="value negative">- '+fmt(custos)+'</span></div><div class="result-item"><span>💎 Lucro distribuído (isento)</span><span class="value positive">'+fmt(lucro)+'</span></div><div class="result-item total"><span>💰 Líquido PJ</span><span class="value '+(diff>=0?'positive':'negative')+'">'+fmt(liquidoPJ)+' ('+(diff>=0?'+':'')+fmt(diff)+' vs CLT)</span></div></div>';
+h+='<div class="explanation"><b>📌 Fator R:</b> '+(regime==='fatorR'?'Folha/Faturamento = '+proPerc+'%. '+(proPerc>=28?'Anexo III (6%)':'Anexo V (15,5%)'):'Regime: Anexo '+regime)+'. Pró-labore mínimo 28%. Lucro distribuído isento de IR.</div>';
+h+=addShareButtons();
+document.getElementById('resCLTPJ').innerHTML=h;lucide.createIcons()}
 
 function calcFreela(){
 let sal=unformat(document.getElementById('frSal').value),custos=unformat(document.getElementById('frCustos').value);
@@ -389,8 +442,10 @@ let hDia=parseFloat(document.getElementById('frHorasDia').value)||8,dSem=parseFl
 let fatPerc=parseFloat(document.getElementById('frFat').value)||60,margem=parseFloat(document.getElementById('frMargem').value)||30;
 let horasMes=hDia*dSem*4.33,horasFaturaveis=horasMes*fatPerc/100,custoHora=(sal+custos)/horasFaturaveis;
 let valorHora=custoHora*(1+margem/100),valorDia=valorHora*hDia,valorMes=valorHora*horasFaturaveis,valorProjeto40h=valorHora*40;
-let h='<div class="result"><div class="result-item"><span>Horas mês</span><span class="value">'+horasMes.toFixed(0)+'h</span></div><div class="result-item"><span>Horas faturáveis</span><span class="value">'+horasFaturaveis.toFixed(0)+'h</span></div><div class="result-item"><span>Custo/hora</span><span class="value">'+fmt(custoHora)+'</span></div><div class="result-item"><span>Valor/hora</span><span class="value positive">'+fmt(valorHora)+'</span></div><div class="result-item"><span>Valor/dia</span><span class="value">'+fmt(valorDia)+'</span></div><div class="result-item"><span>Valor/mês</span><span class="value">'+fmt(valorMes)+'</span></div><div class="result-item total"><span>Projeto 40h</span><span class="value positive">'+fmt(valorProjeto40h)+'</span></div></div>'+addShareButtons();
-document.getElementById('resFreela').innerHTML=h}
+let h='<div class="result"><div class="result-item"><span>📅 Horas totais/mês</span><span class="value">'+horasMes.toFixed(0)+'h</span></div><div class="result-item"><span>⏱️ Horas faturáveis ('+fatPerc+'%)</span><span class="value">'+horasFaturaveis.toFixed(0)+'h</span></div><div class="result-item"><span>📊 Custo base/hora</span><span class="value">'+fmt(custoHora)+'</span></div><div class="result-item"><span>💵 Valor/hora (com '+margem+'% margem)</span><span class="value positive">'+fmt(valorHora)+'</span></div><div class="result-item"><span>📆 Valor/dia ('+hDia+'h)</span><span class="value">'+fmt(valorDia)+'</span></div><div class="result-item"><span>📅 Valor/mês faturável</span><span class="value">'+fmt(valorMes)+'</span></div><div class="result-item total"><span>💼 Projeto 40h (1 semana)</span><span class="value positive">'+fmt(valorProjeto40h)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Fórmula:</b> (Custos + Salário desejado) ÷ Horas faturáveis × (1 + Margem). Horas faturáveis = 50-60% do total (resto é prospecção/admin).</div>';
+h+=addShareButtons();
+document.getElementById('resFreela').innerHTML=h;lucide.createIcons()}
 
 function calcFinan(){
 let imovel=unformat(document.getElementById('finImovel').value),entrada=unformat(document.getElementById('finEntrada').value);
@@ -400,10 +455,12 @@ let parcPrice=financiado*(taxaAm*Math.pow(1+taxaAm,prazo))/(Math.pow(1+taxaAm,pr
 let totalPrice=parcPrice*prazo,jurosPrice=totalPrice-financiado,amort=financiado/prazo;
 let primeiraSAC=amort+financiado*taxaAm,ultimaSAC=amort+amort*taxaAm;
 let jurosSAC=taxaAm*financiado*(prazo+1)/2,totalSAC=financiado+jurosSAC,economia=jurosPrice-jurosSAC;
-let h='<div class="result"><div class="result-item"><span>Financiado</span><span class="value">'+fmt(financiado)+'</span></div><div class="result-item"><span>Taxa a.m.</span><span class="value">'+(taxaAm*100).toFixed(3)+'%</span></div><div class="result-item"><span>PRICE parcela</span><span class="value">'+fmt(parcPrice)+'</span></div><div class="result-item"><span>PRICE juros</span><span class="value negative">'+fmt(jurosPrice)+'</span></div><div class="result-item"><span>PRICE total</span><span class="value">'+fmt(totalPrice)+'</span></div><div class="result-item"><span>SAC 1ª parcela</span><span class="value">'+fmt(primeiraSAC)+'</span></div><div class="result-item"><span>SAC última</span><span class="value">'+fmt(ultimaSAC)+'</span></div><div class="result-item"><span>SAC juros</span><span class="value negative">'+fmt(jurosSAC)+'</span></div><div class="result-item"><span>SAC total</span><span class="value">'+fmt(totalSAC)+'</span></div><div class="result-item total"><span>Economia SAC</span><span class="value positive">'+fmt(economia)+'</span></div></div>'+addShareButtons();
-document.getElementById('resFinan').innerHTML=h}
+let h='<div class="result"><h3 style="margin-bottom:8px">📊 Resumo</h3><div class="result-item"><span>🏠 Valor do imóvel</span><span class="value">'+fmt(imovel)+'</span></div><div class="result-item"><span>💵 Entrada</span><span class="value">'+fmt(entrada)+'</span></div><div class="result-item"><span>🏦 Valor financiado</span><span class="value">'+fmt(financiado)+'</span></div><div class="result-item"><span>📈 Taxa a.m. equivalente</span><span class="value">'+(taxaAm*100).toFixed(3)+'%</span></div><hr style="margin:8px 0"><h3 style="margin-bottom:8px">📊 PRICE (Parcelas Fixas)</h3><div class="result-item"><span>💳 Valor da parcela</span><span class="value">'+fmt(parcPrice)+'</span></div><div class="result-item"><span>💸 Total de juros</span><span class="value negative">'+fmt(jurosPrice)+'</span></div><div class="result-item"><span>💰 Total pago</span><span class="value">'+fmt(totalPrice)+'</span></div><hr style="margin:8px 0"><h3 style="margin-bottom:8px">📉 SAC (Amortização Constante)</h3><div class="result-item"><span>💳 1ª parcela</span><span class="value">'+fmt(primeiraSAC)+'</span></div><div class="result-item"><span>💳 Última parcela</span><span class="value">'+fmt(ultimaSAC)+'</span></div><div class="result-item"><span>💸 Total de juros</span><span class="value negative">'+fmt(jurosSAC)+'</span></div><div class="result-item"><span>💰 Total pago</span><span class="value">'+fmt(totalSAC)+'</span></div><div class="result-item total"><span>🎉 Economia com SAC</span><span class="value positive">'+fmt(economia)+'</span></div></div>';
+h+='<div class="explanation"><b>📌 Comparação:</b> PRICE tem parcelas fixas (mais juros). SAC tem parcelas decrescentes (economiza juros, mas exige renda inicial maior). Use FGTS para amortizar.</div>';
+h+=addShareButtons();
+document.getElementById('resFinan').innerHTML=h;lucide.createIcons()}
 
-window.onload=function(){loadFromHash();document.getElementById('currentYear').textContent=new Date().getFullYear();const bb=document.getElementById('backToTop');window.addEventListener('scroll',()=>bb.classList.toggle('visible',window.scrollY>300));document.querySelectorAll('input.money').forEach(mascaraMoeda)};
+window.onload=function(){loadFromHash();document.getElementById('currentYear').textContent=new Date().getFullYear();const bb=document.getElementById('backToTop');window.addEventListener('scroll',()=>bb.classList.toggle('visible',window.scrollY>300));document.querySelectorAll('input.money').forEach(mascaraMoeda);lucide.createIcons()};
 </script>
 </body>
 </html>
