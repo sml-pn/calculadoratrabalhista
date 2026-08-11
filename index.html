@@ -27,6 +27,16 @@ body{background:var(--bg);color:var(--text);line-height:1.65;padding-top:72px}
 .nav-links a{color:rgba(255,255,255,.85);text-decoration:none;padding:8px 16px;border-radius:30px;font-size:13px;font-weight:600;transition:0.2s;white-space:nowrap}
 
 @media(min-width:820px){.nav-links a{font-size:14px;padding:10px 20px}}
+
+@media(max-width:820px){
+.nav-links{position:fixed;top:64px;left:0;right:0;background:var(--primary);flex-direction:column;padding:16px;display:none;border-radius:0 0 18px 18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.nav-links.open{display:flex;flex-direction:column;gap:8px}
+.nav-links a{width:100%;text-align:center;padding:12px;font-size:15px}
+.hamburger{display:flex}
+.nav-dropdown-content{display:none;position:static;box-shadow:none;padding:0;min-width:auto;background:transparent;grid-template-columns:1fr 1fr;gap:6px}
+.nav-dropdown-content a{padding:10px 8px;font-size:13px}
+}
+
 .nav-links a:hover,.nav-links a.active{background:rgba(255,255,255,.15);color:#fff}
 .nav-links a.active{background:var(--accent)}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
@@ -88,7 +98,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:12px 0}
 .footer-links a{color:var(--muted);text-decoration:none;font-size:12px;border-right:1px solid var(--border);padding-right:12px}
 .footer-links a:last-child{border-right:none}.footer-links a:hover{color:var(--primary)}
-@media(max-width:820px){.nav-links{position:fixed;top:64px;left:0;right:0;background:var(--primary);flex-direction:column;padding:16px;display:none;border-radius:0 0 18px 18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}.nav-links.open{display:flex}.nav-links a{width:100%;text-align:center;padding:12px;font-size:15px;justify-content:center}.hamburger{display:flex}}
+.nav-links.open{display:flex}.nav-links a{width:100%;text-align:center;padding:12px;font-size:15px;justify-content:center}.hamburger{display:flex}}
 #backToTop{position:fixed;bottom:24px;right:24px;background:var(--primary);color:#fff;width:44px;height:44px;border-radius:50%;border:none;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.2)}
 #backToTop.visible{opacity:1;visibility:visible}#backToTop:hover{background:var(--primary-light)}
 .share-btns{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
@@ -131,7 +141,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 <li><a href="#escala" data-page="escala">6x1/5x1</a></li>
 <li><a href="#ferias" data-page="ferias">Férias</a></li>
 <li class="nav-dropdown">
-<a href="#" onclick="return false" style="cursor:pointer">Mais ▾</a>
+<a href="#" onclick="event.preventDefault();event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'" style="cursor:pointer">Mais ▾</a>
 <div class="nav-dropdown-content">
 <a href="#decimo" data-page="decimo">13º Salário</a>
 <a href="#seguro" data-page="seguro">Seguro</a>
@@ -321,7 +331,7 @@ function loadFromHash(){const h=window.location.hash.replace('#','')||'home';sho
 window.addEventListener('hashchange',loadFromHash);
 document.querySelectorAll('.nav-links a').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();window.location.hash=this.dataset.page})});
 document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');this.classList.toggle('active')});
-document.addEventListener('click',e=>{if(!e.target.closest('.navbar')){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}});
+document.addEventListener('click',e=>{if(!e.target.closest('.navbar')&&!e.target.closest('.nav-dropdown')){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}});
 function toggleCards(){const h=document.querySelectorAll('.mini-card.hidden-mobile');const b=document.getElementById('showMoreBtn');const v=h[0].style.display==='none'||!h[0].style.display;h.forEach(c=>c.style.display=v?'block':'none');b.innerHTML=v?'<i data-lucide="chevron-up"></i> Mostrar menos':'<i data-lucide="chevron-down"></i> Ver todas as 13 calculadoras';lucide.createIcons()}
 function mascaraMoeda(el){el.addEventListener('input',function(){let v=this.value.replace(/\D/g,'');if(!v){this.value='';return}v=(parseInt(v)/100).toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,'.');this.value=v});el.addEventListener('blur',function(){if(this.value){let n=parseFloat(this.value.replace(/[^0-9,]/g,'').replace(',','.'))||0;this.value=n.toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,'.')}})}
 document.querySelectorAll('input.money').forEach(mascaraMoeda);
