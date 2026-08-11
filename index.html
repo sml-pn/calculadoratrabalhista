@@ -33,7 +33,7 @@ body{background:var(--bg);color:var(--text);line-height:1.65;padding-top:72px}
 .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
 .hamburger.active span:nth-child(2){opacity:0}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px)}
-.hero{background:linear-gradient(135deg,var(--primary),#0f2a44);color:#fff;border-radius:var(--radius);padding:24px 20px;margin:8px 0 16px;box-shadow:var(--shadow)}
+.hero{background:linear-gradient(135deg,var(--primary),#0f2a44);color:#fff;border-radius:var(--radius);padding:24px 20px;margin:8px 0 16px;box-shadow:var(--shadow);transition:all 0.3s ease}
 .hero h1{font-size:24px;line-height:1.2;margin-bottom:4px;display:flex;align-items:center;gap:8px}
 .hero h1 i{width:28px;height:28px;color:#f1c40f}
 .hero p{opacity:.9;font-size:14px;max-width:620px}
@@ -152,7 +152,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 </ul>
 </nav>
 <div class="container">
-<div class="hero">
+<div class="hero" id="heroBanner">
 <h1><i data-lucide="calculator"></i> 13 Calculadoras Trabalhistas 2026</h1>
 <p>Tabelas oficiais INSS/IRRF - Isenção de IR até R$5.000 (Lei 15.270/2025)</p>
 <div class="stats"><div class="stat"><i data-lucide="check-circle"></i> Sem cadastro</div><div class="stat"><i data-lucide="book-open"></i> Fontes oficiais</div><div class="stat"><i data-lucide="save"></i> Salva memória</div><div class="stat"><i data-lucide="smartphone"></i> Responsivo</div></div>
@@ -270,7 +270,8 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 
 <script>
 lucide.createIcons();
-const pageData={home:{title:'Ferramentas Trabalhistas 2026',desc:'13 calculadoras trabalhistas 2026',canonical:'https://trabalhista2026.onrender.com/'},liquido:{title:'Salário Líquido 2026',desc:'Calcule seu salário líquido com INSS, IRRF, salário-família e vale-transporte',canonical:'https://trabalhista2026.onrender.com/#liquido'},rescisao:{title:'Rescisão Trabalhista 2026',desc:'Calcule sua rescisão completa',canonical:'https://trabalhista2026.onrender.com/#rescisao'},extras:{title:'Horas Extras 2026',desc:'Calcule horas extras, DSR e adicional noturno',canonical:'https://trabalhista2026.onrender.com/#extras'},escala:{title:'Escala 6x1/5x1 2026',desc:'Compare regimes de escala',canonical:'https://trabalhista2026.onrender.com/#escala'},ferias:{title:'Férias 2026',desc:'Calcule férias com abono e 1/3',canonical:'https://trabalhista2026.onrender.com/#ferias'},decimo:{title:'13º Salário 2026',desc:'Calcule 1ª e 2ª parcela do 13º',canonical:'https://trabalhista2026.onrender.com/#decimo'},seguro:{title:'Seguro-Desemprego 2026',desc:'Calcule seguro-desemprego com faixas oficiais',canonical:'https://trabalhista2026.onrender.com/#seguro'},fgts:{title:'FGTS 2026',desc:'Calcule FGTS com multa rescisória',canonical:'https://trabalhista2026.onrender.com/#fgts'},adicionais:{title:'Adicionais 2026',desc:'Calcule insalubridade e periculosidade',canonical:'https://trabalhista2026.onrender.com/#adicionais'},aviso:{title:'Aviso Prévio 2026',desc:'Calcule aviso prévio proporcional',canonical:'https://trabalhista2026.onrender.com/#aviso'},'clt-pj':{title:'CLT vs PJ 2026',desc:'Compare CLT e PJ com Fator R',canonical:'https://trabalhista2026.onrender.com/#clt-pj'},freela:{title:'Valor Hora Freelancer 2026',desc:'Calcule valor hora como freelancer',canonical:'https://trabalhista2026.onrender.com/#freela'},finan:{title:'Financiamento 2026',desc:'Simule financiamento PRICE vs SAC',canonical:'https://trabalhista2026.onrender.com/#finan'}};
+const pageData={
+home:{title:'Ferramentas Trabalhistas 2026',desc:'13 calculadoras trabalhistas 2026',canonical:'https://trabalhista2026.onrender.com/',hero:'<h1><i data-lucide="calculator"></i> 13 Calculadoras Trabalhistas 2026</h1><p>Tabelas oficiais INSS/IRRF - Isenção de IR até R$5.000 (Lei 15.270/2025)</p>'},liquido:{hero:'<h1><i data-lucide="dollar-sign"></i> Salário Líquido 2026</h1><p>INSS progressivo | IRRF isento até R$5.000 | Salário-família | Portaria 13/2026</p>',title:'Salário Líquido 2026',desc:'Calcule seu salário líquido com INSS, IRRF, salário-família e vale-transporte',canonical:'https://trabalhista2026.onrender.com/#liquido'},rescisao:{hero:'<h1><i data-lucide="file-text"></i> Rescisão Trabalhista</h1><p>4 tipos de rescisão | Aviso prévio proporcional (Lei 12.506/2011) | Multa FGTS 40%</p>',title:'Rescisão Trabalhista 2026',desc:'Calcule sua rescisão completa',canonical:'https://trabalhista2026.onrender.com/#rescisao'},extras:{hero:'<h1><i data-lucide="clock"></i> Horas Extras + DSR</h1><p>Adicional 50%/100% | Noturno 20% | Súmula 60 TST | Banco de horas</p>',title:'Horas Extras 2026',desc:'Calcule horas extras, DSR e adicional noturno',canonical:'https://trabalhista2026.onrender.com/#extras'},escala:{hero:'<h1><i data-lucide="calendar"></i> Escala 6x1 vs 5x1</h1><p>Reforma Trabalhista | Limite 44h semanais | Comparativo de regimes</p>',title:'Escala 6x1/5x1 2026',desc:'Compare regimes de escala',canonical:'https://trabalhista2026.onrender.com/#escala'},ferias:{hero:'<h1><i data-lucide="umbrella"></i> Férias + 1/3 + Abono</h1><p>Art. 137 CLT (dobra) | Abono pecuniário isento | 30 dias + 1/3</p>',title:'Férias 2026',desc:'Calcule férias com abono e 1/3',canonical:'https://trabalhista2026.onrender.com/#ferias'},decimo:{hero:'<h1><i data-lucide="gift"></i> 13º Salário 2026</h1><p>Lei 4.090/1962 | 1ª parcela até 30/11 | 2ª parcela até 20/12 com INSS/IRRF</p>',title:'13º Salário 2026',desc:'Calcule 1ª e 2ª parcela do 13º',canonical:'https://trabalhista2026.onrender.com/#decimo'},seguro:{hero:'<h1><i data-lucide="shield"></i> Seguro-Desemprego 2026</h1><p>Piso R$1.621 | Teto R$2.518,65 | Lei 13.134/2015 | Faixas MTE</p>',title:'Seguro-Desemprego 2026',desc:'Calcule seguro-desemprego com faixas oficiais',canonical:'https://trabalhista2026.onrender.com/#seguro'},fgts:{hero:'<h1><i data-lucide="building"></i> FGTS + Multa 2026</h1><p>Depósito 8% | Rendimento TR+3% | Multa 40% sem justa causa</p>',title:'FGTS 2026',desc:'Calcule FGTS com multa rescisória',canonical:'https://trabalhista2026.onrender.com/#fgts'},adicionais:{hero:'<h1><i data-lucide="alert-triangle"></i> Adicionais Ocupacionais</h1><p>Insalubridade (S.139 TST) | Periculosidade 30% (S.191 TST)</p>',title:'Adicionais 2026',desc:'Calcule insalubridade e periculosidade',canonical:'https://trabalhista2026.onrender.com/#adicionais'},aviso:{hero:'<h1><i data-lucide="calendar-days"></i> Aviso Prévio Proporcional</h1><p>Lei 12.506/2011 | 30 a 90 dias | Projeção para 13º e férias</p>',title:'Aviso Prévio 2026',desc:'Calcule aviso prévio proporcional',canonical:'https://trabalhista2026.onrender.com/#aviso'},'clt-pj':{title:'CLT vs PJ 2026',desc:'Compare CLT e PJ com Fator R',canonical:'https://trabalhista2026.onrender.com/#clt-pj'},freela:{hero:'<h1><i data-lucide="user"></i> Valor Hora Freelancer</h1><p>Fórmula: (custos + salário) ÷ horas faturáveis | Margem de lucro</p>',title:'Valor Hora Freelancer 2026',desc:'Calcule valor hora como freelancer',canonical:'https://trabalhista2026.onrender.com/#freela'},finan:{hero:'<h1><i data-lucide="home"></i> Financiamento PRICE vs SAC</h1><p>Compare sistemas de amortização | Economia de juros | Use FGTS</p>',title:'Financiamento 2026',desc:'Simule financiamento PRICE vs SAC',canonical:'https://trabalhista2026.onrender.com/#finan'}};
 
 // =============================================
 // FUNÇÕES DE NAVEGAÇÃO CORRIGIDAS
@@ -281,6 +282,15 @@ function updatePageSEO(id){
   document.title=d.title;
   document.getElementById('pageDesc').content=d.desc;
   document.getElementById('pageCanonical').href=d.canonical;
+}
+
+function updateHero(id){
+  const d=pageData[id]||pageData.home;
+  const hero=document.getElementById('heroBanner');
+  if(hero&&d.hero){
+    hero.innerHTML=d.hero;
+    lucide.createIcons();
+  }
 }
 
 function showPage(id){
@@ -298,7 +308,7 @@ function showPage(id){
   closeMenu();
   
   // Atualiza SEO
-  updatePageSEO(id);
+  updatePageSEO(id);updateHero(id);
   
   // Atualiza URL sem recarregar
   if(window.location.hash!=='#'+id) history.pushState(null,'','#'+id);
