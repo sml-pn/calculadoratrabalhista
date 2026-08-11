@@ -1,0 +1,9 @@
+# Backups gerados pelo script de deploy
+index.html.bkp*
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
