@@ -102,6 +102,14 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 .glossario dd{margin-left:0;color:var(--text);font-size:13px;padding:4px 0 8px 0;border-bottom:1px solid #e8ecf2}
 .glossario dd:last-child{border-bottom:none}
 
+
+.glossario details{border-bottom:1px solid #e8ecf2;padding:8px 0}
+.glossario summary{font-weight:600;color:var(--primary);cursor:pointer;font-size:14px;list-style:none;display:flex;align-items:center;gap:8px}
+.glossario summary::-webkit-details-marker{display:none}
+.glossario summary::before{content:"+";font-size:18px;font-weight:700;color:var(--accent);min-width:20px;text-align:center;transition:0.2s}
+.glossario details[open] summary::before{content:"−"}
+.glossario p{margin:6px 0 6px 28px;font-size:13px;color:var(--text);line-height:1.6}
+
 </style>
 </head>
 <body>
@@ -198,21 +206,70 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 
 <div class="card" id="glossario">
 <h2><i data-lucide="book-open"></i> Glossário Trabalhista</h2>
-<p class="sub">Principais siglas e termos usados nos cálculos</p>
-<dl class="glossario">
-<dt>INSS</dt><dd><b>Instituto Nacional do Seguro Social.</b> Contribuição previdenciária obrigatória descontada do salário do trabalhador. As alíquotas são progressivas: 7,5% a 14% em 2026, dependendo da faixa salarial. O valor é calculado por faixas, não sobre o salário total.</dd>
-<dt>IRRF</dt><dd><b>Imposto de Renda Retido na Fonte.</b> Imposto descontado diretamente do salário. Em 2026, a base de cálculo até R$5.000 é isenta (Lei 15.270/2025). Entre R$5.000,01 e R$7.350, há um redutor gradual. Acima disso, aplica-se a tabela normal.</dd>
-<dt>FGTS</dt><dd><b>Fundo de Garantia do Tempo de Serviço.</b> O empregador deposita mensalmente 8% do salário em uma conta vinculada. O saldo é corrigido pela TR + 3% ao ano. Na demissão sem justa causa, o trabalhador pode sacar o saldo mais multa de 40%.</dd>
-<dt>DSR</dt><dd><b>Descanso Semanal Remunerado.</b> Valor adicional pago ao trabalhador referente aos domingos e feriados. É calculado sobre horas extras e comissões: (Total HE ÷ Dias úteis) × Domingos/feriados.</dd>
-<dt>CLT</dt><dd><b>Consolidação das Leis do Trabalho.</b> Regime de contratação com carteira assinada que garante direitos como férias, 13º salário, FGTS, aviso prévio e seguro-desemprego.</dd>
-<dt>PJ</dt><dd><b>Pessoa Jurídica.</b> Modalidade de contratação onde o trabalhador atua como empresa (CNPJ). Não tem vínculo empregatício, mas pode pagar menos impostos dependendo do regime tributário.</dd>
-<dt>Fator R</dt><dd><b>Relação entre folha de pagamento e faturamento.</b> No Simples Nacional, se a folha representar 28% ou mais do faturamento, a empresa se enquadra no Anexo III (alíquota inicial de 6%). Abaixo disso, Anexo V (15,5%).</dd>
-<dt>PRICE</dt><dd><b>Sistema Francês de Amortização.</b> Método de financiamento com parcelas fixas do início ao fim. As primeiras parcelas têm mais juros e menos amortização. Resulta em mais juros totais que o SAC.</dd>
-<dt>SAC</dt><dd><b>Sistema de Amortização Constante.</b> Método de financiamento com parcelas decrescentes. A amortização é constante, e os juros diminuem ao longo do tempo. Economiza juros, mas as parcelas iniciais são mais altas.</dd>
-<dt>Salário-Família</dt><dd><b>Benefício para trabalhadores de baixa renda.</b> Pago a quem tem filhos até 14 anos e salário até R$1.906,04 (2026). Valor por filho: R$67,84. Não incide INSS nem IRRF.</dd>
-<dt>Vale-Transporte</dt><dd><b>Desconto para custeio do transporte.</b> O empregador pode descontar até 6% do salário base para o vale-transporte. O valor descontado é limitado ao gasto real com transporte.</dd>
-<dt>Simples Nacional</dt><dd><b>Regime tributário simplificado.</b> Para micro e pequenas empresas. Unifica vários impostos em uma única guia. Alíquotas variam de 6% a 21% conforme o faturamento e a atividade.</dd>
-</dl>
+<p class="sub">Clique no termo para ver a explicação</p>
+<div class="glossario" id="accordeon">
+
+<details>
+<summary>INSS - Instituto Nacional do Seguro Social</summary>
+<p>Contribuição previdenciária obrigatória descontada do salário do trabalhador. As alíquotas são <b>progressivas por faixa</b>: 7,5% a 14% em 2026. O cálculo não é sobre o salário total, mas sim por partes (cada faixa tem sua alíquota).</p>
+</details>
+
+<details>
+<summary>IRRF - Imposto de Renda Retido na Fonte</summary>
+<p>Imposto descontado diretamente do salário. Em 2026, a <b>base de cálculo até R$5.000 é isenta</b> (Lei 15.270/2025). Entre R$5.000,01 e R$7.350 há um redutor gradual. Acima disso, aplica-se a tabela normal com deduções por dependentes (R$189,59 cada).</p>
+</details>
+
+<details>
+<summary>FGTS - Fundo de Garantia do Tempo de Serviço</summary>
+<p>O empregador deposita mensalmente <b>8% do salário</b> (2% para aprendiz) em uma conta vinculada na Caixa. O saldo é corrigido pela TR + 3% ao ano. Na demissão sem justa causa, o trabalhador pode <b>sacar o saldo + multa de 40%</b>.</p>
+</details>
+
+<details>
+<summary>DSR - Descanso Semanal Remunerado</summary>
+<p>Valor adicional pago ao trabalhador referente aos <b>domingos e feriados</b>. É calculado sobre horas extras e comissões usando a fórmula: <b>(Total HE ÷ Dias úteis) × Domingos/feriados</b>. Integra a base de cálculo de férias, 13º e FGTS.</p>
+</details>
+
+<details>
+<summary>CLT - Consolidação das Leis do Trabalho</summary>
+<p>Regime de contratação com <b>carteira assinada</b> que garante direitos como: férias + 1/3, 13º salário, FGTS com multa de 40%, aviso prévio proporcional (30 a 90 dias), seguro-desemprego, entre outros.</p>
+</details>
+
+<details>
+<summary>PJ - Pessoa Jurídica</summary>
+<p>Modalidade onde o trabalhador atua como <b>empresa (CNPJ)</b>. Não tem vínculo empregatício, mas pode pagar menos impostos dependendo do regime (Simples Nacional, Lucro Presumido). O pró-labore é obrigatório (mínimo 28% do faturamento).</p>
+</details>
+
+<details>
+<summary>Fator R - Relação Folha/Faturamento</summary>
+<p>No <b>Simples Nacional</b>, é a relação entre a folha de pagamento e o faturamento. Se a folha representar <b>28% ou mais</b> do faturamento, a empresa se enquadra no <b>Anexo III</b> (alíquota inicial de 6%). Abaixo disso, <b>Anexo V</b> (15,5%).</p>
+</details>
+
+<details>
+<summary>PRICE - Sistema Francês de Amortização</summary>
+<p>Método de financiamento com <b>parcelas fixas</b> do início ao fim. As primeiras parcelas têm mais juros e menos amortização. <b>Mais juros totais</b> que o SAC, mas previsibilidade nas parcelas. Ideal para quem quer parcela constante.</p>
+</details>
+
+<details>
+<summary>SAC - Sistema de Amortização Constante</summary>
+<p>Método com <b>parcelas decrescentes</b>. A amortização é constante, e os juros diminuem ao longo do tempo. <b>Economiza juros</b> comparado ao PRICE, mas as parcelas iniciais são mais altas. Use o FGTS para amortizar e reduzir ainda mais.</p>
+</details>
+
+<details>
+<summary>Salário-Família</summary>
+<p>Benefício pago a quem tem <b>filhos até 14 anos</b> e salário até <b>R$1.906,04</b> (2026). Valor por filho: <b>R$67,84</b>. Não incide INSS nem IRRF. É adicionado ao salário líquido.</p>
+</details>
+
+<details>
+<summary>Vale-Transporte</summary>
+<p>O empregador pode descontar até <b>6% do salário base</b> para custeio do transporte casa-trabalho. O valor descontado é <b>limitado ao gasto real</b> com transporte. Se o gasto for menor que 6%, desconta-se o valor real.</p>
+</details>
+
+<details>
+<summary>Simples Nacional</summary>
+<p>Regime tributário simplificado para <b>micro e pequenas empresas</b>. Unifica IRPJ, CSLL, PIS, COFINS, IPI, ICMS, ISS e INSS patronal em uma única guia. Alíquotas variam de <b>6% a 21%</b> conforme faturamento e atividade.</p>
+</details>
+
+</div>
 </div>
 
 <div class="card" id="faq">
@@ -486,6 +543,18 @@ let h='<div class="result"><h3 style="margin-bottom:8px">📊 Resumo</h3><div cl
 h+='<div class="explanation"><b>📌 Comparação:</b> PRICE tem parcelas fixas (mais juros). SAC tem parcelas decrescentes (economiza juros, mas exige renda inicial maior). Use FGTS para amortizar.</div>';
 h+=addShareButtons();
 document.getElementById('resFinan').innerHTML=h;lucide.createIcons()}
+
+
+// Acordeão intuitivo: abre um e fecha os outros
+document.querySelectorAll("#accordeon details").forEach(d => {
+  d.addEventListener("toggle", function() {
+    if (this.open) {
+      document.querySelectorAll("#accordeon details").forEach(other => {
+        if (other !== this) other.open = false;
+      });
+    }
+  });
+});
 
 window.onload=function(){loadFromHash();document.getElementById('currentYear').textContent=new Date().getFullYear();const bb=document.getElementById('backToTop');window.addEventListener('scroll',()=>bb.classList.toggle('visible',window.scrollY>300));document.querySelectorAll('input.money').forEach(mascaraMoeda);lucide.createIcons()};
 </script>
