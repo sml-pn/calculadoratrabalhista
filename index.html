@@ -159,8 +159,13 @@
       <div class="form-group"><label>Outros proventos</label><input type="text" id="salOutros" value="0,00" class="money"></div>
       <div class="form-group"><label>Dependentes</label><input type="number" id="salDep" value="0" min="0" max="10"></div>
       <div class="form-group"><label>Pensão alimentícia (R$)</label><input type="text" id="salPensao" value="0,00" class="money"></div>
+      <div class="form-group"><label>Filhos até 14 anos (salário-família)</label><input type="number" id="salFilhos" value="0" min="0" max="20"></div>
+      <div class="form-group"><label>Vale-Transporte (desconto 6%)</label><input type="text" id="salVT" value="0,00" class="money" placeholder="Valor do transporte mensal"></div>
     </div>
+      <div class="form-group"><label>Filhos até 14 anos (salário-família)</label><input type="number" id="salFilhos" value="0" min="0" max="20"></div>
+      <div class="form-group"><label>Vale-Transporte (desconto 6%)</label><input type="text" id="salVT" value="0,00" class="money" placeholder="Valor do transporte mensal"></div>
     <label class="check"><input type="checkbox" id="salUsaSimpl"> Forçar dedução simplificada (R$607,20)</label>
+    <label class="check"><input type="checkbox" id="salSindical"> Descontar Contribuição Sindical (1 dia/ano)</label>
     <button class="btn" onclick="calcLiquido()">Calcular Líquido</button>
     <div id="resLiquido"></div></div>
   </section>
@@ -492,14 +497,51 @@ function calcIRRF(base,dep=0,pensao=0,pgbl=0,usaSimpl=false){
 
 // 1. Salário Líquido
 function calcLiquido(){
-  let bruto=unformat(document.getElementById('salBruto').value)+unformat(document.getElementById('salOutros').value);
-  let dep=parseInt(document.getElementById('salDep').value)||0;
-  let pensao=unformat(document.getElementById('salPensao').value);
-  let usaSimpl=document.getElementById('salUsaSimpl').checked;
-  let inss=calcINSS(bruto);
-  let resIR=calcIRRF(bruto-inss,dep,pensao,0,usaSimpl);
-  let liquido=bruto-inss-resIR.ir-pensao;
-  document.getElementById('resLiquido').innerHTML='<div class="result"><div class="result-item"><span>Bruto total</span><span class="value">'+fmt(bruto)+'</span></div><div class="result-item"><span>INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>Base IRRF ('+resIR.metodo+')</span><span class="value">'+fmt(resIR.base)+'</span></div><div class="result-item"><span>IRRF '+(resIR.base<=5000?'<span style="background:#e8f5e9;color:#27ae60;padding:2px 8px;border-radius:99px;font-size:11px">ISENTO ATÉ 5K</span>':'')+'</span><span class="value negative">- '+fmt(resIR.ir)+'</span></div>'+(pensao>0?'<div class="result-item"><span>Pensão</span><span class="value negative">- '+fmt(pensao)+'</span></div>':'')+'<div class="result-item total"><span>Líquido</span><span class="value positive">'+fmt(liquido)+'</span></div></div><div class="explanation">Dedução: dependentes '+dep+'×R$189,59 = '+fmt(dep*189.59)+'. Simplificada R$607,20. Método: <b>'+resIR.metodo+'</b>.</div>';
+  let bruto=unformat(document.getElementById("salBruto").value)+unformat(document.getElementById("salOutros").value);
+  let dep=parseInt(document.getElementById("salDep").value)||0;
+  let filhos=parseInt(document.getElementById("salFilhos").value)||0;
+  let pensao=unformat(document.getElementById("salPensao").value);
+  let vtValor=unformat(document.getElementById("salVT").value);
+  let usaSimpl=document.getElementById("salUsaSimpl").checked;
+  let sindical=document.getElementById("salSindical").checked;
+  
+  /* Salário-Família 2026 */
+  let salFamilia=0;
+  if(filhos>0&&bruto<=1906.04){salFamilia=filhos*67.84;}
+  
+  /* Vale-Transporte (6% sobre base, limitado ao valor informado) */
+  let vtDesconto=Math.min(bruto*0.06,vtValor);
+  
+  /* Contribuição Sindical (1 dia de trabalho) */
+  let sindValor=sindical?(bruto/30):0;
+  
+  /* INSS sobre bruto total */
+  let baseINSS=bruto+salFamilia;
+  let inss=calcINSS(baseINSS);
+  
+  /* Base IRRF */
+  let baseIR=bruto-inss-vtDesconto-sindValor;
+  let resIR=calcIRRF(baseIR,dep,pensao,0,usaSimpl);
+  
+  let liquido=bruto+salFamilia-inss-vtDesconto-sindValor-resIR.ir-pensao;
+  
+  document.getElementById("resLiquido").innerHTML='<div class="result">
+    <div class="result-item"><span>Salário bruto</span><span class="value">'+fmt(bruto)+'</span></div>
+    '+(salFamilia>0?'<div class="result-item"><span>Salário-Família ('+filhos+' filhos)</span><span class="value positive">+ '+fmt(salFamilia)+'</span></div>':'')+'
+    <div class="result-item"><span>INSS</span><span class="value negative">- '+fmt(inss)+'</span></div>
+    '+(vtDesconto>0?'<div class="result-item"><span>Vale-Transporte (6%)</span><span class="value negative">- '+fmt(vtDesconto)+'</span></div>':'')+'
+    '+(sindValor>0?'<div class="result-item"><span>Contrib. Sindical</span><span class="value negative">- '+fmt(sindValor)+'</span></div>':'')+'
+    '+(pensao>0?'<div class="result-item"><span>Pensão alimentícia</span><span class="value negative">- '+fmt(pensao)+'</span></div>':'')+'
+    <div class="result-item"><span>Base IRRF ('+resIR.metodo+')</span><span class="value">'+fmt(resIR.base)+'</span></div>
+    <div class="result-item"><span>IRRF '+(resIR.base<=5000?'<span style="background:#e8f5e9;color:#27ae60;padding:2px 8px;border-radius:99px;font-size:11px">ISENTO ATÉ 5K</span>':'')+'</span><span class="value negative">- '+fmt(resIR.ir)+'</span></div>
+    <div class="result-item total"><span>Salário Líquido</span><span class="value positive">'+fmt(liquido)+'</span></div>
+  </div>
+  <div class="explanation">
+    '+(salFamilia>0?'Salário-família: '+filhos+' filhos × R$67,84. ':'')+'
+    '+(vtDesconto>0?'Vale-transporte: 6% sobre R$'+fmt(bruto)+', limitado a R$'+fmt(vtValor)+'. ':'')+'
+    '+(sindValor>0?'Contribuição sindical: 1 dia de trabalho. ':'')+'
+    Dedução: dependentes '+dep+'×R$189,59 = '+fmt(dep*189.59)+'. Simplificada R$607,20.
+  </div>';
 }
 
 // 2. Rescisão
