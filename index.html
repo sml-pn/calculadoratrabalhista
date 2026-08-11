@@ -110,6 +110,13 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 .glossario details[open] summary::before{content:"−"}
 .glossario p{margin:6px 0 6px 28px;font-size:13px;color:var(--text);line-height:1.6}
 
+
+.nav-dropdown{position:relative}
+.nav-dropdown-content{display:none;position:absolute;top:100%;right:0;background:var(--primary);min-width:160px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.3);z-index:1001;padding:8px}
+.nav-dropdown:hover .nav-dropdown-content{display:block}
+.nav-dropdown-content a{display:block;padding:10px 16px;color:#fff;text-decoration:none;font-size:13px;border-radius:8px;white-space:nowrap}
+.nav-dropdown-content a:hover{background:rgba(255,255,255,.15)}
+
 </style>
 </head>
 <body>
@@ -123,10 +130,19 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 <li><a href="#extras" data-page="extras">Extras</a></li>
 <li><a href="#escala" data-page="escala">6x1/5x1</a></li>
 <li><a href="#ferias" data-page="ferias">Férias</a></li>
-<li><a href="#seguro" data-page="seguro">Seguro</a></li>
-<li><a href="#adicionais" data-page="adicionais">Adicionais</a></li>
-<li><a href="#clt-pj" data-page="clt-pj">CLT vs PJ</a></li>
-<li><a href="#finan" data-page="finan">Financiamento</a></li>
+<li class="nav-dropdown">
+<a href="#" onclick="return false" style="cursor:pointer">Mais ▾</a>
+<div class="nav-dropdown-content">
+<a href="#decimo" data-page="decimo">13º Salário</a>
+<a href="#seguro" data-page="seguro">Seguro</a>
+<a href="#fgts" data-page="fgts">FGTS</a>
+<a href="#adicionais" data-page="adicionais">Adicionais</a>
+<a href="#aviso" data-page="aviso">Aviso Prévio</a>
+<a href="#clt-pj" data-page="clt-pj">CLT vs PJ</a>
+<a href="#freela" data-page="freela">Freelancer</a>
+<a href="#finan" data-page="finan">Financiamento</a>
+</div>
+</li>
 </ul>
 </nav>
 <div class="container">
