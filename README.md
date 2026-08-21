@@ -38,6 +38,7 @@ calculadora-trabalhista/
 ├── .gitignore # Arquivos ignorados pelo Git
 └── README.md # Documentação
 
+
 ## 📈 Tabelas oficiais
 
 - **INSS**: Teto R$8.475,55
@@ -48,5 +49,19 @@ calculadora-trabalhista/
 
 **[https://calculadoratrabalhista.onrender.com](https://calculadoratrabalhista.onrender.com)**
 
+## 📬 Contato
+
+- **GitHub**: [seu-usuario/calculadora-trabalhista](https://github.com/seu-usuario/calculadora-trabalhista)
+- **Email**: contato@calculadoratrabalhista.com.br
+
 ---
 © 2026 Calculadora Trabalhista | Desenvolvido por Samuel Pena
+
+calculadora-trabalhista/
+├── index.html          # Site completo (single-page)
+├── ads.txt             # Autorização AdSense
+├── robots.txt          # Configuração de crawlers
+├── sitemap.xml         # Mapa do site para SEO
+├── .nojekyll           # Bypass do Jekyll no GitHub Pages
+├── .gitignore          # Arquivos ignorados pelo Git
+└── README.md           # Documentação
