@@ -7,10 +7,31 @@
 <meta name="description" id="pageDesc" content="Calculadoras trabalhistas gratuitas e atualizadas: salário líquido, rescisão, horas extras, FGTS, férias, 13º, seguro-desemprego e mais.">
 <link rel="canonical" id="pageCanonical" href="https://calculadoratrabalhista.onrender.com/">
 <meta property="og:title" content="Calculadora Trabalhista">
+<meta property="og:description" content="13 calculadoras trabalhistas gratuitas e atualizadas">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://calculadoratrabalhista.onrender.com/">
 <meta name="theme-color" content="#1a3a5c">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4138232959155881" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PY0S5EYP3"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-7PY0S5EYP3');</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+// Configuração inicial - desativado até consentimento
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied'
+});
+
+gtag('js', new Date());
+gtag('config', 'G-7PY0S5EYP3', {
+  'anonymize_ip': true
+});
+</script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
 :root{--primary:#1a3a5c;--primary-light:#2a5a8c;--accent:#e67e22;--bg:#f4f6f9;--card:#fff;--text:#1e2a3a;--muted:#6b7a8a;--border:#dce3ed;--shadow:0 8px 24px rgba(26,58,92,.08);--radius:16px;--green:#27ae60;--red:#e74c3c}
@@ -126,6 +147,68 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 </style>
 </head>
 <body>
+
+<!-- Banner de consentimento LGPD/GDPR -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #e0e6ed;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  z-index: 10000;
+  max-width: 400px;
+  width: 90%;
+  display: none;
+  animation: fadeUp .5s ease;
+">
+  <div style="display:flex;gap:12px;align-items:flex-start;">
+    <div style="font-size:24px;">🍪</div>
+    <div>
+      <h3 style="margin:0 0 8px;font-size:16px;color:#1a3a5c;">Sua privacidade importa</h3>
+      <p style="font-size:13px;color:#6b7a8a;margin:0 0 12px;line-height:1.5;">
+        Usamos cookies para entender como você usa nossas calculadoras e melhorar sua experiência. 
+        Podemos continuar?
+      </p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button onclick="aceitarCookies()" style="
+          background:#1a3a5c;
+          color:#fff;
+          border:none;
+          padding:10px 20px;
+          border-radius:30px;
+          font-size:13px;
+          font-weight:600;
+          cursor:pointer;
+          transition:.2s;
+        ">Aceitar e continuar</button>
+        <button onclick="recusarCookies()" style="
+          background:#f8fafc;
+          color:#6b7a8a;
+          border:1px solid #dce3ed;
+          padding:10px 20px;
+          border-radius:30px;
+          font-size:13px;
+          font-weight:600;
+          cursor:pointer;
+          transition:.2s;
+        ">Apenas essenciais</button>
+      </div>
+      <a href="#privacidade" onclick="fecharBanner()" style="
+        display:block;
+        margin-top:12px;
+        font-size:11px;
+        color:#6b7a8a;
+        text-decoration:underline;
+        cursor:pointer;
+      ">Saiba mais sobre nossa política de privacidade</a>
+    </div>
+  </div>
+</div>
+
 <nav class="navbar">
 <div class="logo"><i data-lucide="calculator"></i> Calculadora<span>Trabalhista</span></div>
 <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -151,6 +234,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 </li>
 </ul>
 </nav>
+
 <div class="container">
 <div class="hero" id="heroBanner">
 <h1><i data-lucide="calculator"></i> Calculadora Trabalhista – 13 Cálculos Online</h1>
@@ -248,8 +332,15 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 <p><b>Não coletamos dados pessoais.</b> Todas as calculadoras funcionam localmente no seu navegador. Nenhuma informação inserida nos formulários é enviada para nossos servidores. Os cálculos são processados integralmente no seu dispositivo.</p>
 
 <h3>3. Cookies e Anúncios</h3>
-<p>Utilizamos o <b>Google AdSense</b> para exibir anúncios. O Google pode usar cookies para personalizar anúncios com base em suas visitas anteriores a este e outros sites. Para mais informações, consulte a <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Política de Publicidade do Google</a>.</p>
-<p>Você pode desativar a personalização de anúncios nas <a href="https://adssettings.google.com" target="_blank" rel="noopener">Configurações de Anúncios do Google</a>.</p>
+<p>Utilizamos o <b>Google AdSense</b> para exibir anúncios e o <b>Google Analytics</b> para entender como os visitantes interagem com o site. Ao utilizar nosso site, você concorda com o uso de cookies para:</p>
+<ul>
+  <li>Melhorar sua experiência de navegação</li>
+  <li>Analisar o tráfego e uso das calculadoras</li>
+  <li>Exibir anúncios personalizados (se aceitar)</li>
+  <li>Lembrar suas preferências</li>
+</ul>
+<p>Você pode <b>aceitar ou recusar</b> o uso de cookies não essenciais a qualquer momento. Os cookies essenciais (como salvar suas preferências de calculadora) não podem ser desativados.</p>
+<p>Para mais informações, consulte a <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Política de Publicidade do Google</a>.</p>
 
 <h3>4. Google Analytics</h3>
 <p>Utilizamos o <b>Google Analytics 4</b> para entender como os visitantes interagem com o site. Os dados coletados são anônimos e incluem: páginas visitadas, tempo de permanência, tipo de dispositivo e região geográfica aproximada. Nenhum dado pessoal identificável é coletado.</p>
@@ -261,7 +352,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 <p>Utilizamos o <b>localStorage</b> do navegador para salvar preferências de uso (como a calculadora ativa). Esses dados ficam apenas no seu dispositivo e podem ser limpos a qualquer momento nas configurações do navegador.</p>
 
 <h3>7. Contato</h3>
-<p>Dúvidas sobre esta política: <a href="mailto:#">#</a></p>
+<p>Dúvidas sobre esta política: <a href="mailto:contato@calculadoratrabalhista.com.br">contato@calculadoratrabalhista.com.br</a></p>
 </div>
 </section>
 
@@ -297,7 +388,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 <p>Estes Termos de Uso podem ser atualizados a qualquer momento. Recomendamos revisar periodicamente.</p>
 
 <h3>8. Contato</h3>
-<p>Dúvidas: <a href="mailto:#">#</a></p>
+<p>Dúvidas: <a href="mailto:contato@calculadoratrabalhista.com.br">contato@calculadoratrabalhista.com.br</a></p>
 </div>
 </section>
 
@@ -358,7 +449,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 <a href="#privacidade" data-page="privacidade">Privacidade</a>
 <a href="#termos" data-page="termos">Termos</a>
 <span>Calculadora Trabalhista</span>
-<span>Contato: em breve</span>
+<span>Contato: contato@calculadoratrabalhista.com.br</span>
 </div>
 <p style="font-size:12px;margin-bottom:6px">📌 <a href="https://meu.inss.gov.br" target="_blank" rel="noopener">Meu INSS</a> | <a href="https://www.caixa.gov.br/beneficios-trabalhador/fgts/" target="_blank" rel="noopener">FGTS Caixa</a> | <a href="https://servicos.mte.gov.br" target="_blank" rel="noopener">Carteira Digital</a></p>
 <p style="font-size:11px;color:#aaa">© <span id="currentYear"></span> Calculadora Trabalhista • Tabelas oficiais</p>
@@ -369,11 +460,122 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0;border
 
 <script>
 lucide.createIcons();
-const pageData={
-home:{title:'Calculadora Trabalhista – Salário Líquido, Rescisão, FGTS e Mais',desc:'Calculadoras trabalhistas gratuitas e atualizadas: salário líquido, rescisão, horas extras, FGTS, férias, 13º, seguro-desemprego e mais.',canonical:'https://calculadoratrabalhista.onrender.com/',hero:'<h1><i data-lucide="calculator"></i> Calculadora Trabalhista – 13 Cálculos Online</h1><p>Tabelas oficiais INSS/IRRF - Isenção de IR até R$5.000 (Lei 15.270/2025)</p>'},liquido:{hero:'<h1><i data-lucide="dollar-sign"></i> Salário Líquido</h1><p>INSS progressivo | IRRF isento até R$5.000 | Salário-família</p>',title:'Salário Líquido – Calculadora Trabalhista',desc:'Calcule seu salário líquido com INSS, IRRF, salário-família e vale-transporte',canonical:'https://calculadoratrabalhista.onrender.com/#liquido'},rescisao:{hero:'<h1><i data-lucide="file-text"></i> Rescisão Trabalhista</h1><p>4 tipos de rescisão | Aviso prévio proporcional (Lei 12.506/2011) | Multa FGTS 40%</p>',title:'Rescisão Trabalhista – Calculadora Trabalhista',desc:'Calcule sua rescisão completa',canonical:'https://calculadoratrabalhista.onrender.com/#rescisao'},extras:{hero:'<h1><i data-lucide="clock"></i> Horas Extras + DSR</h1><p>Adicional 50%/100% | Noturno 20% | Súmula 60 TST | Banco de horas</p>',title:'Horas Extras – Calculadora Trabalhista',desc:'Calcule horas extras, DSR e adicional noturno',canonical:'https://calculadoratrabalhista.onrender.com/#extras'},escala:{hero:'<h1><i data-lucide="calendar"></i> Escala 6x1 vs 5x1</h1><p>Reforma Trabalhista | Limite 44h semanais | Comparativo de regimes</p>',title:'Escala 6x1/5x1 – Calculadora Trabalhista',desc:'Compare regimes de escala',canonical:'https://calculadoratrabalhista.onrender.com/#escala'},ferias:{hero:'<h1><i data-lucide="umbrella"></i> Férias + 1/3 + Abono</h1><p>Art. 137 CLT (dobra) | Abono pecuniário isento | 30 dias + 1/3</p>',title:'Férias – Calculadora Trabalhista',desc:'Calcule férias com abono e 1/3',canonical:'https://calculadoratrabalhista.onrender.com/#ferias'},decimo:{hero:'<h1><i data-lucide="gift"></i> 13º Salário</h1><p>Lei 4.090/1962 | 1ª parcela até 30/11 | 2ª parcela até 20/12 com INSS/IRRF</p>',title:'13º Salário – Calculadora Trabalhista',desc:'Calcule 1ª e 2ª parcela do 13º',canonical:'https://calculadoratrabalhista.onrender.com/#decimo'},seguro:{hero:'<h1><i data-lucide="shield"></i> Seguro-Desemprego</h1><p>Piso R$1.621 | Teto R$2.518,65 | Lei 13.134/2015 | Faixas MTE</p>',title:'Seguro-Desemprego – Calculadora Trabalhista',desc:'Calcule seguro-desemprego com faixas oficiais',canonical:'https://calculadoratrabalhista.onrender.com/#seguro'},fgts:{hero:'<h1><i data-lucide="building"></i> FGTS + Multa</h1><p>Depósito 8% | Rendimento TR+3% | Multa 40% sem justa causa</p>',title:'FGTS – Calculadora Trabalhista',desc:'Calcule FGTS com multa rescisória',canonical:'https://calculadoratrabalhista.onrender.com/#fgts'},adicionais:{hero:'<h1><i data-lucide="alert-triangle"></i> Adicionais Ocupacionais</h1><p>Insalubridade (S.139 TST) | Periculosidade 30% (S.191 TST)</p>',title:'Adicionais – Calculadora Trabalhista',desc:'Calcule insalubridade e periculosidade',canonical:'https://calculadoratrabalhista.onrender.com/#adicionais'},aviso:{hero:'<h1><i data-lucide="calendar-days"></i> Aviso Prévio Proporcional</h1><p>Lei 12.506/2011 | 30 a 90 dias | Projeção para 13º e férias</p>',title:'Aviso Prévio – Calculadora Trabalhista',desc:'Calcule aviso prévio proporcional',canonical:'https://calculadoratrabalhista.onrender.com/#aviso'},'clt-pj':{title:'CLT vs PJ – Calculadora Trabalhista',desc:'Compare CLT e PJ com Fator R',canonical:'https://calculadoratrabalhista.onrender.com/#clt-pj'},freela:{hero:'<h1><i data-lucide="user"></i> Valor Hora Freelancer</h1><p>Fórmula: (custos + salário) ÷ horas faturáveis | Margem de lucro</p>',title:'Valor Hora Freelancer – Calculadora Trabalhista',desc:'Calcule valor hora como freelancer',canonical:'https://calculadoratrabalhista.onrender.com/#freela'},privacidade:{title:"Política de Privacidade – Calculadora Trabalhista",desc:"Política de privacidade do site",canonical:"https://calculadoratrabalhista.onrender.com/#privacidade"},termos:{title:"Termos de Uso – Calculadora Trabalhista",desc:"Termos de uso do site",canonical:"https://calculadoratrabalhista.onrender.com/#termos"},finan:{hero:'<h1><i data-lucide="home"></i> Financiamento PRICE vs SAC</h1><p>Compare sistemas de amortização | Economia de juros | Use FGTS</p>',title:'Financiamento – Calculadora Trabalhista',desc:'Simule financiamento PRICE vs SAC',canonical:'https://calculadoratrabalhista.onrender.com/#finan'}};
 
 // =============================================
-// FUNÇÕES DE NAVEGAÇÃO CORRIGIDAS
+// CONTROLE DE CONSENTIMENTO LGPD/GDPR
+// =============================================
+
+function verificarConsentimento() {
+  const consentimento = localStorage.getItem('consentimento_cookies');
+  
+  if (consentimento === null) {
+    document.getElementById('cookie-banner').style.display = 'block';
+    desativarRastreamento();
+  } else if (consentimento === 'aceito') {
+    ativarRastreamento();
+    esconderBanner();
+  } else {
+    desativarRastreamento();
+    esconderBanner();
+  }
+}
+
+function ativarRastreamento() {
+  if (typeof gtag !== 'undefined') {
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted',
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted'
+    });
+    console.log('✅ Rastreamento ativado');
+  }
+}
+
+function desativarRastreamento() {
+  if (typeof gtag !== 'undefined') {
+    gtag('consent', 'update', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+    console.log('🔒 Rastreamento desativado');
+  }
+}
+
+function aceitarCookies() {
+  localStorage.setItem('consentimento_cookies', 'aceito');
+  ativarRastreamento();
+  esconderBanner();
+  console.log('🍪 Cookies aceitos');
+}
+
+function recusarCookies() {
+  localStorage.setItem('consentimento_cookies', 'recusado');
+  desativarRastreamento();
+  esconderBanner();
+  console.log('🍪 Apenas cookies essenciais');
+}
+
+function esconderBanner() {
+  document.getElementById('cookie-banner').style.display = 'none';
+}
+
+function fecharBanner() {
+  esconderBanner();
+}
+
+// =============================================
+// RASTREAMENTO DE EVENTOS
+// =============================================
+
+function rastrearEvento(nomeCalculadora, acao) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'uso_calculadora', {
+      'calculadora': nomeCalculadora,
+      'acao': acao,
+      'timestamp': new Date().toISOString()
+    });
+    console.log('📊 Evento registrado: ' + nomeCalculadora + ' - ' + acao);
+  }
+}
+
+function rastrearPageView() {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'page_view', {
+      'page_title': document.title,
+      'page_location': window.location.href,
+      'page_path': window.location.hash || '/'
+    });
+  }
+}
+
+// =============================================
+// DADOS DAS PÁGINAS
+// =============================================
+
+const pageData={
+home:{title:'Calculadora Trabalhista – Salário Líquido, Rescisão, FGTS e Mais',desc:'Calculadoras trabalhistas gratuitas e atualizadas: salário líquido, rescisão, horas extras, FGTS, férias, 13º, seguro-desemprego e mais.',canonical:'https://calculadoratrabalhista.onrender.com/',hero:'<h1><i data-lucide="calculator"></i> Calculadora Trabalhista – 13 Cálculos Online</h1><p>Tabelas oficiais INSS/IRRF - Isenção de IR até R$5.000 (Lei 15.270/2025)</p>'},
+liquido:{hero:'<h1><i data-lucide="dollar-sign"></i> Salário Líquido</h1><p>INSS progressivo | IRRF isento até R$5.000 | Salário-família</p>',title:'Salário Líquido – Calculadora Trabalhista',desc:'Calcule seu salário líquido com INSS, IRRF, salário-família e vale-transporte',canonical:'https://calculadoratrabalhista.onrender.com/#liquido'},
+rescisao:{hero:'<h1><i data-lucide="file-text"></i> Rescisão Trabalhista</h1><p>4 tipos de rescisão | Aviso prévio proporcional (Lei 12.506/2011) | Multa FGTS 40%</p>',title:'Rescisão Trabalhista – Calculadora Trabalhista',desc:'Calcule sua rescisão completa',canonical:'https://calculadoratrabalhista.onrender.com/#rescisao'},
+extras:{hero:'<h1><i data-lucide="clock"></i> Horas Extras + DSR</h1><p>Adicional 50%/100% | Noturno 20% | Súmula 60 TST | Banco de horas</p>',title:'Horas Extras – Calculadora Trabalhista',desc:'Calcule horas extras, DSR e adicional noturno',canonical:'https://calculadoratrabalhista.onrender.com/#extras'},
+escala:{hero:'<h1><i data-lucide="calendar"></i> Escala 6x1 vs 5x1</h1><p>Reforma Trabalhista | Limite 44h semanais | Comparativo de regimes</p>',title:'Escala 6x1/5x1 – Calculadora Trabalhista',desc:'Compare regimes de escala',canonical:'https://calculadoratrabalhista.onrender.com/#escala'},
+ferias:{hero:'<h1><i data-lucide="umbrella"></i> Férias + 1/3 + Abono</h1><p>Art. 137 CLT (dobra) | Abono pecuniário isento | 30 dias + 1/3</p>',title:'Férias – Calculadora Trabalhista',desc:'Calcule férias com abono e 1/3',canonical:'https://calculadoratrabalhista.onrender.com/#ferias'},
+decimo:{hero:'<h1><i data-lucide="gift"></i> 13º Salário</h1><p>Lei 4.090/1962 | 1ª parcela até 30/11 | 2ª parcela até 20/12 com INSS/IRRF</p>',title:'13º Salário – Calculadora Trabalhista',desc:'Calcule 1ª e 2ª parcela do 13º',canonical:'https://calculadoratrabalhista.onrender.com/#decimo'},
+seguro:{hero:'<h1><i data-lucide="shield"></i> Seguro-Desemprego</h1><p>Piso R$1.621 | Teto R$2.518,65 | Lei 13.134/2015 | Faixas MTE</p>',title:'Seguro-Desemprego – Calculadora Trabalhista',desc:'Calcule seguro-desemprego com faixas oficiais',canonical:'https://calculadoratrabalhista.onrender.com/#seguro'},
+fgts:{hero:'<h1><i data-lucide="building"></i> FGTS + Multa</h1><p>Depósito 8% | Rendimento TR+3% | Multa 40% sem justa causa</p>',title:'FGTS – Calculadora Trabalhista',desc:'Calcule FGTS com multa rescisória',canonical:'https://calculadoratrabalhista.onrender.com/#fgts'},
+adicionais:{hero:'<h1><i data-lucide="alert-triangle"></i> Adicionais Ocupacionais</h1><p>Insalubridade (S.139 TST) | Periculosidade 30% (S.191 TST)</p>',title:'Adicionais – Calculadora Trabalhista',desc:'Calcule insalubridade e periculosidade',canonical:'https://calculadoratrabalhista.onrender.com/#adicionais'},
+aviso:{hero:'<h1><i data-lucide="calendar-days"></i> Aviso Prévio Proporcional</h1><p>Lei 12.506/2011 | 30 a 90 dias | Projeção para 13º e férias</p>',title:'Aviso Prévio – Calculadora Trabalhista',desc:'Calcule aviso prévio proporcional',canonical:'https://calculadoratrabalhista.onrender.com/#aviso'},
+'clt-pj':{title:'CLT vs PJ – Calculadora Trabalhista',desc:'Compare CLT e PJ com Fator R',canonical:'https://calculadoratrabalhista.onrender.com/#clt-pj'},
+freela:{hero:'<h1><i data-lucide="user"></i> Valor Hora Freelancer</h1><p>Fórmula: (custos + salário) ÷ horas faturáveis | Margem de lucro</p>',title:'Valor Hora Freelancer – Calculadora Trabalhista',desc:'Calcule valor hora como freelancer',canonical:'https://calculadoratrabalhista.onrender.com/#freela'},
+privacidade:{title:"Política de Privacidade – Calculadora Trabalhista",desc:"Política de privacidade do site",canonical:"https://calculadoratrabalhista.onrender.com/#privacidade"},
+termos:{title:"Termos de Uso – Calculadora Trabalhista",desc:"Termos de uso do site",canonical:"https://calculadoratrabalhista.onrender.com/#termos"},
+finan:{hero:'<h1><i data-lucide="home"></i> Financiamento PRICE vs SAC</h1><p>Compare sistemas de amortização | Economia de juros | Use FGTS</p>',title:'Financiamento – Calculadora Trabalhista',desc:'Simule financiamento PRICE vs SAC',canonical:'https://calculadoratrabalhista.onrender.com/#finan'}
+};
+
+// =============================================
+// FUNÇÕES DE NAVEGAÇÃO
 // =============================================
 
 function updatePageSEO(id){
@@ -393,28 +595,23 @@ function updateHero(id){
 }
 
 function showPage(id){
-  // Ativa a section correta
   document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));
   const target=document.getElementById('page-'+id);
   if(target) target.classList.add('active');
   
-  // Marca link ativo no menu
   document.querySelectorAll('.nav-links a[data-page]').forEach(a=>a.classList.remove('active'));
   const activeLink=document.querySelector('.nav-links a[data-page="'+id+'"]');
   if(activeLink) activeLink.classList.add('active');
   
-  // Fecha menu mobile
   closeMenu();
+  updatePageSEO(id);
+  updateHero(id);
   
-  // Atualiza SEO
-  updatePageSEO(id);updateHero(id);
-  
-  // Atualiza URL sem recarregar
   if(window.location.hash!=='#'+id) history.pushState(null,'','#'+id);
   
-  // Scroll ao topo
   window.scrollTo({top:0,behavior:'smooth'});
   lucide.createIcons();
+  rastrearPageView();
 }
 
 function navigateTo(id){
@@ -440,13 +637,11 @@ function toggleMenu(){
 }
 
 // =============================================
-// EVENT LISTENERS CORRIGIDOS
+// EVENT LISTENERS
 // =============================================
 
-// Hash change
 window.addEventListener('hashchange',loadFromHash);
 
-// Todos os links do menu (incluindo dropdown)
 document.querySelectorAll('.nav-links a[data-page]').forEach(a=>{
   a.addEventListener('click',function(e){
     e.preventDefault();
@@ -458,7 +653,6 @@ document.querySelectorAll('.nav-links a[data-page]').forEach(a=>{
   });
 });
 
-// Dropdown toggle em mobile
 const dropdownToggle=document.querySelector('.nav-dropdown .dropdown-toggle');
 const navDropdown=document.getElementById('navDropdown');
 
@@ -466,14 +660,12 @@ if(dropdownToggle){
   dropdownToggle.addEventListener('click',function(e){
     e.preventDefault();
     e.stopPropagation();
-    // Só funciona como toggle em mobile
     if(window.innerWidth<=820){
       navDropdown.classList.toggle('open');
     }
   });
 }
 
-// Links dentro do dropdown
 document.querySelectorAll('.nav-dropdown-content a[data-page]').forEach(a=>{
   a.addEventListener('click',function(e){
     e.preventDefault();
@@ -486,13 +678,11 @@ document.querySelectorAll('.nav-dropdown-content a[data-page]').forEach(a=>{
   });
 });
 
-// Hamburger
 document.getElementById('hamburger').addEventListener('click',function(e){
   e.stopPropagation();
   toggleMenu();
 });
 
-// Fechar menu ao clicar fora
 document.addEventListener('click',function(e){
   if(!e.target.closest('.navbar')){
     closeMenu();
@@ -500,7 +690,6 @@ document.addEventListener('click',function(e){
   }
 });
 
-// Fechar menu com tecla ESC
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){
     closeMenu();
@@ -509,7 +698,7 @@ document.addEventListener('keydown',function(e){
 });
 
 // =============================================
-// TOGGLE CARDS (MOBILE) - CORRIGIDO
+// TOGGLE CARDS (MOBILE)
 // =============================================
 
 function toggleCards(){
@@ -523,7 +712,7 @@ function toggleCards(){
 }
 
 // =============================================
-// MÁSCARA DE MOEDA - CORRIGIDA
+// MÁSCARA DE MOEDA
 // =============================================
 
 function mascaraMoeda(el){
@@ -539,11 +728,9 @@ function mascaraMoeda(el){
       this.value=n.toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,'.');
     }
   });
-  // Previne submit ao pressionar Enter
   el.addEventListener('keydown',function(e){
     if(e.key==='Enter'){
       e.preventDefault();
-      // Encontra o botão de calcular mais próximo e clica
       const btn=this.closest('.card')?.querySelector('.btn');
       if(btn) btn.click();
     }
@@ -557,7 +744,7 @@ const unformat=s=>{if(!s)return 0;if(typeof s==='number')return s;let t=s.toStri
 function parseHM(s){if(!s||!s.includes(':'))return parseFloat(s)||0;let p=s.split(':');let h=parseInt(p[0])||0,m=parseInt(p[1])||0;return h+m/60}
 
 // =============================================
-// SHARE - CORRIGIDO
+// SHARE
 // =============================================
 
 function shareCalc(p){
@@ -678,12 +865,10 @@ function calcLiquido(){
   h+='<div class="result-item total"><span>💰 Salário Líquido</span><span class="value positive">'+fmt(liquido)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Detalhes:</b> '+(dep>0?dep+' dependente(s) × R$189,59 = '+fmt(dep*189.59)+'. ':'')+(filhos>0&&salFamilia>0?filhos+' filho(s) com salário-família: '+fmt(salFamilia)+'. ':'')+(salFamilia===0&&filhos>0?'Salário-família não concedido (salário acima de R$1.906,04). ':'')+'Dedução simplificada: '+(usaSimpl?'Sim (R$607,20)':'Não (mais vantajosa: detalhada)')+'.</div>';
   h+=addShareButtons();
-  document.getElementById('resLiquido').innerHTML=h;lucide.createIcons();
+  document.getElementById('resLiquido').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Salário Líquido', 'calculo_realizado');
 }
-
-// =============================================
-// diffYears CORRIGIDO
-// =============================================
 
 function diffYears(adm,dem){
   if(!adm||!dem||isNaN(adm.getTime())||isNaN(dem.getTime()))return 0;
@@ -692,10 +877,6 @@ function diffYears(adm,dem){
   if(dem.getMonth()<adm.getMonth()||(dem.getMonth()===adm.getMonth()&&dem.getDate()<adm.getDate()))y--;
   return Math.max(0,y);
 }
-
-// =============================================
-// CALC RESCISÃO - CORRIGIDO
-// =============================================
 
 function calcRescisao(){
   let sal=unformat(document.getElementById('rescSal').value);
@@ -727,7 +908,6 @@ function calcRescisao(){
   if(tipo==='justa')meses13=0;
   let decimo=sal/12*meses13;
   
-  // Cálculo de férias proporcionais corrigido
   let msTotal=totalDias/30;
   let mesesFerProp=Math.min(Math.round((msTotal%12)*10)/10,12);
   if(mesesFerProp===0&&totalDias%365>=15)mesesFerProp=1;
@@ -774,7 +954,9 @@ function calcRescisao(){
   h+='<div class="result-item total"><span>💵 Total com FGTS + Multa</span><span class="value positive">'+fmt(totalComFGTS)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Resumo:</b> '+anos+' anos de empresa. Aviso prévio de '+diasAviso+' dias (Lei 12.506/2011). Projeção até '+demProj.toLocaleDateString('pt-BR')+'. Tipo: '+tipo.replace('_',' ')+'.</div>';
   h+=addShareButtons();
-  document.getElementById('resRescisao').innerHTML=h;lucide.createIcons();
+  document.getElementById('resRescisao').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Rescisão', 'calculo_realizado');
 }
 
 function calcHE(){
@@ -794,7 +976,9 @@ function calcHE(){
   h+='<div class="result-item total"><span>💰 Total HE + DSR</span><span class="value positive">'+fmt(total)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Fórmula:</b> DSR = (Total HE ÷ Dias úteis) × Domingos/feriados. '+(compensar?'Banco de horas: sem adicional de 50%.':'')+' HE habitual integra 13º, férias e FGTS (Súmula 45 TST).</div>';
   h+=addShareButtons();
-  document.getElementById('resHE').innerHTML=h;lucide.createIcons();
+  document.getElementById('resHE').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Horas Extras', 'calculo_realizado');
 }
 
 function calcEscala(){
@@ -817,7 +1001,9 @@ function calcEscala(){
   let h='<div class="result"><div class="result-item"><span>📅 Jornada mensal ('+diasSemana+'x'+jornada+'h)</span><span class="value">'+hm.toFixed(0)+'h</span></div><div class="result-item"><span>💵 Salário base</span><span class="value">'+fmt(sal)+'</span></div><div class="result-item"><span>⏰ Horas extras ('+he+'h)</span><span class="value positive">'+fmt(heV)+'</span></div><div class="result-item"><span>🌙 Adicional noturno</span><span class="value positive">'+fmt(nv)+'</span></div><div class="result-item"><span>📅 DSR sobre HE</span><span class="value positive">'+fmt(dsr)+'</span></div><div class="result-item"><span>➕ Bruto total</span><span class="value">'+fmt(bruto)+'</span></div><div class="result-item"><span>🔴 INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>🔵 IRRF</span><span class="value negative">- '+fmt(irrf)+'</span></div><div class="result-item total"><span>💰 Líquido ('+diasSemana+'x1)</span><span class="value positive">'+fmt(liquido)+'</span></div>'+comp+'</div>';
   h+='<div class="explanation"><b>📌 Legislação:</b> Reforma trabalhista permite escalas 5x1 e 6x1 com até 44h semanais. DSR obrigatório. Horas extras: 50% dias úteis, 100% domingos/feriados.</div>';
   h+=addShareButtons();
-  document.getElementById('resEscala').innerHTML=h;lucide.createIcons();
+  document.getElementById('resEscala').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Escala 6x1/5x1', 'calculo_realizado');
 }
 
 function calcFerias(){
@@ -838,7 +1024,9 @@ function calcFerias(){
   h+='<div class="result-item total"><span>💰 Líquido a receber</span><span class="value positive">'+fmt(liquido)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Observações:</b> Abono pecuniário e seu 1/3 são isentos de INSS e IRRF (Art. 144 CLT). Férias gozadas + 1/3 são tributáveis.</div>';
   h+=addShareButtons();
-  document.getElementById('resFerias').innerHTML=h;lucide.createIcons();
+  document.getElementById('resFerias').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Férias', 'calculo_realizado');
 }
 
 function calcDecimo(){
@@ -848,7 +1036,9 @@ function calcDecimo(){
   let h='<div class="result"><div class="result-item"><span>🎄 13º Bruto ('+meses+'/12 avos)</span><span class="value">'+fmt(total)+'</span></div><div class="result-item"><span>💵 1ª Parcela (até 30/11)</span><span class="value positive">'+fmt(primeira)+'</span></div><div class="result-item"><span>📊 Base para INSS/IRRF</span><span class="value">'+fmt(total)+'</span></div><div class="result-item"><span>🔴 INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>🔵 IRRF (tributação exclusiva)</span><span class="value negative">- '+fmt(ir)+'</span></div><div class="result-item total"><span>💵 2ª Parcela (até 20/12)</span><span class="value positive">'+fmt(segunda)+'</span></div><div class="result-item total"><span>💰 Líquido total</span><span class="value positive">'+fmt(total-inss-ir)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Lei 4.090/1962:</b> 1ª parcela sem descontos. 2ª parcela com INSS e IRRF integrais. IRRF do 13º tem tributação exclusiva (não soma ao salário).</div>';
   h+=addShareButtons();
-  document.getElementById('resDecimo').innerHTML=h;lucide.createIcons();
+  document.getElementById('resDecimo').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('13º Salário', 'calculo_realizado');
 }
 
 function calcSeguro(){
@@ -869,7 +1059,9 @@ function calcSeguro(){
   h+='<div class="result-item total"><span>💰 Total a receber</span><span class="value positive">'+fmt(total)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Faixas MTE:</b> Piso R$1.621,00 | Teto R$2.518,65. Requisitos: 1ª vez ≥12 meses nos últimos 18; 2ª vez ≥9 meses; 3ª+ ≥6 meses.</div>';
   h+=addShareButtons();
-  document.getElementById('resSeguro').innerHTML=h;lucide.createIcons();
+  document.getElementById('resSeguro').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Seguro-Desemprego', 'calculo_realizado');
 }
 
 function calcFGTS(){
@@ -883,7 +1075,9 @@ function calcFGTS(){
   h+='<div class="result-item total"><span>💰 Total (saldo + multa)</span><span class="value positive">'+fmt(total)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Depósito:</b> '+(perc*100)+'% sobre salário. Rendimento aproximado de 0,25% a.m. (TR + 3% a.a.). Multa de '+tipo+'% sobre o saldo total.</div>';
   h+=addShareButtons();
-  document.getElementById('resFGTS').innerHTML=h;lucide.createIcons();
+  document.getElementById('resFGTS').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('FGTS', 'calculo_realizado');
 }
 
 function calcAdicionais(){
@@ -900,7 +1094,9 @@ function calcAdicionais(){
   h+='<div class="result-item"><span>➕ Base total</span><span class="value">'+fmt(base)+'</span></div><div class="result-item"><span>🔴 INSS</span><span class="value negative">- '+fmt(inss)+'</span></div><div class="result-item"><span>🔵 IRRF</span><span class="value negative">- '+fmt(ir)+'</span></div><div class="result-item total"><span>💰 Líquido com adicionais</span><span class="value positive">'+fmt(liquido)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Súmulas TST:</b> Insalubridade (S.139) sobre salário mínimo. Periculosidade (S.191) sobre salário base. Não cumulativos (escolhe o maior).</div>';
   h+=addShareButtons();
-  document.getElementById('resAdicionais').innerHTML=h;lucide.createIcons();
+  document.getElementById('resAdicionais').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Adicionais', 'calculo_realizado');
 }
 
 function calcAviso(){
@@ -914,7 +1110,9 @@ function calcAviso(){
   let h='<div class="result"><div class="result-item"><span>⏱️ Tempo de empresa</span><span class="value">'+anos+' anos</span></div><div class="result-item"><span>📅 Dias de aviso (30 + '+Math.min(anos*3,60)+')</span><span class="value">'+dias+' dias</span></div><div class="result-item"><span>💵 Valor do aviso ('+tipo+')</span><span class="value positive">'+fmt(valor)+'</span></div><div class="result-item"><span>📆 Data projetada (OJ 82 TST)</span><span class="value">'+proj.toLocaleDateString('pt-BR')+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Lei 12.506/2011:</b> 30 dias base + 3 dias por ano completo, limitado a 90 dias. Projeção gera avos de 13º e férias.</div>';
   h+=addShareButtons();
-  document.getElementById('resAviso').innerHTML=h;lucide.createIcons();
+  document.getElementById('resAviso').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Aviso Prévio', 'calculo_realizado');
 }
 
 function calcCLTPJ(){
@@ -933,7 +1131,9 @@ function calcCLTPJ(){
   let h='<div class="result"><h3 style="margin-bottom:8px">👔 CLT</h3><div class="result-item"><span>💵 Salário bruto</span><span class="value">'+fmt(salCLT)+'</span></div><div class="result-item"><span>🔴 INSS</span><span class="value negative">- '+fmt(inssCLT)+'</span></div><div class="result-item"><span>🔵 IRRF</span><span class="value negative">- '+fmt(irCLT)+'</span></div><div class="result-item"><span>🎁 Benefícios</span><span class="value positive">+ '+fmt(benef)+'</span></div><div class="result-item total"><span>💰 Líquido CLT</span><span class="value positive">'+fmt(liquidoCLT+benef)+'</span></div><div class="result-item"><span>🏢 Custo total empresa</span><span class="value">'+fmt(custoTotalCLT)+'</span></div><hr style="margin:8px 0"><h3 style="margin-bottom:8px">💼 PJ</h3><div class="result-item"><span>📊 Faturamento</span><span class="value">'+fmt(fat)+'</span></div><div class="result-item"><span>📑 Imposto Simples ('+(aliquota*100).toFixed(1)+'%)</span><span class="value negative">- '+fmt(impostoPJ)+'</span></div><div class="result-item"><span>👤 Pró-labore ('+proPerc+'%)</span><span class="value">'+fmt(proLabore)+'</span></div><div class="result-item"><span>🔴 INSS pró-labore</span><span class="value negative">- '+fmt(inssPro)+'</span></div><div class="result-item"><span>🔵 IRRF pró-labore</span><span class="value negative">- '+fmt(irPro)+'</span></div><div class="result-item"><span>📋 Custos fixos</span><span class="value negative">- '+fmt(custos)+'</span></div><div class="result-item"><span>💎 Lucro distribuído (isento)</span><span class="value positive">'+fmt(lucro)+'</span></div><div class="result-item total"><span>💰 Líquido PJ</span><span class="value '+(diff>=0?'positive':'negative')+'">'+fmt(liquidoPJ)+' ('+(diff>=0?'+':'')+fmt(diff)+' vs CLT)</span></div></div>';
   h+='<div class="explanation"><b>📌 Fator R:</b> '+(regime==='fatorR'?'Folha/Faturamento = '+proPerc+'%. '+(proPerc>=28?'Anexo III (6%)':'Anexo V (15,5%)'):'Regime: Anexo '+regime)+'. Pró-labore mínimo 28%. Lucro distribuído isento de IR.</div>';
   h+=addShareButtons();
-  document.getElementById('resCLTPJ').innerHTML=h;lucide.createIcons();
+  document.getElementById('resCLTPJ').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('CLT vs PJ', 'calculo_realizado');
 }
 
 function calcFreela(){
@@ -945,7 +1145,9 @@ function calcFreela(){
   let h='<div class="result"><div class="result-item"><span>📅 Horas totais/mês</span><span class="value">'+horasMes.toFixed(0)+'h</span></div><div class="result-item"><span>⏱️ Horas faturáveis ('+fatPerc+'%)</span><span class="value">'+horasFaturaveis.toFixed(0)+'h</span></div><div class="result-item"><span>📊 Custo base/hora</span><span class="value">'+fmt(custoHora)+'</span></div><div class="result-item"><span>💵 Valor/hora (com '+margem+'% margem)</span><span class="value positive">'+fmt(valorHora)+'</span></div><div class="result-item"><span>📆 Valor/dia ('+hDia+'h)</span><span class="value">'+fmt(valorDia)+'</span></div><div class="result-item"><span>📅 Valor/mês faturável</span><span class="value">'+fmt(valorMes)+'</span></div><div class="result-item total"><span>💼 Projeto 40h (1 semana)</span><span class="value positive">'+fmt(valorProjeto40h)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Fórmula:</b> (Custos + Salário desejado) ÷ Horas faturáveis × (1 + Margem). Horas faturáveis = 50-60% do total (resto é prospecção/admin).</div>';
   h+=addShareButtons();
-  document.getElementById('resFreela').innerHTML=h;lucide.createIcons();
+  document.getElementById('resFreela').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Freelancer', 'calculo_realizado');
 }
 
 function calcFinan(){
@@ -963,11 +1165,13 @@ function calcFinan(){
   let h='<div class="result"><h3 style="margin-bottom:8px">📊 Resumo</h3><div class="result-item"><span>🏠 Valor do imóvel</span><span class="value">'+fmt(imovel)+'</span></div><div class="result-item"><span>💵 Entrada</span><span class="value">'+fmt(entrada)+'</span></div><div class="result-item"><span>🏦 Valor financiado</span><span class="value">'+fmt(financiado)+'</span></div><div class="result-item"><span>📈 Taxa a.m. equivalente</span><span class="value">'+(taxaAm*100).toFixed(3)+'%</span></div><hr style="margin:8px 0"><h3 style="margin-bottom:8px">📊 PRICE (Parcelas Fixas)</h3><div class="result-item"><span>💳 Valor da parcela</span><span class="value">'+fmt(parcPrice)+'</span></div><div class="result-item"><span>💸 Total de juros</span><span class="value negative">'+fmt(jurosPrice)+'</span></div><div class="result-item"><span>💰 Total pago</span><span class="value">'+fmt(totalPrice)+'</span></div><hr style="margin:8px 0"><h3 style="margin-bottom:8px">📉 SAC (Amortização Constante)</h3><div class="result-item"><span>💳 1ª parcela</span><span class="value">'+fmt(primeiraSAC)+'</span></div><div class="result-item"><span>💳 Última parcela</span><span class="value">'+fmt(ultimaSAC)+'</span></div><div class="result-item"><span>💸 Total de juros</span><span class="value negative">'+fmt(jurosSAC)+'</span></div><div class="result-item"><span>💰 Total pago</span><span class="value">'+fmt(totalSAC)+'</span></div><div class="result-item total"><span>🎉 Economia com SAC</span><span class="value positive">'+fmt(economia)+'</span></div></div>';
   h+='<div class="explanation"><b>📌 Comparação:</b> PRICE tem parcelas fixas (mais juros). SAC tem parcelas decrescentes (economiza juros, mas exige renda inicial maior). Use FGTS para amortizar.</div>';
   h+=addShareButtons();
-  document.getElementById('resFinan').innerHTML=h;lucide.createIcons();
+  document.getElementById('resFinan').innerHTML=h;
+  lucide.createIcons();
+  rastrearEvento('Financiamento', 'calculo_realizado');
 }
 
 // =============================================
-// ACORDEÃO - CORRIGIDO
+// ACORDEÃO
 // =============================================
 
 document.querySelectorAll("#accordeon details").forEach(d=>{
@@ -985,6 +1189,7 @@ document.querySelectorAll("#accordeon details").forEach(d=>{
 // =============================================
 
 window.onload=function(){
+  verificarConsentimento();
   loadFromHash();
   document.getElementById('currentYear').textContent=new Date().getFullYear();
   const bb=document.getElementById('backToTop');
@@ -992,7 +1197,6 @@ window.onload=function(){
   document.querySelectorAll('input.money').forEach(mascaraMoeda);
   lucide.createIcons();
   
-  // Resize handler para dropdown
   window.addEventListener('resize',function(){
     if(window.innerWidth>820){
       navDropdown.classList.remove('open');
