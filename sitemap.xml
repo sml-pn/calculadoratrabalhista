@@ -1,87 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
   <url>
-    <loc>https://trabalhista2026.onrender.com/</loc>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://calculadoratrabalhista.onrender.com/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Seções principais -->
   <url>
-    <loc>https://trabalhista2026.onrender.com/#liquido</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://calculadoratrabalhista.onrender.com/#liquido</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://trabalhista2026.onrender.com/#rescisao</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://calculadoratrabalhista.onrender.com/#rescisao</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://trabalhista2026.onrender.com/#extras</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://calculadoratrabalhista.onrender.com/#extras</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://trabalhista2026.onrender.com/#escala</loc>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://trabalhista2026.onrender.com/#ferias</loc>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://trabalhista2026.onrender.com/#decimo</loc>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://trabalhista2026.onrender.com/#seguro</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://calculadoratrabalhista.onrender.com/#escala</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://trabalhista2026.onrender.com/#fgts</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://calculadoratrabalhista.onrender.com/#ferias</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://trabalhista2026.onrender.com/#adicionais</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://calculadoratrabalhista.onrender.com/#decimo</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://trabalhista2026.onrender.com/#aviso</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://calculadoratrabalhista.onrender.com/#seguro</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://trabalhista2026.onrender.com/#clt-pj</loc>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://trabalhista2026.onrender.com/#freela</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://calculadoratrabalhista.onrender.com/#fgts</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://trabalhista2026.onrender.com/#finan</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://calculadoratrabalhista.onrender.com/#adicionais</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://calculadoratrabalhista.onrender.com/#aviso</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://calculadoratrabalhista.onrender.com/#clt-pj</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://calculadoratrabalhista.onrender.com/#freela</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://calculadoratrabalhista.onrender.com/#finan</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Páginas institucionais -->
+  <url>
+    <loc>https://calculadoratrabalhista.onrender.com/#privacidade</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://calculadoratrabalhista.onrender.com/#termos</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
