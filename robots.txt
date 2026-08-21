@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
-Sitemap: https://trabalhista2026.onrender.com/sitemap.xml
+
+# Sitemap
+Sitemap: https://calculadoratrabalhista.onrender.com/sitemap.xml
+
+# Bloquear acesso a arquivos desnecessários
+Disallow: /css/
+Disallow: /js/
